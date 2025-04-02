@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>odd:odd</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="페이지 제목" />
+    <meta property="og:description" content="페이지 설명" />
+    <meta property="og:image" content="http://www.mysite.com/article/article1_featured_image.jpg" />
+    <meta property="og:url" content="http://www.mysite.com/article/article1.html" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="페이지 제목" />
+    <meta name="twitter:description" content="페이지 설명" />
+    <meta name="twitter:image" content="http://www.mysite.com/article/article1.html" />
+    <meta name="twitter:domain" content="사이트 명" />
+    <link rel="shortcut icon" href="http://www.mysite.com/favicon.ico" />
+    <!-- css -->
+     <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/duotone/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../resources/css/pattern_css.css" />
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@latest/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.8/countUp.min.js"></script>
+    <script defer src="../resources/js/ui-swiper.js"></script>
+    <script defer src="../resources/js/ui-pattern-script.js"></script>
+    <script defer src="../resources/js/ui-counter.js"></script>
+    <script defer src="../resources/js/include.js"></script>
+  </head>
+  <body>
+    <div id="skip-nav">
+      <a href="#gnb">메뉴 바로가기</a>
+      <a href="#container">본문 바로가기</a>
+    </div>
+    <div id="wrap">
+      <header id="header">
+        <div class="inner">
+          <h1 id="logo">
+            <a href="./index.html" class="logo__link">od<b>d:o</b>dd</a>
+          </h1>
+          <div class="util">
+            <button class="lang">
+              <span class="blind">영어로 보기</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <g transform="rotate(-90, 12, 12)">
+                  <circle cx="12" cy="12" r="11" stroke-width="1.7" fill="none" />
+                  <line x1="1" y1="12" x2="23" y2="12" stroke-width="1.7" />
+                  <ellipse cx="12" cy="12" rx="11" ry="5.5" stroke-width="1.7" fill="none" />
+                  <line x1="12" y1="1" x2="12" y2="23" stroke-width="1.7" />
+                </g>
+              </svg>
+            </button>
+            <button class="all-menu">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line class="line1" x1="2" y1="3" x2="22" y2="3"></line>
+                <line class="line2" x1="2" y1="12" x2="16" y2="12"></line>
+                <line class="line3" x1="2" y1="21" x2="22" y2="21"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- active 추가시 활성화 -->
+        <nav id="nav-all" class="">
+          <div class="inner">
+            <ul class="gnb gnb_left">
+              <li><a href="./about.html">About</a></li>
+              <li><a href="#">Insight</a></li>
+              <li><a href="#">Archive</a></li>
+            </ul>
+            <ul class="gnb gnb_right">
+              <li><a href="#">News</a></li>
+              <li><a href="#">Partner</a></li>
+              <li><a href="#">Membership</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <div class="intro">
+          <div class="sec-leadin">
+              <div class="sec-leadin__cont">
+                <div class="txt-box">
+                  <p class="txt-box__top">What makes it stand out?</p>
+                  <!-- <p class="txt-box__bottom">
+                    Revealing the <span class="bg-highlight">value of art</span> <br />at
+                    <span class="line-highlight"><strong>Kiaf Seoul</strong></span>
+                  </p> -->
+                  <p class="txt-box__bottom">
+                    기술의 가치를<span class="bg-highlight">이끌어내는</span> <br />at
+                    <span class="line-highlight"><strong>odd:odd</strong></span>
+                  </p>
+                </div>
+                <!-- <div class="arrow-box">
+                  <p class="arrow-box__text"><strong class="stepinto">STEP INTO</strong></p>
+                  <div class="arrow-box__arrow">
+                    <div class="arrow-start"></div>
+                    <div class="arrow-end"></div>
+                  </div>
+                </div> -->
+              </div>
+          </div>
+          <div class="intro__vid">
+            <video id="introVideo" autoplay loop muted playsinline>
+              <source src="../resources/images/pattern/common/intro-3.mp4" type="video/mp4" />
+            </video>
+            <div class="overlay">
+              <div class="overlay-text">oddodd</div>
+            </div>
+          </div>
+      </div>
+      <main id="container">
+        <section class="sec-g sec-works">
+          <div class="inner">
+            <div class="sec-g__area">
+              <h2 class="sec-g__tit">Our Works</h2>
+              <p class="sec-g__desc">
+                WEBTOON is a global storytelling platform that enables creators <br>
+  and users to discover, create, and share stories.</p>
+              <a href="#" class="sec-g__more">View Our Works</a>
+            </div>
+
+            <div class="swiper swiper-works">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="https://www.wooriam.kr/upload/public/board/LnMCTNmG6JaCGQHJ/tb5eAihFnIe9tAmJ.jpg" alt="" />
+                      <strong>미국 공모주 정말 쉽게 받는 방법</strong>
+                      <em>2024.10.16</em>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="https://www.wooriam.kr/upload/public/board/LnMCTNmG6JaCGQHJ/tb5eAihFnIe9tAmJ.jpg" alt="" />
+                      <strong>미국 공모주 정말 쉽게 받는 방법</strong>
+                      <em>2024.10.16</em>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="https://www.wooriam.kr/upload/public/board/LnMCTNmG6JaCGQHJ/tb5eAihFnIe9tAmJ.jpg" alt="" />
+                      <strong>미국 공모주 정말 쉽게 받는 방법</strong>
+                      <em>2024.10.16</em>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="https://www.wooriam.kr/upload/public/board/LnMCTNmG6JaCGQHJ/tb5eAihFnIe9tAmJ.jpg" alt="" />
+                      <strong>미국 공모주 정말 쉽게 받는 방법</strong>
+                      <em>2024.10.16</em>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="https://www.wooriam.kr/upload/public/board/LnMCTNmG6JaCGQHJ/tb5eAihFnIe9tAmJ.jpg" alt="" />
+                      <strong>미국 공모주 정말 쉽게 받는 방법</strong>
+                      <em>2024.10.16</em>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="https://www.wooriam.kr/upload/public/board/LnMCTNmG6JaCGQHJ/tb5eAihFnIe9tAmJ.jpg" alt="" />
+                      <strong>미국 공모주 정말 쉽게 받는 방법</strong>
+                      <em>2024.10.16</em>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="https://www.wooriam.kr/upload/public/board/LnMCTNmG6JaCGQHJ/tb5eAihFnIe9tAmJ.jpg" alt="" />
+                      <strong>미국 공모주 정말 쉽게 받는 방법</strong>
+                      <em>2024.10.16</em>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+        </section>
+
+        <section class="sec-g sec-event">
+          <ul class="video">
+            <video src="../resources/images/pattern/common/intro-2.mp4" autoplay loop></video>
+            <div class="text">
+              <strong>Investor Relations at WEBTOON</strong>
+              <p>Get more information about WEBTOON’s latest financials, <br>
+  news, events and presentations.</p>
+              <!-- <a href="#" class="more">View More</a> -->
+            </div>
+          </div>
+          
+        </section>
+
+        <section class="sec-g sec-vision">
+          <div class="inner">
+            <strong class="text">To provide opportunities <br>
+            for everyone to create their own stories <br>
+            and share them with others.</strong>
+
+            <div class="counter">
+              <div id="creators-count">
+                <strong>
+                  0 M+
+                </strong>
+                <span>Total Creators</span>
+              </div>
+              <div id="users-count">
+                <strong>
+                  0 M
+                </strong>
+                <span>Monthly Active Users</span>
+              </div>
+              <div id="stories-count">
+                <strong>
+                  0+
+                </strong>
+                <span>Adapted Stories</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="sec-g sec-careers">
+          <div class="inner">
+            <div class="box sec-g__text">
+              <div class="left">
+                <strong>Careers at WEBTOON</strong>
+                <p>Join us in our mission to inspire creativity and bring stories to life.</p>
+                <!-- <a href="#" class="btn-goto">View Careers</a> -->
+              </div>
+              <div class="right"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="sec-g sec-goto">
+          <div class="inner">
+            <ul class="sec-goto__list">
+              <li class="list__item contact">
+                <a href="#" class="list__link">
+                  <div class="top-box"></div>
+                  <div class="bottom-box">
+                    <strong class="title">Contact</strong>
+                    <span class="btn-goto"><span class="blind">메일 새창열림</span></span>
+                  </div>
+                </a>
+              </li>
+              <li class="list__item instagram">
+                <a href="#" class="list__link">
+                  <div class="top-box"></div>
+                  <div class="bottom-box">
+                    <strong class="title">Instagram</strong>
+                    <span class="btn-goto"><span class="blind">새창열림</span></span>
+                  </div>
+                </a>
+              </li>
+              <li class="list__item facebook">
+                <a href="#" class="list__link">
+                  <div class="top-box"></div>
+                  <div class="bottom-box">
+                    <strong class="title">blog</strong>
+                    <span class="btn-goto"><span class="blind">새창열림</span></span>
+                  </div>
+                </a>
+              </li>
+              <li class="list__item youtube">
+                <a href="#" class="list__link">
+                  <div class="top-box"></div>
+                  <div class="bottom-box">
+                    <strong class="title">velog</strong>
+                    <span class="btn-goto"><span class="blind">새창열림</span></span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <div class="sec-g sec-tag">
+          <div class="inner">
+            <div class="sec-tag__text">
+              <div class="text-box">Digital Innovation   Web Development   System Integration   Frontend Education   Digital Innovation</div>
+            </div>
+            <div class="sec-tag__cont">
+              <div class="sec-tag__canvas"></div>
+              <span class="tag__item bg-primary">Development</span>
+              <span class="tag__item">Creativity</span>
+              <span class="tag__item bg-primary">Collaboration</span>
+              <span class="tag__item bg-secondary">Education</span>
+              <span class="tag__item bg-secondary">Vision</span>
+              <span class="tag__item">UX/UI</span>
+              <span class="tag__item bg-secondary">Trends</span>
+              <span class="tag__item">Technology</span>
+              <span class="tag__item">Solutions </span>
+              <span class="tag__item bg-primary">Digital</span>
+              <span class="tag__item">Diversity</span>
+              <span class="tag__item">Innovation</span>
+              <span class="tag__item">Portfolio</span>
+              <span class="tag__item">Projects</span>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer id="footer" include-html="./layout/footer.html"></footer>
+    </div>
+  </body>
+</html>
