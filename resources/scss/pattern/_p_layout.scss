@@ -46,6 +46,16 @@
   }
 }
 
+// logo
+  #logo {
+    .logo__link {
+      display: block;
+      font-family: "Baloo 2", "cursive";
+      font-weight: normal;
+      font-size: 32px;
+    }
+  }
+
 // header
 #header {
   background-color: rgba(255, 255, 255, 0.65);
@@ -63,14 +73,6 @@
     height: 72px;
     @include tabletMore {
       height: 80px;
-    }
-  }
-  #logo {
-    .logo__link {
-      display: block;
-      font-family: "Baloo 2", "cursive";
-      font-weight: normal;
-      font-size: 32px;
     }
   }
   .util {
@@ -179,13 +181,13 @@
     }
   }
   .copyright {
-    font-size: 5rem;
+    font-size: 4rem;
     font-family: "Baloo 2", "cursive";
     font-weight: 500;
     line-height: 1;
     letter-spacing: -1.5px;
     @include tabletMore {
-      font-size: 7.2rem;
+      font-size: 3rem;
     }
   }
   .footer__info {
@@ -194,22 +196,9 @@
   }
   .btn-top {
     padding-top: 4px;
+    font-size: 5rem;
     &:hover {
-      &::after {
-        background-image: url(../../../resources/images/component/common/icon_btn_top_on.svg);
-      }
-    }
-  }
-  .btn-top::after {
-    display: block;
-    content: '';
-    width: 40px;
-    height: 40px;
-    background: url(../../../resources/images/component/common/icon_btn_top.svg) no-repeat center / contain;
-    transition: all 0.3s;
-    @include tabletMore {
-      width: 52px;
-      height: 52px;
+      color: $primary;
     }
   }
 }

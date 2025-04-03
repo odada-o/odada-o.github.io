@@ -469,6 +469,32 @@ legend {
   transform: rotate(180deg);
 }
 
+.lst-dot {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+.lst-dot li::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-top: -3px;
+  margin-right: 7px;
+  border-radius: 50%;
+  background-color: #1d1d1d;
+  vertical-align: middle;
+}
+.lst-dot li.active {
+  background-color: #000;
+}
+@media (min-width: 1024px) {
+  .lst-dot {
+    margin-top: 20px;
+  }
+}
+
 #skip-nav {
   position: fixed;
   top: 0;
@@ -523,6 +549,13 @@ legend {
   }
 }
 
+#logo .logo__link {
+  display: block;
+  font-family: "Baloo 2", "cursive";
+  font-weight: normal;
+  font-size: 32px;
+}
+
 #header {
   background-color: rgba(255, 255, 255, 0.65);
   -webkit-backdrop-filter: blur(0.5rem);
@@ -544,12 +577,6 @@ legend {
   #header .inner {
     height: 80px;
   }
-}
-#header #logo .logo__link {
-  display: block;
-  font-family: "Baloo 2", "cursive";
-  font-weight: normal;
-  font-size: 32px;
 }
 #header .util {
   display: flex;
@@ -665,7 +692,7 @@ legend {
   text-decoration: underline;
 }
 #footer .copyright {
-  font-size: 5rem;
+  font-size: 4rem;
   font-family: "Baloo 2", "cursive";
   font-weight: 500;
   line-height: 1;
@@ -673,7 +700,7 @@ legend {
 }
 @media (min-width: 1024px) {
   #footer .copyright {
-    font-size: 7.2rem;
+    font-size: 3rem;
   }
 }
 #footer .footer__info {
@@ -682,23 +709,10 @@ legend {
 }
 #footer .btn-top {
   padding-top: 4px;
+  font-size: 5rem;
 }
-#footer .btn-top:hover::after {
-  background-image: url(../../../resources/images/component/common/icon_btn_top_on.svg);
-}
-#footer .btn-top::after {
-  display: block;
-  content: "";
-  width: 40px;
-  height: 40px;
-  background: url(../../../resources/images/component/common/icon_btn_top.svg) no-repeat center/contain;
-  transition: all 0.3s;
-}
-@media (min-width: 1024px) {
-  #footer .btn-top::after {
-    width: 52px;
-    height: 52px;
-  }
+#footer .btn-top:hover {
+  color: #E7FF6C;
 }
 
 .intro {
@@ -1913,6 +1927,14 @@ legend {
   .sec-goto .top-box {
     width: 64px;
     height: 64px;
+    background: #D8D8D8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sec-goto .top-box i {
+    font-size: 2.2rem;
   }
 }
 .sec-goto .bottom-box {
@@ -1974,56 +1996,28 @@ legend {
     font-size: 2.4rem;
   }
 }
-.sec-goto__list .contact .top-box {
-  background: url(../../../resources/images/pattern/common/goto_mail.svg) no-repeat center/cover;
+.sec-goto__list .contact .title, .sec-goto__list .contact .top-box {
   transition: all 0.3s ease;
 }
-.sec-goto__list .contact .title {
-  transition: all 0.3s ease;
-}
-.sec-goto__list .contact:hover .top-box {
-  background: url(../../../resources/images/pattern/common/goto_mail_on2.svg) no-repeat center/cover;
-}
-.sec-goto__list .contact:hover .title {
+.sec-goto__list .contact:hover .title, .sec-goto__list .contact:hover .top-box {
   color: #022be9;
 }
-.sec-goto__list .instagram .top-box {
-  background: url(../../../resources/images/pattern/common/goto_instagram.svg) no-repeat center/cover;
+.sec-goto__list .instagram .title, .sec-goto__list .instagram .top-box {
   transition: all 0.3s ease;
 }
-.sec-goto__list .instagram .title {
-  transition: all 0.3s ease;
-}
-.sec-goto__list .instagram:hover .top-box {
-  background: url(../../../resources/images/pattern/common/goto_instagram_on.svg) no-repeat center/cover;
-}
-.sec-goto__list .instagram:hover .title {
+.sec-goto__list .instagram:hover .title, .sec-goto__list .instagram:hover .top-box {
   color: #ff3366;
 }
-.sec-goto__list .facebook .top-box {
-  background: url(../../../resources/images/pattern/common/goto_facebook.svg) no-repeat center/cover;
+.sec-goto__list .facebook .title, .sec-goto__list .facebook .top-box {
   transition: all 0.3s ease;
 }
-.sec-goto__list .facebook .title {
+.sec-goto__list .facebook:hover .title, .sec-goto__list .facebook:hover .top-box {
+  color: #3A559F;
+}
+.sec-goto__list .youtube .title, .sec-goto__list .youtube .top-box {
   transition: all 0.3s ease;
 }
-.sec-goto__list .facebook:hover .top-box {
-  background: url(../../../resources/images/pattern/common/goto_facebook_on.svg) no-repeat center/cover;
-}
-.sec-goto__list .facebook:hover .title {
-  color: #E7FF6C;
-}
-.sec-goto__list .youtube .top-box {
-  background: url(../../../resources/images/pattern/common/goto_youtube.svg) no-repeat center/cover;
-  transition: all 0.3s ease;
-}
-.sec-goto__list .youtube .title {
-  transition: all 0.3s ease;
-}
-.sec-goto__list .youtube:hover .top-box {
-  background: url(../../../resources/images/pattern/common/goto_youtube_on.svg) no-repeat center/cover;
-}
-.sec-goto__list .youtube:hover .title {
+.sec-goto__list .youtube:hover .title, .sec-goto__list .youtube:hover .top-box {
   color: #ff0000;
 }
 
@@ -2069,7 +2063,6 @@ legend {
 }
 .sec-tag__cont .bg-primary {
   background-color: #E7FF6C;
-  color: #fff;
 }
 .sec-tag__cont .bg-secondary {
   background-color: #ff5f00;
@@ -2222,9 +2215,9 @@ legend {
   }
 }
 .sec-careers .box .right {
-  flex: 1;
+  width: 40%;
   padding-left: 20px;
-  background: url(../../../resources/images/pattern/main/careers-bg.jpg) no-repeat center/cover;
+  background: url(../../../resources/images/pattern/main/careers-bg.jpg) no-repeat 50% 100%/cover;
 }
 @media (min-width: 1024px) {
   .sec-careers .box .right {
@@ -2255,15 +2248,28 @@ legend {
 .sec-works .swiper-works .swiper-slide-next {
   transform: translateX(50px) scale(0.7);
 }
+.sec-works .swiper-works .swiper-slide a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f0f0f0;
+}
+.sec-works .swiper-works .swiper-slide a img {
+  display: block;
+  width: 80%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .sec-works .swiper-works .swiper-button-next,
 .sec-works .swiper-works .swiper-button-prev {
   left: 50%;
 }
 .sec-works .swiper-works .swiper-button-next {
-  transform: translate(200px, -100%);
+  transform: translate(190px, -100%);
 }
 .sec-works .swiper-works .swiper-button-prev {
-  transform: translate(-248px, -100%);
+  transform: translate(-238px, -100%);
 }
 
 .about #container,

@@ -1170,14 +1170,6 @@
     @include tabletMore {
       width: 64px;
       height: 64px;
-      background: #D8D8D8;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      i {
-        font-size: 2.2rem;
-      }
     }
   }
   .bottom-box {
@@ -1229,41 +1221,69 @@
       }
     }
     .contact {
-      .title, .top-box {
+      .top-box {
+        background: url(../../../resources/images/pattern/common/goto_mail.svg) no-repeat center / cover;
+        transition: all 0.3s ease;
+      }
+      .title {
         transition: all 0.3s ease;
       }
       &:hover {
-        .title, .top-box {
+        .top-box {
+          background: url(../../../resources/images/pattern/common/goto_mail_on2.svg) no-repeat center / cover;
+        }
+        .title {
           color: #022be9;
         }
       }
     }
     .instagram {
-      .title, .top-box {
+      .top-box {
+        background: url(../../../resources/images/pattern/common/goto_instagram.svg) no-repeat center / cover;
+        transition: all 0.3s ease;
+      }
+      .title {
         transition: all 0.3s ease;
       }
       &:hover {
-        .title, .top-box {
+        .top-box {
+          background: url(../../../resources/images/pattern/common/goto_instagram_on.svg) no-repeat center / cover;
+        }
+        .title {
           color: #ff3366;
         }
       }
     }
     .facebook {
-      .title, .top-box {
+      .top-box {
+        background: url(../../../resources/images/pattern/common/goto_facebook.svg) no-repeat center / cover;
+        transition: all 0.3s ease;
+      }
+      .title {
         transition: all 0.3s ease;
       }
       &:hover {
-        .title, .top-box {
-          color: #3A559F;
+        .top-box {
+          background: url(../../../resources/images/pattern/common/goto_facebook_on.svg) no-repeat center / cover;
+        }
+        .title {
+          color: $primary;
         }
       }
     }
     .youtube {
-      .title, .top-box {
+      .top-box {
+        background: url(../../../resources/images/pattern/common/goto_youtube.svg) no-repeat center / cover;
+        transition: all 0.3s ease;
+      }
+      .title {
         transition: all 0.3s ease;
       }
       &:hover {
-        .title, .top-box {
+        .top-box {
+          background: url(../../../resources/images/pattern/common/goto_youtube_on.svg) no-repeat center / cover;
+        }
+        .title {
           color: #ff0000;
         }
       }
@@ -1457,9 +1477,9 @@
       }
     }
     .right {
-      width: 40%;
+      flex: 1;
       padding-left: 20px;
-      background: url(../../../resources/images/pattern/main/careers-bg.jpg) no-repeat 50% 100% / cover;
+      background: url(../../../resources/images/pattern/main/careers-bg.jpg) no-repeat center / cover;
       @include tabletMore {
         padding-left: 40px;
       }
@@ -1491,19 +1511,6 @@
       &-next {
         transform: translateX(50px) scale(0.7);
       }
-
-      a {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: $gray-10;
-        img {
-          display: block;
-          width: 80%;
-          object-fit: contain;
-        }
-      }
     }
 
     .swiper-button-next,
@@ -1511,10 +1518,10 @@
       left: 50%;
     }
     .swiper-button-next {
-      transform: translate(190px, -100%);
+      transform: translate(200px, -100%);
     }
     .swiper-button-prev {
-      transform: translate(-238px, -100%);
+      transform: translate(-248px, -100%);
     }
   }
 }
