@@ -292,11 +292,6 @@ legend {
   overflow: hidden;
   padding-top: 50px;
 }
-@media (min-width: 1024px) {
-  .sec-g {
-    padding-top: 100px;
-  }
-}
 .sec-g__area {
   display: flex;
   flex-direction: column;
