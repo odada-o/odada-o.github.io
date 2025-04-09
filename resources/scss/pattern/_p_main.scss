@@ -75,7 +75,7 @@
 .sec-leadin {
   .sec-leadin__cont {
     position: relative;
-    padding-top: 200px;
+    padding-top: 110px;
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -87,11 +87,8 @@
       @include mobileMore {
         font-size: 2rem;
       }
-      @include tabletMore {
-        font-size: 2.4rem;
-      }
     }
-    .txt-box__bottom {
+    .txt-box__middle {
       //overflow: hidden;
       margin-top: 20px;
       font-size: clamp(1rem, 7vw, 3.2rem);
@@ -101,6 +98,15 @@
       @include tabletMore {
         font-size: clamp(4rem, 4vw, 5rem);
         margin-top: 40px;
+      }
+    }
+    .txt-box__bottom {
+      margin-top: 50px;
+      @include mobileMore {
+        font-size: 2rem;
+      }
+      @include tabletMore {
+        font-size: 2.4rem;
       }
     }
     .bg-highlight {
@@ -140,7 +146,7 @@
         content: '';
         width: 0; /* 초기 너비를 0으로 설정해 밑줄이 보이지 않도록 */
         height: 50%;
-        background-color: $gray-30;
+        background-color: $primary;
         position: absolute;
         bottom: 0;
         right: 0;
@@ -1516,5 +1522,173 @@
     .swiper-button-prev {
       transform: translate(-238px, -100%);
     }
+  }
+}
+
+// Font
+$font-family-base: 'Pretendard', sans-serif;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+.sec-why {
+  .sec-g__cont {
+    display: flex;
+  }
+}
+
+
+// 메인 섹션 스타일
+.main-section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15rem;
+    
+    @media (min-width: 768px) {
+      padding: 8rem 4rem;
+    }
+  }
+}
+
+// 첫 번째 파트 - 헤더 콘텐츠
+.header-content {
+  text-align: center;
+  
+  .main-title {
+    font-size: 3.6rem;
+    font-weight: $font-weight-bold;
+    margin-bottom: 3rem;
+    
+    @media (min-width: 768px) {
+      font-size: 5rem;
+    }
+  }
+  
+  .sub-title {
+    margin-top: 1rem;
+    
+    .highlight {
+      color: $primary;
+      font-weight: $font-weight-bold;
+    }
+  }
+  
+  .dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+    
+    .dot {
+      width: 0.8rem;
+      height: 0.8rem;
+      background-color: $gray-70;
+      border-radius: 50%;
+      margin: 0 0.4rem;
+      
+      &:nth-child(2) {
+        background-color: $white;
+      }
+    }
+  }
+}
+
+// 두 번째 파트 - WHY 콘텐츠
+.why-content {
+  max-width: 90%;
+  
+  @media (min-width: 768px) {
+    max-width: 70%;
+  }
+  
+  .why-label {
+    font-size: 1.6rem;
+    color: $primary;
+    margin-bottom: 2rem;
+    font-weight: $font-weight-medium;
+  }
+  
+  .why-title {
+    font-size: 3.6rem;
+    font-weight: $font-weight-bold;
+    line-height: 1.3;
+    margin-bottom: 3rem;
+    
+    @media (min-width: 768px) {
+      font-size: 5rem;
+    }
+    
+    .why-subtitle {
+      margin-top: 1rem;
+    }
+  }
+  
+  .why-description {
+    font-size: 1.8rem;
+    color: $gray-70;
+    line-height: 1.7;
+    
+    @media (min-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+}
+
+// 세 번째 파트 - 프로세스
+.process-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 45rem;
+  margin: 0 auto;
+  
+  .process-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 1.5rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    
+    @media (min-width: 768px) {
+      padding: 2.5rem;
+    }
+    
+    .process-emoji {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      
+      @media (min-width: 768px) {
+        font-size: 4rem;
+      }
+    }
+    
+    .process-text {
+      font-size: 1.8rem;
+      font-weight: $font-weight-medium;
+      
+      @media (min-width: 768px) {
+        font-size: 2rem;
+      }
+    }
+  }
+  
+  .arrow {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    color: $gray-70;
   }
 }

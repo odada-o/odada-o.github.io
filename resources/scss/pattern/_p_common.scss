@@ -21,7 +21,7 @@
   }
   &__tit {
     padding-bottom: 2.34375vw;
-    font-size: 3rem;
+    font-size: 5rem;
     text-align: center;
   }
   &__desc {
@@ -35,8 +35,12 @@
     align-items: center;
     gap: 10px;
     margin: 0 auto;
+    padding: 10px 20px 10px 25px;
     font-size: 1.5rem;
     font-weight: 600;
+    color: $white;
+    background: $black;
+    border-radius: 44px;
     @include mobileMore {
       right: $p-tablet;
     }
@@ -48,9 +52,9 @@
       align-items: center;
       width: 24px;
       height: 24px;
-      background: $black;
+      background: $white;
       border-radius: 50%;
-      color: $white;
+      color: $black;
       font-size: 1rem;
     }
   }
