@@ -313,7 +313,6 @@ legend {
   padding-bottom: 2.34375vw;
   font-size: 4rem;
   text-align: center;
-  font-weight: 300;
 }
 .sec-g__tit .sub-title {
   font-weight: 700;
@@ -2392,7 +2391,6 @@ legend {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
-  max-width: 1150px;
   margin: 0 auto;
   margin-top: 40px;
 }
