@@ -11,7 +11,6 @@
 
 // sec 전역
 .sec-g {
-  overflow: hidden;
   padding-top: 50px;
   &__area {
     display: flex;
@@ -21,8 +20,13 @@
   }
   &__tit {
     padding-bottom: 2.34375vw;
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
+    font-weight: 300;
+    .sub-title {
+      font-weight: 700;
+    font-size: 6rem;
+    }
   }
   &__desc {
     margin-bottom: 1.5rem;

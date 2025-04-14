@@ -12,6 +12,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "KIMM_Bold";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
 /* reset */
 body,
 div,
@@ -295,7 +301,6 @@ legend {
 }
 
 .sec-g {
-  overflow: hidden;
   padding-top: 50px;
 }
 .sec-g__area {
@@ -306,8 +311,13 @@ legend {
 }
 .sec-g__tit {
   padding-bottom: 2.34375vw;
-  font-size: 5rem;
+  font-size: 4rem;
   text-align: center;
+  font-weight: 300;
+}
+.sec-g__tit .sub-title {
+  font-weight: 700;
+  font-size: 6rem;
 }
 .sec-g__desc {
   margin-bottom: 1.5rem;
@@ -556,7 +566,7 @@ legend {
 
 #logo .logo__link {
   display: block;
-  font-family: "Baloo 2", "cursive";
+  font-family: "KIMM_Bold", sans-serif;
   font-weight: normal;
   font-size: 32px;
 }
@@ -973,7 +983,7 @@ legend {
   position: relative;
   display: inline-block;
   z-index: 1;
-  font-family: "Baloo 2", "cursive";
+  font-family: "KIMM_Bold", sans-serif;
 }
 .sec-leadin .txt-box .line-highlight::after {
   display: block;
@@ -2377,6 +2387,29 @@ legend {
 .sec-works .swiper-works .swiper-button-prev {
   transform: translate(-238px, -100%);
 }
+.sec-works .lst-works {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 1150px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.sec-works .lst-works li {
+  margin-bottom: 40px;
+}
+.sec-works .lst-works video {
+  width: 100%;
+}
+.sec-works .lst-works strong {
+  display: block;
+  margin-top: 10px;
+  font-size: 2.4rem;
+}
+.sec-works .lst-works p {
+  font-size: 1.4rem;
+  color: #717171;
+}
 
 .sec-why .sec-g__cont {
   display: flex;
@@ -2524,6 +2557,62 @@ legend {
   font-size: 2.5rem;
   margin: 1rem 0;
   color: #555555;
+}
+
+.why-oteam {
+  position: relative;
+  z-index: 10;
+  padding: 100px 20px;
+}
+.why-oteam .inner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1150px;
+}
+.why-oteam .left {
+  flex: 1 1 45%;
+}
+.why-oteam .left h2 {
+  font-size: 6rem;
+  font-weight: bold;
+  margin-bottom: 4rem;
+}
+.why-oteam .left h2 .highlight {
+  color: #ff5f00;
+}
+.why-oteam .left .why-label {
+  display: block;
+  color: #ff5f00;
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin: 10px 0 0.5rem;
+}
+.why-oteam .left h3 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+.why-oteam .left .sub {
+  margin-top: 2rem;
+  color: #555555;
+  font-size: 1.6rem;
+}
+.why-oteam .left .lst-box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+.why-oteam .left .lst-box li {
+  display: inline-flex;
+  padding: 10px 15px;
+  background: #e4e4e4;
+  border-radius: 8px;
+}
+.why-oteam .right img {
+  border-radius: 8px;
+  width: 500px;
 }
 
 .about #container,

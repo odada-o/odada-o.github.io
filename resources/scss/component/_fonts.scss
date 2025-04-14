@@ -12,3 +12,11 @@
     font-weight: normal;
     font-style: normal;
 }
+
+// 한국기계연구원 폰트
+@font-face {
+    font-family: 'KIMM_Bold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
