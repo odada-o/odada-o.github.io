@@ -768,6 +768,7 @@ legend {
 
 #container {
   position: relative;
+  padding-top: 240px;
 }
 
 #footer {
@@ -892,7 +893,7 @@ legend {
     height: 50vh;
     border-radius: 40px;
     position: absolute;
-    top: 570px;
+    top: 700px;
     left: 50%;
     transform: translateX(-50%);
     transition: width 0.3s ease;
@@ -908,7 +909,7 @@ legend {
 
 .sec-leadin .sec-leadin__cont {
   position: relative;
-  padding-top: 110px;
+  padding-top: 170px;
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
