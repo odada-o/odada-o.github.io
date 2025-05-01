@@ -71,6 +71,7 @@
     justify-content: space-between;
     align-items: center;
     height: 72px;
+    max-width: none;
     @include tabletMore {
       height: 80px;
     }
@@ -248,7 +249,7 @@
 
 #container {
   position: relative;
-    padding-top: 200px;
+    // padding-top: 80px;
 }
 
 // footer
