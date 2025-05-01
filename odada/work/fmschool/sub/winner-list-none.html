@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- 220101 수정 -->
+        <meta name="robots" content="index,follow" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>수강권을 쏜다 이벤트 보기 | FM스쿨</title>
+        <!-- //220101 수정 -->
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta property="og:site_name" content="FMschool" />
+        <meta property="og:locale" content="ko_KR" />
+        <meta property="og:title" content="주식에 대한 모든 것을 담았다. | FM스쿨" />
+        <meta property="og:url" content="https://www.fmschool.co.kr" />
+        <meta
+            property="og:keywords"
+            content="투자스쿨,입문편,기본적분석,기술적분석,실전투자,경제부기자,ETF,미국주식,국내주식,국내주식랭킹,미국주식랭킹,분석자료,신영일강사,고란강사,강승희강사,윤한홍강사"
+        />
+        <meta property="og:description" content="자산을 늘리는 가장 스마트한 방법! FM스쿨에서 투자공부 시작하세요" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://fmschool.s3.ap-northeast-2.amazonaws.com/images/static/sns1200x600.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:width" content="600" />
+        <!-- 220101 수정 -->
+        <meta name="twitter:card" content="자산을 늘리는 가장 스마트한 방법! FM스쿨에서 투자공부 시작하세요" />
+        <meta name="twitter:title" content="주식에 대한 모든 것을 담았다. | FM스쿨" />
+        <meta name="twitter:description" content="자산을 늘리는 가장 스마트한 방법! FM스쿨에서 투자공부 시작하세요" />
+        <meta name="twitter:image" content="https://fmschool.s3.ap-northeast-2.amazonaws.com/images/static/sns1200x600.png" />
+        <meta name="twitter:domain" content="https://www.fmschool.co.kr" />
+        <!-- //220101 수정 -->
+        <meta name="google-site-verification" content="3d8D2RnLpSRR0tAT5UA1fm61Mlr-076RlC6Z889TYx0" />
+        <meta name="naver-site-verification" content="cf48e79714058b7ad744b3b71505ddc104f82b9c" />
+        <meta name="description" content="자산을 늘리는 가장 스마트한 방법! FM스쿨에서 주식공부 시작하세요." />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://fmschool.co.kr/css/default.css" />
+        <link rel="stylesheet" href="https://fmschool.co.kr/css/style.css" />
+        <link rel="stylesheet" href="https://fmschool.co.kr/css/custom.css" />
+        <link rel="stylesheet" href="https://fmschool.co.kr/css/m_custom.css" />
+        <script src="../js/jquery-1.8.3.min.js"></script>
+        <script src="../js/script.js"></script>
+        <script src="../js/swiper.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- 220101 수정 -->
+        <link
+            rel="stylesheet"
+            href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+        />
+        <link rel="stylesheet" href="../dist/css/comm.css" />
+        <!--[if lt IE 9]>
+            <script src="../dist/vendor/html5.js"></script>
+            <script src="../dist/vendor/respond.min.js"></script>
+        <![endif]-->
+        <!-- //220101 수정 -->
+    </head>
+    <body>
+        <div class="event_wrap">
+            <div class="event_con swiper-container">
+                <div class="event_btn_prev event_btn"><img src="/img/event_prev.png" /></div>
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <a href="/review"><img src="/img/event_pc.JPG" class="pc_v" /><img src="/img/event_m.jpg" class="mb_v" /></a>
+                    </li>
+                </ul>
+                <div class="event_btn_next event_btn"><img src="/img/event_next.png" /></div>
+            </div>
+            <label class="event_cookie"
+                ><input type="checkbox" id="eventTop" /><span></span>
+                <p for="eventTop">오늘은 그만볼게요</p></label
+            >
+            <div class="event_btn event_btn_clsoe"><img src="/img/event_close.png" /></div>
+        </div>
+        <div id="hd" class="">
+            <div class="hd_wrap">
+                <ul class="left_menu">
+                    <li>
+                        <button class="menu_btn"><i class=""></i></button>
+                    </li>
+                    <li>
+                        <a class="logo" href="/"><i></i></a>
+                    </li>
+                </ul>
+                <a class="m_logo" href="/"><i class="m_logo_s"></i></a>
+                <div class="sch_box">
+                    <input type="text" class="sch_input" placeholder="강좌를 검색하세요." /><button>
+                        <img src="/img/search_btn.png" class="pc_v" />
+                    </button>
+                    <div class="guide_txt main_txt">
+                        <button type="button" name="guide_close" class="guide_close">
+                            <img src="/img/sub_img/guide_close.png" alt="" /></button
+                        ><span> 궁금한 주식키워드를 검색해보세요</span>
+                    </div>
+                </div>
+                <ul class="right_menu">
+                    <li>
+                        <button class="search_btn"><img src="/img/mobile/m_search_ico.png" alt="검색" class="mb_v" /></button>
+                    </li>
+                    <li><a class="w_btn" href="/payment/product">이용권</a></li>
+                    <li><a class="b_btn" href="/login">로그인</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="side_menu_wrap event_on">
+            <ul class="min_side">
+                <li class="on">
+                    <a
+                        ><i class="home"></i>
+                        <p>홈</p></a
+                    >
+                </li>
+                <li class="">
+                    <a
+                        ><i class="course"></i>
+                        <p>
+                            투자 <br />
+                            스쿨
+                        </p></a
+                    >
+                </li>
+                <li class="">
+                    <a
+                        ><i class="stock"></i>
+                        <p>
+                            분석 <br />
+                            자료
+                        </p></a
+                    >
+                </li>
+                <li class="" href="/login">
+                    <a
+                        ><i class="history"></i>
+                        <p>최근 본</p></a
+                    >
+                </li>
+                <li class="" href="/login">
+                    <a
+                        ><i class="class"></i>
+                        <p>학습내역</p></a
+                    >
+                </li>
+                <li class="">
+                    <a
+                        ><i class="cs"></i>
+                        <p>문의</p></a
+                    >
+                </li>
+            </ul>
+            <div class="side_menu">
+                <button type="button" name="m_side_btn" class="m_side_btn"><img src="/img/mobile/m_side_close.png" alt="" /></button>
+                <ul class="first_ul">
+                    <li class="on2">
+                        <a href="/"><i class="menu home"></i>홈</a>
+                    </li>
+                    <li class="">
+                        <i class="menu course"></i>투자스쿨
+                        <ul class="drop_menu1">
+                            <li class="no_dashline"><a>무료강좌</a></li>
+                            <li></li>
+                            <li class="">
+                                <a
+                                    ><span>①</span>입문편<span><i class="fas fa-chevron-down"></i></span
+                                ></a>
+                                <ul class="drop_menu2">
+                                    <li class=""><a>└ 투자심리와 원칙세우기</a></li>
+                                    <li class=""><a>└ 주식투자의 이해</a></li>
+                                    <li class=""><a>└ 처음시작하는 주식투자</a></li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a
+                                    ><span>②</span>기본적분석<span><i class="fas fa-chevron-down"></i></span
+                                ></a>
+                                <ul class="drop_menu2">
+                                    <li class=""><a>└ 경제분석</a></li>
+                                    <li class=""><a>└ 산업분석</a></li>
+                                    <li class=""><a>└ 기업분석</a></li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a
+                                    ><span>③</span>기술적분석<span><i class="fas fa-chevron-down"></i></span
+                                ></a>
+                                <ul class="drop_menu2">
+                                    <li class=""><a>└ 차트의 기본 지식</a></li>
+                                    <li class=""><a>└ 캔들차트 분석</a></li>
+                                    <li class=""><a>└ 차트패턴 분석</a></li>
+                                    <li class=""><a>└ 실전 활용</a></li>
+                                    <li class=""><a>└ 보조지표 분석</a></li>
+                                    <li class=""><a>└ 핵심 투자 기법</a></li>
+                                    <li class=""><a>└ 투자심리 분석</a></li>
+                                    <li class=""><a>└ 지표의 실전 전략</a></li>
+                                    <li class=""><a>└ 고수들의 시스템</a></li>
+                                    <li class=""><a>└ 프로그래밍 매매</a></li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a
+                                    ><span>④</span>실전투자<span><i class="fas fa-chevron-down"></i></span
+                                ></a>
+                                <ul class="drop_menu2">
+                                    <li class=""><a>└ 주식과 파생</a></li>
+                                    <li class=""><a>└ 공모주</a></li>
+                                    <li class=""><a>└ 퀀트</a></li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a
+                                    ><span>⑤</span>경제부 기자의 시선<span><i class="fas fa-chevron-down"></i></span
+                                ></a>
+                                <ul class="drop_menu2">
+                                    <li class=""><a>└ 경제부 기자의 시선</a></li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a
+                                    ><span>⑥</span>ETF<span><i class="fas fa-chevron-down"></i></span
+                                ></a>
+                                <ul class="drop_menu2">
+                                    <li class=""><a>└ ETF 이해</a></li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a
+                                    ><span>⑦</span>미국주식<span><i class="fas fa-chevron-down"></i></span
+                                ></a>
+                                <ul class="drop_menu2">
+                                    <li class=""><a>└ 미국주식</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="drop_btn" id="menuStocks">
+                        <i class="menu stock"></i>분석자료<i class="beta"></i>
+                        <ul class="mv_ul">
+                            <li class=""><a href="/login">- 국내주식</a></li>
+                            <li class=""><a href="/login">- 국내주식 랭킹</a></li>
+                            <li class=""><a href="/login">- 미국주식</a></li>
+                            <li class=""><a href="/login">- 미국주식 랭킹</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="n_mv_v">
+                    <li class="">
+                        <a href="/login"><i class="menu history"></i>최근 본 동영상</a>
+                    </li>
+                    <li class="">
+                        <a href="/login"><i class="menu class"></i>학습내역</a>
+                    </li>
+                </ul>
+                <ul class="n_mv_v">
+                    <li class="">
+                        <a href="/login"><i class="menu purchase"></i>구매내역</a>
+                    </li>
+                    <li class="">
+                        <a href="/login"><i class="menu coupon"></i>쿠폰</a>
+                    </li>
+                    <li class="">
+                        <a href="/login"><i class="menu my"></i>회원정보</a>
+                    </li>
+                </ul>
+                <ul class="last_ul">
+                    <li class="">
+                        <a href="/payment/product"><i class="menu purchase"></i>이용권 구매</a>
+                    </li>
+                    <li class="">
+                        <a href="/cs/notice"><i class="menu cs"></i>고객센터</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 220101 추가 -->
+        <main id="main" class="main-contents">
+            <div class="head-cont">
+                <div class="container">
+                    <h2 class="tit-secondary">이벤트 · 혜택</h2>
+                    <ul class="snb">
+                        <li>
+                            <a href="event-list.html" class="link-snb">이벤트</a>
+                        </li>
+                        <li class="on">
+                            <a href="winner-list.html" class="link-snb">당첨자 발표</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contents-area">
+                <h3 class="blind">당첨자 발표</h3>
+                <div class="board-lst-search">
+                    <form class="form-select" method="post" action="" id="searchForm" name="searchForm">
+                        <fieldset>
+                            <legend class="blind">검색</legend>
+                            <div class="sel-search-area">
+                                <select id="selSearch" name="selSearch" title="검색범위 선택" class="sel-search">
+                                    <option value="all" selected>전체</option>
+                                    <option value="title">제목</option>
+                                    <option value="tag">태그</option>
+                                </select>
+                            </div>
+
+                            <div class="inp-search-area">
+                                <input
+                                    type="text"
+                                    id="inpSearch"
+                                    name="inpSearch"
+                                    placeholder="검색어를 입력해주세요."
+                                    title="검색어 입력"
+                                    maxlength="20"
+                                    class="inp-search"
+                                />
+                                <button class="btn_search" id="btnSearch">검색</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="container">
+                    <div class="board-lst-none">당첨자 발표 내용이 없습니다.</div>
+                </div>
+            </div>
+        </main>
+        <!-- //220101 추가 -->
+    </body>
+</html>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>드림픽쳐스21</title>
+        <meta name="title" content="드림픽쳐스21" />
+        <meta name="keywords" content="드림픽쳐스21" />
+        <meta name="description" content="드림픽쳐스21. 명실상부한 디지털 콘텐츠 제작사로 발전해 오고 있습니다." />
+        <!-- 카카오톡 관련 설정 -->
+        <meta property="og:title" content="드림픽쳐스21" />
+        <meta property="og:url" content="http://dp21.net/" />
+        <meta property="og:image" content="./images/mobile.png" />
+        <meta property="og:description" content="드림픽쳐스21. 명실상부한 디지털 콘텐츠 제작사로 발전해 오고 있습니다." />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" />
+        <link rel="stylesheet" href="./dist/css/comm.css" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+        <script src="./dist/vendor/scrollUp/jquery.scrollUp.min.js"></script>
+        <script src="./dist/js/comm.js"></script>
+        <!--[if lt IE 9]>
+            <script src="./dist/vendor/html5.js"></script>
+            <script src="./dist/vendor/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+        <div id="u-skip">
+            <a href="#gnb">주메뉴 바로가기</a>
+            <a href="#main">본문 바로가기</a>
+        </div>
+        <div class="wrap">
+            <!-- header -->
+            <!-- 스크롤 시 .bg-light .navbar-light 추가 -->
+            <!-- 마우스 오버시 .active 추가 -->
+            <header id="header" class="">
+                <div class="container">
+                    <h1 class="logo"><a href="index.html">드림픽쳐스21</a></h1>
+                    <nav class="gnb-wrap navbar navbar-expand-md">
+                        <!-- Toggler/collapsibe Button -->
+                        <input type="checkbox" id="click" class="burger-input" />
+                        <label for="click" class="burger-label">
+                            <span class="blind">Menu</span>
+                            <div class="burger">
+                                <span class="bar"></span>
+                            </div>
+                        </label>
+
+                        <div id="gnb">
+                            <h2 class="blind">주메뉴</h2>
+                            <div class="nav-bg"></div>
+                            <ul class="navbar-nav nav-depth1">
+                                <li class="active">
+                                    <a href="#"><span>COMPANY</span></a>
+                                    <ul class="nav-depth2">
+                                        <li><a href="#">회사소개</a></li>
+                                        <li><a href="#">회사연혁</a></li>
+                                        <li><a href="#">오시는길</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><span>BUSINESS</span></a>
+                                    <ul class="nav-depth2">
+                                        <li><a href="#">웹툰사업부</a></li>
+                                        <li><a href="#">영상사업부</a></li>
+                                        <li><a href="#">게임사업부</a></li>
+                                        <li><a href="#">웹소설사업부</a></li>
+                                        <li><a href="#">영화제작부</a></li>
+                                        <li><a href="#">(가)OST제작부</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><span>WORK</span></a>
+                                    <ul class="nav-depth2">
+                                        <li><a href="#">애니메이션</a></li>
+                                        <li><a href="#">무빙툰</a></li>
+                                        <li><a href="#">웹툰</a></li>
+                                        <li><a href="#">웹소설</a></li>
+                                        <li><a href="#">시나리오</a></li>
+                                        <li><a href="#">게임</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><span>NOTICE</span></a>
+                                    <ul class="nav-depth2">
+                                        <li><a href="#">공지사항</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><span>CONTACT</span></a>
+                                    <ul class="nav-depth2">
+                                        <li><a href="#">작품 공모</a></li>
+                                        <li><a href="#">1:1 문의</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+
+            <!-- //header -->
+            <!-- mbusiness -->
+            <div class="mVisual">
+                <div id="businessBg" style="background-image: url(./images/main/mainslide-1.jpg)"></div>
+                <div class="container">
+                    <div class="swiper swiper-business">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="business-wrap">
+                                    <div class="business-txt">
+                                        <h2 class="tit" data-en="moving cartoon business.">무빙카툰사업</h2>
+                                        <p>
+                                            무빙카툰사업부는 카툰, 무빙카툰, 입체영상 등 <br />
+                                            4차혁명기술을 통해 글로벌 시장에서 <br />
+                                            선두 기업의 위상을 펼치고 있습니다.
+                                        </p>
+                                        <a href="/business/building" class="btn-outline-white btn-bottom">자세히 보기</a>
+                                    </div>
+                                    <div class="business-bg" style="background-image: url(./images/main/mainslide-1.jpg)">
+                                        <strong class="line-text"
+                                            >moving <br />
+                                            cartoon<br />
+                                            business.</strong
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="business-wrap">
+                                    <div class="business-txt">
+                                        <h2 class="tit" data-en="movie business.">영화제작사업</h2>
+                                        <p>영화제작(CG작업)으로 영화제작 산업을 선도해 갑니다.</p>
+                                        <a href="/business/housing" class="btn-outline-white btn-bottom">자세히 보기</a>
+                                    </div>
+                                    <div class="business-bg" style="background-image: url(./images/main/mainslide-2.jpg)">
+                                        <strong class="line-text"
+                                            >Film<br />
+                                            production<br />
+                                            business.</strong
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="business-wrap">
+                                    <div class="business-txt">
+                                        <h2 class="tit" data-en="VFX production business.">VFX제작사업</h2>
+                                        <p>VFX아카데미 비지니스를 통해 <br />국내, 해외 진출을 준비하고 있습니다.</p>
+                                        <a href="/business/civil" class="btn-outline-white btn-bottom">자세히 보기</a>
+                                    </div>
+                                    <div class="business-bg" style="background-image: url(./images/main/mainslide-3.jpg)">
+                                        <strong class="line-text"
+                                            >VFX<br />
+                                            production<br />
+                                            business.</strong
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="business-wrap">
+                                    <div class="business-txt">
+                                        <h2 class="tit" data-en="VR, AR  production business.">VR, AR사업</h2>
+                                        <p>
+                                            모바일, PC, 서버 등의 부문에서 다양한 혁신 제품을 선보이며, <br />
+                                            업계를 선도하고 기존 제품과는 차원이 다른 제품을 개발하여 <br />
+                                            차세대 시장을 개척하고 있습니다.
+                                        </p>
+                                        <a href="/business/others" class="btn-outline-white btn-bottom">자세히 보기</a>
+                                    </div>
+                                    <div class="business-bg" style="background-image: url(./images/main/mainslide-4.jpg)">
+                                        <strong class="line-text"
+                                            >VR, AR<br />
+                                            production <br />business.</strong
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                var swiper = new Swiper(".swiper-business", {
+                    spaceBetween: 0,
+                    loop: true,
+                    autoplay: {
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    on: {
+                        slideChangeTransitionEnd: function () {
+                            var num = this.realIndex + 2;
+                            if (this.realIndex == this.loopedSlides - 1) {
+                                num = 1;
+                            }
+                            $("#businessBg").css("background-image", "url(./images/main/mainslide-" + (this.realIndex + 1) + ".jpg)");
+                            $(this.navigation.nextEl)
+                                .attr("data-index", num)
+                                .html($(".business-swiper .swiper-slide-next .display-2").clone());
+                        },
+                    },
+                });
+            </script>
+            <!-- //slide -->
+            <!-- main -->
+            <div id="main">
+                <div class="mNews">
+                    <div class="container">
+                        <div class="mTit_area">
+                            <h2 class="mTit">News</h2>
+                            <p class="mTit_txt">
+                                드림픽쳐스21의 모든 소식을 <br class="pc" />
+                                생생하게 보실 수 있습니다.
+                            </p>
+                        </div>
+
+                        <ul class="mNews_lst">
+                            <li>
+                                <a href="#none">
+                                    <span class="date"> 2021.04 <span class="blind">.</span> <span class="day">19</span> </span>
+                                    <strong class="tit">[뉴스] 헐리웃 CG 명장 파올로 모스카텔리, 영화 ‘동해왕 이사부’ 위해 방한</strong>
+                                    <p class="txt">
+                                        헐리웃 최고의 CG감독으로 꼽히는 파올로 모스카텔리 감독이 영화 ‘동해왕 이사부’(가제) 제작 참여를
+                                        위해...
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <span class="date"> 2021.04 <span class="blind">.</span> <span class="day">19</span> </span>
+                                    <strong class="tit">[뉴스] 헐리웃 CG 명장 파올로 모스카텔리, 영화 ‘동해왕 이사부’ 위해 방한</strong>
+                                    <p class="txt">
+                                        헐리웃 최고의 CG감독으로 꼽히는 파올로 모스카텔리 감독이 영화 ‘동해왕 이사부’(가제) 제작 참여를
+                                        위해...
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <span class="date"> 2021.04 <span class="blind">.</span> <span class="day">19</span> </span>
+                                    <strong class="tit">[뉴스] 헐리웃 CG 명장 파올로 모스카텔리, 영화 ‘동해왕 이사부’ 위해 방한</strong>
+                                    <p class="txt">
+                                        헐리웃 최고의 CG감독으로 꼽히는 파올로 모스카텔리 감독이 영화 ‘동해왕 이사부’(가제) 제작 참여를
+                                        위해...
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="#none" class="btnC green btn_more">더보기</a>
+                    </div>
+                </div>
+
+                <div class="mIcoBnr">
+                    <div class="container">
+                        <div class="mTit_area">
+                            <h2 class="mTit">Work Column</h2>
+                            <p class="mTit_txt">해당 섹션의 상세 설명이 들어갑니다. <br />해당 섹션의 상세 설명이 들어갑니다.</p>
+                        </div>
+                        <div class="swiper mIco-slick">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#none" style="background-image: url(./images/main/work-slide01.jpeg)"> 나이스 비스트 </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#none" style="background-image: url(./images/main/work-slide02.jpeg)"> 나이스 비스트 </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#none" style="background-image: url(./images/main/work-slide03.jpeg)"> 나이스 비스트 </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#none" style="background-image: url(./images/main/work-slide04.jpeg)"> 나이스 비스트 </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#none" style="background-image: url(./images/main/work-slide05.jpeg)"> 나이스 비스트 </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#none" style="background-image: url(./images/main/work-slide06.jpeg)"> 나이스 비스트 </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#none" style="background-image: url(./images/main/work-slide07.jpeg)"> 나이스 비스트 </a>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    var swiper = new Swiper(".mIco-slick", {
+                        slidesPerView: 3,
+                        // spaceBetween: 30,
+                        loop: true,
+                        spaceBetween: 0,
+                        loop: true,
+                        autoplay: {
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        },
+                        navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                        },
+                        breakpoints: {
+                            992: {
+                                slidesPerView: 1,
+                            },
+                        },
+                    });
+                </script>
+
+                <div class="mBnr">
+                    <p>
+                        <b> 드림픽쳐스21</b>은 <br class="m" />
+                        명실상부한 디지털 콘텐츠 제작사로 <br />
+                        최고의 기술로 더 나은 세상을<br class="m" />
+                        만드는 기업으로 발전하고 있습니다.
+                    </p>
+                </div>
+
+                <div class="mContacts">
+                    <div class="container">
+                        <h2 class="mTit"><span>Contact</span></h2>
+                        <div class="sec-cont">
+                            <form class="form-contact" name="contact" method="post" action="">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="usr" class="blind">이름</label>
+                                        <input type="text" name="usr" class="form-control" id="usr" placeholder="이름" />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="blind">이메일</label>
+                                        <input type="email" name="email" class="form-control" id="email" placeholder="이메일" />
+                                    </div>
+                                    <!-- 문의내용 -->
+                                    <div class="col-md-12 mt-3">
+                                        <label for="comment" class="blind">문의내용</label>
+                                        <textarea
+                                            class="form-textarea"
+                                            name="commet"
+                                            rows="5"
+                                            id="comment"
+                                            placeholder="공모할 작품에 대해 적어주세요."
+                                        ></textarea>
+                                    </div>
+                                </div>
+                                <div class="btn-wrap">
+                                    <button type="submit" class="btn btn-red">보내기</button>
+                                    <button type="reset" class="btn btn-gray">취소</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //main -->
+            <!-- footer -->
+            <footer>
+                <div class="container">
+                    <ul class="f_mark">
+                        <li><a href="#">영화제작사업부</a></li>
+                        <li><a href="#"> 무빙카툰사업부 </a></li>
+                        <li><a href="#"> VFX제작부 </a></li>
+                        <li><a href="#"> VR,AR사업부 </a></li>
+                        <li><a href="#"> Academy 사업부 </a></li>
+                    </ul>
+                    <ul class="f_sns">
+                        <li><a href="#none" class="btn_cirFacebook">페이스북</a></li>
+                        <li><a href="#none" class="btn_cirNblog">네이버 블로그</a></li>
+                        <li><a href="#none" class="btn_cirYoutube">유투브</a></li>
+                        <li><a href="#none" class="btn_cirNpost">네이버 포스트</a></li>
+                    </ul>
+
+                    <ul class="f_menu">
+                        <li><a href="#none">회사소개</a></li>
+                        <li><a href="#none">사업소개</a></li>
+                        <li><a href="#none" class="point">개인정보처리방침</a></li>
+                        <li><a href="#none">고객센터</a></li>
+                        <li><a href="#none">오시는길</a></li>
+                    </ul>
+
+                    <address>
+                        <span>
+                            (08390) 서울시 구로구 디지털로 288(구로동 212-8) <br class="m" />
+                            대륭포스트타워1차 1801호</span
+                        >
+                        <em>대표전화 : 02-6964-8869</em> <em>FAX : 02-6964-8879</em>
+                    </address>
+                    <p class="copyright">ⓒ 2021 DreamPictures21 All Rights Reserved.</p>
+                </div>
+            </footer>
+            <!-- //footer -->
+        </div>
+    </body>
+</html>

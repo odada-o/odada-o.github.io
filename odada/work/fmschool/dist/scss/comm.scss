@@ -1,0 +1,259 @@
+@charset "UTF-8";
+@import "reset", "font", "variables", "mixin";
+
+// comm
+.container {
+    position: relative;
+    // max-width: 1280px;
+    max-width: 1236px;
+    margin: 0 auto;
+}
+@media screen and (max-width: 1280px) {
+    .container {
+        width: calc(100% - 40px);
+        margin: 0 auto;
+    }
+}
+
+.bg-gray {
+    background-color: $bgCont;
+}
+
+// sec
+.sec- {
+    padding: 100px 0;
+}
+.sec-tit {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    font-weight: 700;
+    .pc {
+        display: inline-block !important;
+    }
+}
+.sec-cont {
+    position: relative;
+}
+@media screen and (max-width: 800px) {
+    .sec- {
+        padding: 60px 0;
+    }
+}
+
+// title
+.tit-area {
+    .tit {
+        font-size: 3.143em;
+        text-align: center;
+        font-weight: 400;
+    }
+    .txt {
+        margin-top: 10px;
+        font-size: 1.143em;
+        color: #777;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .tit-area {
+        .tit {
+            font-size: 2.5em;
+        }
+        .txt {
+            font-size: 1em;
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .tit-area {
+        .tit {
+            font-size: 1.6em;
+        }
+        .txt {
+            font-size: 1em;
+        }
+    }
+}
+
+// btn
+.btn- {
+    display: block;
+    height: 50px;
+    padding: 0 50px;
+    border-radius: 40px;
+    line-height: 50px;
+    text-align: center;
+    transition: all 0.2s;
+    &.btn-line {
+        border: 1px solid $lineCont2;
+    }
+    &:hover {
+        background-color: $prim1;
+        color: $w;
+    }
+}
+@media screen and (max-width: 800px) {
+    .btn- {
+        height: 60px;
+        line-height: 60px;
+        font-size: 1.286em;
+    }
+}
+
+.link-more {
+    position: absolute;
+    top: -35px;
+    right: 0;
+    font-size: 0.857em;
+    color: $subFont;
+    &::after {
+        content: "\f105";
+        display: inline-block;
+        margin-left: 5px;
+        font-family: "Line Awesome Free";
+        font-weight: 900;
+    }
+}
+
+// tab
+.tab-wrap {
+    .tab-cont {
+        .tab-lst {
+            display: none;
+            &.active {
+                display: block;
+            }
+        }
+    }
+}
+
+// star
+.star-area {
+    width: 126px;
+    height: 22px;
+    margin-top: -3px;
+    background: url(../../images/comm/bg-star.png) 0 0 / auto 100% repeat-x;
+    .star- {
+        height: 100%;
+        background: url(../../images/comm/img-star.png) 0 0 / auto 100% repeat-x;
+    }
+    &.star1 .star- {
+        width: 20%;
+    }
+    &.star2 .star- {
+        width: 40%;
+    }
+    &.star3 .star- {
+        width: 60%;
+    }
+    &.star4 .star- {
+        width: 80%;
+    }
+    &.star5 .star- {
+        width: 100%;
+    }
+}
+
+// swiper
+.swiper {
+    .swiper-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: auto;
+        left: auto;
+        bottom: -70px;
+        width: 38px !important;
+        height: 38px !important;
+        border: 1px solid $lineCont2;
+        background-color: $w;
+        color: $b;
+        &:hover {
+            &::before {
+                color: $prim1;
+            }
+        }
+        &::after {
+            display: none;
+        }
+        &::before {
+            font-family: "Line Awesome Free";
+            font-weight: 900;
+        }
+    }
+    .swiper-button-next {
+        right: 0;
+        &::before {
+            content: "\f105";
+        }
+    }
+    .swiper-button-prev {
+        right: 38px;
+        border-right: none;
+        &::before {
+            content: "\f104";
+        }
+    }
+    .swiper-pagination-progressbar {
+        overflow: visible;
+        width: 90%;
+        height: 3px;
+        margin-top: 50px;
+        background-color: transparent;
+        &::before {
+            content: "";
+            @include posY;
+            left: 0;
+            right: 0;
+            height: 1px;
+            opacity: 0.5;
+            background-color: #bebebe;
+        }
+        .swiper-pagination-progressbar-fill {
+            height: 100%;
+            background-color: $prim1;
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .swiper {
+        .swiper-button {
+            display: none;
+        }
+        .swiper-pagination-progressbar {
+            width: 100%;
+            margin-top: 30px;
+        }
+    }
+}
+
+// youtube
+.wrapper-youtube {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    .player-youtube {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+    }
+}
+
+// ratio img
+.ratio-wrap {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    .ratio-img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@import "main", "contents";

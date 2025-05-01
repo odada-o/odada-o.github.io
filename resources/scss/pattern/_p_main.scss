@@ -54,10 +54,10 @@
       border-radius: 20px;
     }
     @include tabletMore {
-      height: 50vh;
+      height: 80vh;
       border-radius: 40px;
       position: absolute;
-      top: 700px;
+      top: 540px;
       left: 50%;
       transform: translateX(-50%);
       transition: width 0.3s ease;
@@ -75,7 +75,7 @@
 .sec-leadin {
   .sec-leadin__cont {
     position: relative;
-    padding-top: 170px;
+    padding-top: 100px;
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -89,6 +89,7 @@
       }
     }
     .txt-box__middle {
+      display: block;
       //overflow: hidden;
       margin-top: 20px;
       font-size: clamp(1rem, 7vw, 3.2rem);

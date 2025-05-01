@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- 220101 수정 -->
+        <meta name="robots" content="index,follow" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>수강권을 쏜다 이벤트 보기 | FM스쿨</title>
+        <!-- //220101 수정 -->
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta property="og:site_name" content="FMschool" />
+        <meta property="og:locale" content="ko_KR" />
+        <meta property="og:title" content="주식에 대한 모든 것을 담았다. | FM스쿨" />
+        <meta property="og:url" content="https://www.fmschool.co.kr" />
+        <meta
+            property="og:keywords"
+            content="투자스쿨,입문편,기본적분석,기술적분석,실전투자,경제부기자,ETF,미국주식,국내주식,국내주식랭킹,미국주식랭킹,분석자료,신영일강사,고란강사,강승희강사,윤한홍강사"
+        />
+        <meta property="og:description" content="자산을 늘리는 가장 스마트한 방법! FM스쿨에서 투자공부 시작하세요" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://fmschool.s3.ap-northeast-2.amazonaws.com/images/static/sns1200x600.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:width" content="600" />
+        <!-- 220101 수정 -->
+        <meta name="twitter:card" content="자산을 늘리는 가장 스마트한 방법! FM스쿨에서 투자공부 시작하세요" />
+        <meta name="twitter:title" content="주식에 대한 모든 것을 담았다. | FM스쿨" />
+        <meta name="twitter:description" content="자산을 늘리는 가장 스마트한 방법! FM스쿨에서 투자공부 시작하세요" />
+        <meta name="twitter:image" content="https://fmschool.s3.ap-northeast-2.amazonaws.com/images/static/sns1200x600.png" />
+        <meta name="twitter:domain" content="https://www.fmschool.co.kr" />
+        <!-- //220101 수정 -->
+        <meta name="google-site-verification" content="3d8D2RnLpSRR0tAT5UA1fm61Mlr-076RlC6Z889TYx0" />
+        <meta name="naver-site-verification" content="cf48e79714058b7ad744b3b71505ddc104f82b9c" />
+        <meta name="description" content="자산을 늘리는 가장 스마트한 방법! FM스쿨에서 주식공부 시작하세요." />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://fmschool.co.kr/css/default.css" />
+        <link rel="stylesheet" href="https://fmschool.co.kr/css/style.css" />
+        <link rel="stylesheet" href="http://oddodd.me/work/fmschool/css/custom.css" />
+        <link rel="stylesheet" href="https://fmschool.co.kr/css/m_custom.css" />
+        <script src="http://oddodd.me/work/fmschool/js/jquery-1.8.3.min.js"></script>
+        <script src="http://oddodd.me/work/fmschool/js/script.js"></script>
+        <script src="http://oddodd.me/work/fmschool/js/swiper.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- 220101 수정 -->
+        <link
+            rel="stylesheet"
+            href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+        />
+        <link rel="stylesheet" href="http://oddodd.me/work/fmschool/dist/css/comm.css" />
+        <script src="http://oddodd.me/work/fmschool/dist/js/comm.js"></script>
+        <!--[if lt IE 9]>
+            <script src="../dist/vendor/html5.js"></script>
+            <script src="../dist/vendor/respond.min.js"></script>
+        <![endif]-->
+        <!-- //220101 수정 -->
+    </head>
+    <body>
+        <div class="event_wrap">
+            <div class="event_con swiper-container">
+                <div class="event_btn_prev event_btn"><img src="/img/event_prev.png" /></div>
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <a href="/review"><img src="/img/event_pc.JPG" class="pc_v" /><img src="/img/event_m.jpg" class="mb_v" /></a>
+                    </li>
+                </ul>
+                <div class="event_btn_next event_btn"><img src="/img/event_next.png" /></div>
+            </div>
+            <label class="event_cookie"
+                ><input type="checkbox" id="eventTop" /><span></span>
+                <p for="eventTop">오늘은 그만볼게요</p></label
+            >
+            <div class="event_btn event_btn_clsoe"><img src="/img/event_close.png" /></div>
+        </div>
+        <div id="hd" class="">
+            <div class="hd_wrap">
+                <ul class="left_menu">
+                    <li>
+                        <button class="menu_btn"><i class=""></i></button>
+                    </li>
+                    <li>
+                        <a class="logo" href="/"><i></i></a>
+                    </li>
+                </ul>
+                <a class="m_logo" href="/"><i class="m_logo_s"></i></a>
+                <div class="sch_box">
+                    <input type="text" class="sch_input" placeholder="강좌를 검색하세요." /><button>
+                        <img src="/img/search_btn.png" class="pc_v" />
+                    </button>
+                    <div class="guide_txt main_txt">
+                        <button type="button" name="guide_close" class="guide_close">
+                            <img src="/img/sub_img/guide_close.png" alt="" /></button
+                        ><span> 궁금한 주식키워드를 검색해보세요</span>
+                    </div>
+                </div>
+                <ul class="right_menu">
+                    <li>
+                        <button class="search_btn"><img src="/img/mobile/m_search_ico.png" alt="검색" class="mb_v" /></button>
+                    </li>
+                    <li><a class="w_btn" href="/payment/product">이용권</a></li>
+                    <li><a class="b_btn" href="/login">로그인</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="side_menu_wrap event_on">
+            <ul class="min_side">
+                <li class="on">
+                    <a
+                        ><i class="home"></i>
+                        <p>홈</p></a
+                    >
+                </li>
+                <li class="">
+                    <a
+                        ><i class="course"></i>
+                        <p>
+                            투자 <br />
+                            스쿨
+                        </p></a
+                    >
+                </li>
+                <li class="">
+                    <a
+                        ><i class="stock"></i>
+                        <p>
+                            분석 <br />
+                            자료
+                        </p></a
+                    >
+                </li>
+                <li class="" href="/login">
+                    <a
+                        ><i class="history"></i>
+                        <p>최근 본</p></a
+                    >
+                </li>
+                <li class="" href="/login">
+                    <a
+                        ><i class="class"></i>
+                        <p>학습내역</p></a
+                    >
+                </li>
+                <li class="">
+                    <a
+                        ><i class="cs"></i>
+                        <p>문의</p></a
+                    >
+                </li>
+            </ul>
+            <div class="side_menu">
+                <button type="button" name="m_side_btn" class="m_side_btn"><img src="/img/mobile/m_side_close.png" alt="" /></button>
+                <ul class="first_ul">
+                    <li class="on2">
+                        <a href="/"><i class="menu home"></i>홈</a>
+                    </li>
+                    <li class="">
+                        <i class="menu course"></i>투자스쿨
+                        <ul class="drop_menu1">
+                            <li class="no_dashline"><a>무료강좌</a></li>
+                            <li></li>
+                            <li class="">
+                                <a
+                                    ><span>①</span>입문편<span><i class="fas fa-chevron-down"></i></span
+                                ></a>
+                                <ul class="drop_menu2">
+                                    <li class=""><a>└ 투자심리와 원칙세우기</a></li>
+                                    <li class=""><a>└ 주식투자의 이해</a></li>
+                                    <li class=""><a>└ 처음시작하는 주식투자</a></li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a
+                                    ><span>②</span>기본적분석<span><i class="fas fa-chevron-down"></i></span
+                                ></a>
+                                <ul class="drop_menu2">
+                                    <li class=""><a>└ 경제분석</a></li>
+                                    <li class=""><a>└ 산업분석</a></li>
+                                    <li class=""><a>└ 기업분석</a></li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a
+                                    ><span>③</span>기술적분석<span><i class="fas fa-chevron-down"></i></span
+                                ></a>
+                                <ul class="drop_menu2">
+                                    <li class=""><a>└ 차트의 기본 지식</a></li>
+                                    <li class=""><a>└ 캔들차트 분석</a></li>
+                                    <li class=""><a>└ 차트패턴 분석</a></li>
+                                    <li class=""><a>└ 실전 활용</a></li>
+                                    <li class=""><a>└ 보조지표 분석</a></li>
+                                    <li class=""><a>└ 핵심 투자 기법</a></li>
+                                    <li class=""><a>└ 투자심리 분석</a></li>
+                                    <li class=""><a>└ 지표의 실전 전략</a></li>
+                                    <li class=""><a>└ 고수들의 시스템</a></li>
+                                    <li class=""><a>└ 프로그래밍 매매</a></li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a
+                                    ><span>④</span>실전투자<span><i class="fas fa-chevron-down"></i></span
+                                ></a>
+                                <ul class="drop_menu2">
+                                    <li class=""><a>└ 주식과 파생</a></li>
+                                    <li class=""><a>└ 공모주</a></li>
+                                    <li class=""><a>└ 퀀트</a></li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a
+                                    ><span>⑤</span>경제부 기자의 시선<span><i class="fas fa-chevron-down"></i></span
+                                ></a>
+                                <ul class="drop_menu2">
+                                    <li class=""><a>└ 경제부 기자의 시선</a></li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a
+                                    ><span>⑥</span>ETF<span><i class="fas fa-chevron-down"></i></span
+                                ></a>
+                                <ul class="drop_menu2">
+                                    <li class=""><a>└ ETF 이해</a></li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a
+                                    ><span>⑦</span>미국주식<span><i class="fas fa-chevron-down"></i></span
+                                ></a>
+                                <ul class="drop_menu2">
+                                    <li class=""><a>└ 미국주식</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="drop_btn" id="menuStocks">
+                        <i class="menu stock"></i>분석자료<i class="beta"></i>
+                        <ul class="mv_ul">
+                            <li class=""><a href="/login">- 국내주식</a></li>
+                            <li class=""><a href="/login">- 국내주식 랭킹</a></li>
+                            <li class=""><a href="/login">- 미국주식</a></li>
+                            <li class=""><a href="/login">- 미국주식 랭킹</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="n_mv_v">
+                    <li class="">
+                        <a href="/login"><i class="menu history"></i>최근 본 동영상</a>
+                    </li>
+                    <li class="">
+                        <a href="/login"><i class="menu class"></i>학습내역</a>
+                    </li>
+                </ul>
+                <ul class="n_mv_v">
+                    <li class="">
+                        <a href="/login"><i class="menu purchase"></i>구매내역</a>
+                    </li>
+                    <li class="">
+                        <a href="/login"><i class="menu coupon"></i>쿠폰</a>
+                    </li>
+                    <li class="">
+                        <a href="/login"><i class="menu my"></i>회원정보</a>
+                    </li>
+                </ul>
+                <ul class="last_ul">
+                    <li class="">
+                        <a href="/payment/product"><i class="menu purchase"></i>이용권 구매</a>
+                    </li>
+                    <li class="">
+                        <a href="/cs/notice"><i class="menu cs"></i>고객센터</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 220117 추가 -->
+        <main id="intro" class="main-contents">
+            <!-- mVisual -->
+            <div class="mVisual">
+                <div class="swiper slide-mVisual">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <em class="scab">Financial <span>Management</span></em>
+                                <strong class="tit">
+                                    자산을 늘리는 <br />
+                                    가장 스마트한 방법
+                                </strong>
+                                <p class="txt">
+                                    직관적이고 재미있는 스마트한 학습, <br class="m" />
+                                    듣다 보면 나도 투자전문가? <br />
+                                    지금 바로 시작해보세요!
+                                </p>
+                                <div class="slide-img">
+                                    <img src="./images/main/mVisual-slide01.png" alt="3+3 수강권" />
+                                </div>
+                                <div class="btn-area">
+                                    <a href="#" class="btn-blue btn-apple">App Store</a>
+                                    <a href="#" class="btn-blue btn-google">Google Play</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <em class="scab">OPEN <span>EVENT</span></em>
+                                <strong class="tit">
+                                    신규가입 특별혜택 <br />
+                                    3+3수강권을 쏜다!
+                                </strong>
+                                <p class="txt">
+                                    18,000원 상당의 수강권 <br />
+                                    2022년 신규 혜택을 놓치지 마세요!
+                                </p>
+                                <div class="slide-img">
+                                    <img src="./images/main/mVisual-slide02.png" alt="3+3 수강권" />
+                                </div>
+                                <div class="btn-area">
+                                    <a href="#" class="btn-blue">이벤트 참여하기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container navi-area">
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev-slide swiper-arrow">이전이미지</div>
+                        <div class="swiper-button-next-slide swiper-arrow">다음이미지</div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                var swiper = new Swiper(".slide-mVisual", {
+                    loop: true,
+                    autoplay: {
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                        type: "fraction",
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next-slide",
+                        prevEl: ".swiper-button-prev-slide",
+                    },
+                    breakpoints: {
+                        800: {
+                            pagination: {
+                                el: ".swiper-pagination",
+                                type: "bullets",
+                                clickable: true,
+                            },
+                        },
+                    },
+                });
+            </script>
+            <!-- //mVisual -->
+            <!-- mContent -->
+            <div class="mContent">
+                <!-- 지금, 가장 핫한 강좌 -->
+                <section class="sec-class et-more">
+                    <div class="container">
+                        <h2 class="sec-tit">지금, 가장 핫한 주식강좌!</h2>
+                        <div class="area-hash">
+                            <ul class="lst-hash">
+                                <li class="on"><a href="#">#좋은종목찾기</a></li>
+                                <li><a href="#">#차트완벽분석</a></li>
+                                <li><a href="#">#멘탈관리</a></li>
+                                <li><a href="#">#공모주</a></li>
+                                <li><a href="#">#주식배당</a></li>
+                            </ul>
+                        </div>
+                        <div class="sec-cont scroll-verti">
+                            <ul class="lst-class">
+                                <li>
+                                    <a href="#" class="link-thumb">
+                                        <img src="./images/main/thumb-hot1.png" alt="재테크 어떻게 하세요?" />
+                                    </a>
+                                    <a href="#" class="link-txt">
+                                        <em class="scab">입문</em>
+                                        <strong class="tit"> 자본시장에서 주식시장의 역할 자본시장에서 주식시장의 역할 </strong>
+                                        <span class="writer">이수민</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-thumb">
+                                        <img src="./images/main/thumb-hot2.png" alt="주식에도 트렌드가 있다." />
+                                    </a>
+                                    <a href="#" class="link-txt">
+                                        <em class="scab">입문</em>
+                                        <strong class="tit"> 주식시장의 인플루언서, 주도주와 테마주 </strong>
+                                        <span class="writer">도지은</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-thumb">
+                                        <img src="./images/main/thumb-hot3.png" alt="고수들도 하는 초보 투자자들의 실수" />
+                                    </a>
+                                    <a href="#" class="link-txt">
+                                        <em class="scab">입문</em>
+                                        <strong class="tit"> 초보투자자들의 흔한 실수</strong>
+                                        <span class="writer">최혜윤</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-thumb">
+                                        <img src="./images/main/thumb-hot4.png" alt="성공투자를 위한 투자노트" />
+                                    </a>
+                                    <a href="#" class="link-txt">
+                                        <em class="scab">입문</em>
+                                        <strong class="tit">성공투자를 위한 필수조건! 투자노트</strong>
+                                        <span class="writer">신영일</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-thumb">
+                                        <img src="./images/main/thumb-hot5.png" alt="금리가 주가에 미치는 영향" />
+                                    </a>
+                                    <a href="#" class="link-txt">
+                                        <em class="scab">입문</em>
+                                        <strong class="tit"> 금리와 주가의 연결고리</strong>
+                                        <span class="writer">이용석</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-thumb">
+                                        <img src="./images/main/thumb-hot6.png" alt="나의 투자 성향은?" />
+                                    </a>
+                                    <a href="#" class="link-txt">
+                                        <em class="scab">입문</em>
+                                        <strong class="tit">나의 투자성향 파악하기</strong>
+                                        <span class="writer">최혜윤</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-thumb">
+                                        <img src="./images/main/thumb-hot7.png" alt="원석같은 종목 찾아내는 방법" />
+                                    </a>
+                                    <a href="#" class="link-txt">
+                                        <em class="scab">입문</em>
+                                        <strong class="tit">재무비율분석으로 좋은 종목 선정하기</strong>
+                                        <span class="writer">도지은</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-thumb">
+                                        <img src="./images/main/thumb-hot8.png" alt="주식투자 성공투자 3원칙" />
+                                    </a>
+                                    <a href="#" class="link-txt">
+                                        <em class="scab">입문</em>
+                                        <strong class="tit">주식투자 성공투자 3원칙</strong>
+                                        <span class="writer">송영욱</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="#" class="link-more">더보기</a>
+                        </div>
+                    </div>
+                </section>
+                <!-- // 지금, 가장 핫한 강좌 -->
+                <!-- banner -->
+                <section class="sec-bnr">
+                    <div class="container">
+                        <a href="#">
+                            <picture>
+                                <source srcset="./images/main/m-mBanner-220117-1@3x.png" media="(max-width: 800px)" />
+                                <source srcset="./images/main/mBanner-220117-1.png" />
+                                <img
+                                    src="./images/main/mBanner-220117-1.png"
+                                    alt="오직 FM스쿨에서만 볼 수 있는 분석자료 FM스쿨 알고리즘 재무평가 무제한이용"
+                                />
+                            </picture>
+                        </a>
+                    </div>
+                </section>
+                <!-- //banner -->
+                <!-- 전문가 추천 무료 -->
+                <section class="sec-class">
+                    <div class="container">
+                        <h2 class="sec-tit">전문가 추천 무료</h2>
+                        <div class="sec-cont scroll-hori">
+                            <ul class="lst-class">
+                                <li>
+                                    <a href="#" class="link-thumb">
+                                        <em class="scab-free">무료</em>
+                                        <img src="./images/main/thumb-hot1.png" alt="재테크 어떻게 하세요?" />
+                                    </a>
+                                    <a href="#" class="link-txt">
+                                        <em class="scab">입문</em>
+                                        <strong class="tit"> 자본시장에서 주식시장의 역할 </strong>
+                                        <span class="writer">이수민</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-thumb">
+                                        <em class="scab-free">무료</em>
+                                        <img src="./images/main/thumb-hot2.png" alt="주식에도 트렌드가 있다." />
+                                    </a>
+                                    <a href="#" class="link-txt">
+                                        <em class="scab">입문</em>
+                                        <strong class="tit"> 주식시장의 인플루언서, 주도주와 테마주 </strong>
+                                        <span class="writer">도지은</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-thumb">
+                                        <em class="scab-free">무료</em>
+                                        <img src="./images/main/thumb-hot1.png" alt="고수들도 하는 초보 투자자들이 실수" />
+                                    </a>
+                                    <a href="#" class="link-txt">
+                                        <em class="scab">입문</em>
+                                        <strong class="tit"> 초보투자자들의 흔한 실수</strong>
+                                        <span class="writer">최혜윤</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-thumb">
+                                        <em class="scab-free">무료</em>
+                                        <img src="./images/main/thumb-hot1.png" alt="성공투자를 위한 투자노트" />
+                                    </a>
+                                    <a href="#" class="link-txt">
+                                        <em class="scab">입문</em>
+                                        <strong class="tit">성공투자를 위한 필수조건! 투자노트</strong>
+                                        <span class="writer">신영일</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="#" class="link-more">더보기</a>
+                        </div>
+                    </div>
+                </section>
+                <!-- //전문가 추천 무료 -->
+                <!-- FM스쿨을 해야만 하는 이유!-->
+                <section class="sec-class">
+                    <div class="container">
+                        <h2 class="sec-tit">FM스쿨을 해야만 하는 이유!</h2>
+                        <div class="sec-cont scroll-hori">
+                            <ul class="lst-class lst-class-type2">
+                                <li>
+                                    <a href="#" class="link-thumb">
+                                        <img src="./images/main/interview-thumb1.png" alt="재테크 어떻게 하세요?" />
+                                    </a>
+                                    <a href="#" class="link-txt">
+                                        <span class="writer">이수민</span>
+                                        <strong class="tit"> 자본시장에서 주식시장의 역할 </strong>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-thumb">
+                                        <img src="./images/main/interview-thumb2.png" alt="주식에도 트렌드가 있다." />
+                                    </a>
+                                    <a href="#" class="link-txt">
+                                        <span class="writer">도지은</span>
+                                        <strong class="tit"> 주식시장의 인플루언서, 주도주와 테마주 </strong>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-thumb">
+                                        <img src="./images/main/interview-thumb3.png" alt="고수들도 하는 초보 투자자들이 실수" />
+                                    </a>
+                                    <a href="#" class="link-txt">
+                                        <span class="writer">최혜윤</span>
+                                        <strong class="tit"> 초보투자자들의 흔한 실수</strong>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-thumb">
+                                        <img src="./images/main/interview-thumb4.png" alt="성공투자를 위한 투자노트" />
+                                    </a>
+                                    <a href="#" class="link-txt">
+                                        <span class="writer">신영일</span>
+                                        <strong class="tit">성공투자를 위한 필수조건! 투자노트</strong>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="#" class="link-more">더보기</a>
+                        </div>
+                    </div>
+                </section>
+                <!-- //FM스쿨을 해야만 하는 이유! -->
+                <!-- expert -->
+                <section class="sec-expert">
+                    <ul class="bg-ani-expert">
+                        <li class="row- row-1"></li>
+                        <li class="row- row-2"></li>
+                        <li class="row- row-3"></li>
+                        <li class="row- row-1"></li>
+                        <li class="row- row-2"></li>
+                        <li class="row- row-3"></li>
+                        <li class="row- row-1"></li>
+                        <li class="row- row-2"></li>
+                        <li class="row- row-3"></li>
+                        <li class="row- row-1"></li>
+                    </ul>
+                    <div class="container cont-expert">
+                        <h2 class="tit ratio-wrap">
+                            <span class="ratio-img"> 재테크의 시작은! FMschool </span>
+                        </h2>
+                        <div class="txt">
+                            재테크 잘하는 특별한 노하우! <br />
+                            궁금하지 않으세요?<br />
+                            <p class="yellow-line">
+                                <span class="row1"> 전문가들의 노하루를 통해 </span>
+                                <span class="row2"> 성공하는 투자를 배워보세요!</span>
+                            </p>
+                            <p class="yellow-line">
+                                <span class="row3">매일 하루 10분, 한달이면</span>
+                                <em class="row4">당신도 재테크의 고수가 될 수 있습니다.</em>
+                            </p>
+                        </div>
+                        <div class="img-sin">
+                            <img src="./images/main/expert-intro-sin.png" alt="" />
+                        </div>
+                    </div>
+                </section>
+                <!-- //expert -->
+                <!-- onestop -->
+                <section class="sec-onestop">
+                    <div class="container">
+                        <h2 class="tit">
+                            <span> 투자교육과 분석을 한번에! </span>
+                            <em>ONE STOP</em>
+                        </h2>
+                        <div class="swiper slider-onestep">
+                            <ul class="lst-onestop swiper-wrapper">
+                                <li class="slideanim swiper-slide">
+                                    <p>투자스쿨에서 <b>배우고</b></p>
+                                    <img src="./images/main/mOnestop-img1.jpg" alt="" />
+                                </li>
+                                <li class="slideanim swiper-slide">
+                                    <p>국내<span class="dot"></span>미국주식을 <b>분석하고</b></p>
+                                    <img src="./images/main/mOnestop-img2.jpg" alt="" />
+                                </li>
+                                <li class="slideanim swiper-slide">
+                                    <p>내 자산을 <b>관리하자</b></p>
+                                    <img src="./images/main/mOnestop-img3.jpg" alt="" />
+                                </li>
+                            </ul>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </section>
+                <script>
+                    var swiper = new Swiper(".slider-onestep", {
+                        slidesPerView: 3,
+                        spaceBetween: 80,
+                        pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true,
+                        },
+                        breakpoints: {
+                            800: {
+                                slidesPerView: 1,
+                                spaceBetween: 0,
+                            },
+                        },
+                    });
+                </script>
+                <!-- // onestop -->
+                <!-- curriculum -->
+                <section class="sec- sec-curri">
+                    <div class="container">
+                        <div class="tit-area">
+                            <h2 class="tit">체계적인 커리큘럼으로 학습하세요!</h2>
+                            <p class="txt">
+                                입문편부터 실전투자까지 <br />
+                                전문가들이 설계한 FM스쿨만의 독자적인 강의구성
+                            </p>
+                        </div>
+                        <div class="cont-curriculum">
+                            <div class="swiper slider-curri">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./images/main/mCurri-step1.png" class="pc" alt="입문편" />
+                                        <div class="m box-curri">
+                                            <div class="cont">
+                                                <em class="num">01</em>
+                                                <em class="group">주식강의 ABC</em>
+                                                <strong class="tit">입문편</strong>
+                                                <p class="txt">
+                                                    처음 주식을 시작하는 투자자를 위한 주식의 ABC를 확인 할 수 있는 기초강의 , 매매준비부터
+                                                    주식시장의 큰 흐름 파악과 종목을 선택하고 매수 매도 타이밍까지 파악 할 수 있는 기초를
+                                                    다질 수 있도록 구성 하였습니다.
+                                                </p>
+                                            </div>
+                                            <div class="foot">
+                                                <dl class="lst-foot">
+                                                    <dt>총 강의수</dt>
+                                                    <dd><span>87강</span></dd>
+                                                    <dt>
+                                                        <span>난</span>
+                                                        <span>이</span>
+                                                        <span>도</span>
+                                                    </dt>
+                                                    <dd>
+                                                        <div class="star-area star1">
+                                                            <div class="star-"><div class="blind">레벨1</div></div>
+                                                        </div>
+                                                    </dd>
+                                                    <dt><span>강</span><span>사</span></dt>
+                                                    <dd>신영일<em>/</em>이수민<em>/</em>도지은<em>/</em>이용석<em>/</em>최혜윤</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/main/mCurri-step2.png" class="pc" alt="기본적분석" />
+                                        <div class="m box-curri">
+                                            <div class="cont">
+                                                <em class="num">02</em>
+                                                <em class="group">좋은 주식을 잘 매수하고 싶다면</em>
+                                                <strong class="tit">기본적분석</strong>
+                                                <p class="txt">
+                                                    경제·산업·기업 분석을 통해 돈과 시장에 대한 이해도를 높일 수 있으며 주식의 정량적인
+                                                    분석이 가능하도록 강의를 구성하였습니다.
+                                                </p>
+                                            </div>
+                                            <div class="foot">
+                                                <dl class="lst-foot">
+                                                    <dt>총 강의수</dt>
+                                                    <dd>67강</dd>
+                                                    <dt>
+                                                        <span>난</span>
+                                                        <span>이</span>
+                                                        <span>도</span>
+                                                    </dt>
+                                                    <dd>
+                                                        <div class="star-area star2">
+                                                            <div class="star-"><div class="blind">레벨2</div></div>
+                                                        </div>
+                                                    </dd>
+                                                    <dt><span>강</span><span>사</span></dt>
+                                                    <dd>강승희<em>/</em>고란<em>/</em>윤한홍<em>/</em>피터송<em>/</em>조현진</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/main/mCurri-step3.png" class="pc" alt="기술적분석" />
+                                        <div class="m box-curri">
+                                            <div class="cont">
+                                                <em class="num">03</em>
+                                                <em class="group">차트는 곧 심리곡선이다!</em>
+                                                <strong class="tit">기술적분석</strong>
+                                                <p class="txt">
+                                                    차트 그래프를 읽을 수 있는 이론적 스킬 뿐 아니라 정통의 투자심리 분석을 배워 차트에서
+                                                    나타내는 사람의 심리흐름을 파악할 수 있는 능력을 기를 수 있도록 강의를 구성하였습니다.
+                                                </p>
+                                            </div>
+                                            <div class="foot">
+                                                <dl class="lst-foot">
+                                                    <dt>총 강의수</dt>
+                                                    <dd>119강</dd>
+                                                    <dt>
+                                                        <span>난</span>
+                                                        <span>이</span>
+                                                        <span>도</span>
+                                                    </dt>
+                                                    <dd>
+                                                        <div class="star-area star3">
+                                                            <div class="star-"><div class="blind">레벨3</div></div>
+                                                        </div>
+                                                    </dd>
+                                                    <dt><span>강</span><span>사</span></dt>
+                                                    <dd>이소담<em>/</em>최윤지</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/main/mCurri-step4.png" class="pc" alt="실전투자" />
+                                        <div class="m box-curri">
+                                            <div class="cont">
+                                                <em class="num">04</em>
+                                                <em class="group">실습을 통해 쉽게 다가가는</em>
+                                                <strong class="tit">실전투자</strong>
+                                                <p class="txt">
+                                                    어디서 한번 들어봤을 법한 “공모주, 파생, 퀀트투자” 어렵게만 느껴질 수 있는 실전투자를
+                                                    실습을 통해 투자 및 대처를 할 수 있도록 구성하였습니다.
+                                                </p>
+                                            </div>
+                                            <div class="foot">
+                                                <dl class="lst-foot">
+                                                    <dt>총 강의수</dt>
+                                                    <dd>32강</dd>
+                                                    <dt>
+                                                        <span>난</span>
+                                                        <span>이</span>
+                                                        <span>도</span>
+                                                    </dt>
+                                                    <dd>
+                                                        <div class="star-area star4">
+                                                            <div class="star-"><div class="blind">레벨4</div></div>
+                                                        </div>
+                                                    </dd>
+                                                    <dt><span>강</span><span>사</span></dt>
+                                                    <dd>강승희<em>/</em>송영욱<em>/</em>이광배</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/main/mCurri-step5.png" class="pc" alt="ETF" />
+                                        <div class="m box-curri">
+                                            <div class="cont">
+                                                <em class="num">05</em>
+                                                <em class="group">한눈에 알아볼 수 있는 ETF가이드</em>
+                                                <strong class="tit">ETF</strong>
+                                                <p class="txt">
+                                                    펀드와 주식 거래의 장점을 모두 갖춘 ETF를 초보투자자도 쉽게 이해하여 투자할 수 있도록
+                                                    강의 구성하였습니다.
+                                                </p>
+                                            </div>
+                                            <div class="foot">
+                                                <dl class="lst-foot">
+                                                    <dt>총 강의수</dt>
+                                                    <dd>67강</dd>
+                                                    <dt>
+                                                        <span>난</span>
+                                                        <span>이</span>
+                                                        <span>도</span>
+                                                    </dt>
+                                                    <dd>
+                                                        <div class="star-area star1">
+                                                            <div class="star-"><div class="blind">레벨1</div></div>
+                                                        </div>
+                                                    </dd>
+                                                    <dt><span>강</span><span>사</span></dt>
+                                                    <dd>도지은</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/main/mCurri-step6.png" class="pc" alt="경제부 기자의 시선" />
+                                        <div class="m box-curri">
+                                            <div class="cont">
+                                                <em class="num">06</em>
+                                                <em class="group">어디에서도 알려주지 않는 경제</em>
+                                                <strong class="tit">경제부기자의 시선</strong>
+                                                <p class="txt">
+                                                    경제부 기자가 알려주는 전자공시와 경제 뉴스 통해 어떤 의미를 내포하고 있는지 속 시원하게
+                                                    알려드립니다. 또한, 시대의 흐름에 따라서 주식시장을 선도하는 트렌드를 알려주어 적합한
+                                                    시장대처법을 찾을 수 있도록 강의를 구성하였습니다.
+                                                </p>
+                                            </div>
+                                            <div class="foot">
+                                                <dl class="lst-foot">
+                                                    <dt>총 강의수</dt>
+                                                    <dd>21강</dd>
+                                                    <dt>
+                                                        <span>난</span>
+                                                        <span>이</span>
+                                                        <span>도</span>
+                                                    </dt>
+                                                    <dd>
+                                                        <div class="star-area star2">
+                                                            <div class="star-"><div class="blind">레벨2</div></div>
+                                                        </div>
+                                                    </dd>
+                                                    <dt><span>강</span><span>사</span></dt>
+                                                    <dd>고란</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/main/mCurri-step7.png" class="pc" alt="미국주식" />
+                                        <div class="m box-curri">
+                                            <div class="cont">
+                                                <em class="num">07</em>
+                                                <em class="group">요즘 대세는</em>
+                                                <strong class="tit">미국주식</strong>
+                                                <p class="txt">
+                                                    미국주식의 튜토리얼로 어렵지 않게 미국주식에 다가갈 수 있도록 강의를 구성하였습니다.
+                                                </p>
+                                            </div>
+                                            <div class="foot">
+                                                <dl class="lst-foot">
+                                                    <dt>총 강의수</dt>
+                                                    <dd>12강</dd>
+                                                    <dt>
+                                                        <span>난</span>
+                                                        <span>이</span>
+                                                        <span>도</span>
+                                                    </dt>
+                                                    <dd>
+                                                        <div class="star-area star2">
+                                                            <div class="star-"><div class="blind">레벨2</div></div>
+                                                        </div>
+                                                    </dd>
+                                                    <dt><span>강</span><span>사</span></dt>
+                                                    <dd>윤현상</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="area-pagination">
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                            <a href="#" class="link-curri"> <span>커리큘럼</span> 자세히 보기</a>
+                        </div>
+                    </div>
+                </section>
+                <script>
+                    var swiper = new Swiper(".slider-curri", {
+                        direction: "vertical",
+                        slidesPerView: 1,
+                        mousewheel: true,
+                        pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true,
+                        },
+                        breakpoints: {
+                            1280: {
+                                direction: "horizontal",
+                                slidesPerView: 1,
+                                spaceBetween: 10,
+                                mousewheel: false,
+                            },
+                        },
+                    });
+                </script>
+                <!-- //curriculum -->
+                <!-- review -->
+                <section class="sec- sec-review">
+                    <div class="container">
+                        <h2 class="sec-tit">수강생들이 말하는 리얼 후기</h2>
+
+                        <div class="swiper slider-review">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <em class="scab">초급</em>
+                                    <span class="group">기본적 분석편</span>
+                                    <strong class="tit">
+                                        유익한 강의! <br />
+                                        정말 추천합니다!
+                                    </strong>
+                                    <p class="txt">
+                                        왜 부동산은 임장도 다니고 주변 호재나 정부의 지침 등 여러가지를 알아보고 공부하면서 주식은 그러지
+                                        않았을까? 공부를 하면 할수록 그런 생각이 들어요. 아무튼 엄청나게 유익한 강의임은 틀림없는 사실~!
+                                        강력추천 합니다. 왜 부동산은 임장도 다니고 주변 호재나 정부의 지침 등 여러가지를 알아보고 공부하면서
+                                        주식은 그러지 않았을까? 공부를 하면 할수록 그런 생각이 들어요. 아무튼 엄청나게 유익한 강의임은
+                                        틀림없는 사실~! 강력추천 합니다. 왜 부동산은 임장도 다니고 주변 호재나 정부의 지침 등 여러가지를
+                                        알아보고 공부하면서 주식은 그러지 않았을까? 공부를 하면 할수록 그런 생각이 들어요. 아무튼 엄청나게
+                                        유익한 강의임은 틀림없는 사실~! 강력추천 합니다.
+                                    </p>
+                                    <div class="box-from">
+                                        최지영님
+                                        <em class="date">2021.05.30</em>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <em class="scab">중급</em>
+                                    <span class="group">기본적 분석편</span>
+                                    <strong class="tit">
+                                        유익한 강의! <br />
+                                        정말 추천합니다!
+                                    </strong>
+                                    <p class="txt">
+                                        왜 부동산은 임장도 다니고 주변 호재나 정부의 지침 등 여러가지를 알아보고 공부하면서 주식은 그러지
+                                        않았을까? 공부를 하면 할수록 그런 생각이 들어요. 아무튼 엄청나게 유익한 강의임은 틀림없는 사실~!
+                                        강력추천 합니다. 왜 부동산은 임장도 다니고 주변 호재나 정부의 지침 등 여러가지를 알아보고 공부하면서
+                                        주식은 그러지 않았을까? 공부를 하면 할수록 그런 생각이 들어요. 아무튼 엄청나게 유익한 강의임은
+                                        틀림없는 사실~! 강력추천 합니다. 왜 부동산은 임장도 다니고 주변 호재나 정부의 지침 등 여러가지를
+                                        알아보고 공부하면서 주식은 그러지 않았을까? 공부를 하면 할수록 그런 생각이 들어요. 아무튼 엄청나게
+                                        유익한 강의임은 틀림없는 사실~! 강력추천 합니다.
+                                    </p>
+                                    <div class="box-from">
+                                        최지영님
+                                        <em class="date">2021.05.30</em>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <em class="scab">고급</em>
+                                    <span class="group">기본적 분석편</span>
+                                    <strong class="tit">
+                                        유익한 강의! <br />
+                                        정말 추천합니다!
+                                    </strong>
+                                    <p class="txt">
+                                        왜 부동산은 임장도 다니고 주변 호재나 정부의 지침 등 여러가지를 알아보고 공부하면서 주식은 그러지
+                                        않았을까? 공부를 하면 할수록 그런 생각이 들어요. 아무튼 엄청나게 유익한 강의임은 틀림없는 사실~!
+                                        강력추천 합니다. 왜 부동산은 임장도 다니고 주변 호재나 정부의 지침 등 여러가지를 알아보고 공부하면서
+                                        주식은 그러지 않았을까? 공부를 하면 할수록 그런 생각이 들어요. 아무튼 엄청나게 유익한 강의임은
+                                        틀림없는 사실~! 강력추천 합니다. 왜 부동산은 임장도 다니고 주변 호재나 정부의 지침 등 여러가지를
+                                        알아보고 공부하면서 주식은 그러지 않았을까? 공부를 하면 할수록 그런 생각이 들어요. 아무튼 엄청나게
+                                        유익한 강의임은 틀림없는 사실~! 강력추천 합니다.
+                                    </p>
+                                    <div class="box-from">
+                                        최지영님
+                                        <em class="date">2021.05.30</em>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <em class="scab">초급</em>
+                                    <span class="group">기본적 분석편</span>
+                                    <strong class="tit">
+                                        유익한 강의! <br />
+                                        정말 추천합니다!
+                                    </strong>
+                                    <p class="txt">
+                                        왜 부동산은 임장도 다니고 주변 호재나 정부의 지침 등 여러가지를 알아보고 공부하면서 주식은 그러지
+                                        않았을까? 공부를 하면 할수록 그런 생각이 들어요. 아무튼 엄청나게 유익한 강의임은 틀림없는 사실~!
+                                        강력추천 합니다. 왜 부동산은 임장도 다니고 주변 호재나 정부의 지침 등 여러가지를 알아보고 공부하면서
+                                        주식은 그러지 않았을까? 공부를 하면 할수록 그런 생각이 들어요. 아무튼 엄청나게 유익한 강의임은
+                                        틀림없는 사실~! 강력추천 합니다. 왜 부동산은 임장도 다니고 주변 호재나 정부의 지침 등 여러가지를
+                                        알아보고 공부하면서 주식은 그러지 않았을까? 공부를 하면 할수록 그런 생각이 들어요. 아무튼 엄청나게
+                                        유익한 강의임은 틀림없는 사실~! 강력추천 합니다.
+                                    </p>
+                                    <div class="box-from">
+                                        최지영님
+                                        <em class="date">2021.05.30</em>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <em class="scab">초급</em>
+                                    <span class="group">기본적 분석편</span>
+                                    <strong class="tit">
+                                        유익한 강의! <br />
+                                        정말 추천합니다!
+                                    </strong>
+                                    <p class="txt">
+                                        왜 부동산은 임장도 다니고 주변 호재나 정부의 지침 등 여러가지를 알아보고 공부하면서 주식은 그러지
+                                        않았을까? 공부를 하면 할수록 그런 생각이 들어요. 아무튼 엄청나게 유익한 강의임은 틀림없는 사실~!
+                                        강력추천 합니다. 왜 부동산은 임장도 다니고 주변 호재나 정부의 지침 등 여러가지를 알아보고 공부하면서
+                                        주식은 그러지 않았을까? 공부를 하면 할수록 그런 생각이 들어요. 아무튼 엄청나게 유익한 강의임은
+                                        틀림없는 사실~! 강력추천 합니다. 왜 부동산은 임장도 다니고 주변 호재나 정부의 지침 등 여러가지를
+                                        알아보고 공부하면서 주식은 그러지 않았을까? 공부를 하면 할수록 그런 생각이 들어요. 아무튼 엄청나게
+                                        유익한 강의임은 틀림없는 사실~! 강력추천 합니다.
+                                    </p>
+                                    <div class="box-from">
+                                        최지영님
+                                        <em class="date">2021.05.30</em>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <em class="scab">초급</em>
+                                    <span class="group">기본적 분석편</span>
+                                    <strong class="tit">
+                                        유익한 강의! <br />
+                                        정말 추천합니다!
+                                    </strong>
+                                    <p class="txt">
+                                        왜 부동산은 임장도 다니고 주변 호재나 정부의 지침 등 여러가지를 알아보고 공부하면서 주식은 그러지
+                                        않았을까? 공부를 하면 할수록 그런 생각이 들어요. 아무튼 엄청나게 유익한 강의임은 틀림없는 사실~!
+                                        강력추천 합니다. 왜 부동산은 임장도 다니고 주변 호재나 정부의 지침 등 여러가지를 알아보고 공부하면서
+                                        주식은 그러지 않았을까? 공부를 하면 할수록 그런 생각이 들어요. 아무튼 엄청나게 유익한 강의임은
+                                        틀림없는 사실~! 강력추천 합니다. 왜 부동산은 임장도 다니고 주변 호재나 정부의 지침 등 여러가지를
+                                        알아보고 공부하면서 주식은 그러지 않았을까? 공부를 하면 할수록 그런 생각이 들어요. 아무튼 엄청나게
+                                        유익한 강의임은 틀림없는 사실~! 강력추천 합니다.
+                                    </p>
+                                    <div class="box-from">
+                                        최지영님
+                                        <em class="date">2021.05.30</em>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <em class="scab">초급</em>
+                                    <span class="group">기본적 분석편</span>
+                                    <strong class="tit">
+                                        유익한 강의! <br />
+                                        정말 추천합니다!
+                                    </strong>
+                                    <p class="txt">
+                                        왜 부동산은 임장도 다니고 주변 호재나 정부의 지침 등 여러가지를 알아보고 공부하면서 주식은 그러지
+                                        않았을까? 공부를 하면 할수록 그런 생각이 들어요. 아무튼 엄청나게 유익한 강의임은 틀림없는 사실~!
+                                        강력추천 합니다. 왜 부동산은 임장도 다니고 주변 호재나 정부의 지침 등 여러가지를 알아보고 공부하면서
+                                        주식은 그러지 않았을까? 공부를 하면 할수록 그런 생각이 들어요. 아무튼 엄청나게 유익한 강의임은
+                                        틀림없는 사실~! 강력추천 합니다. 왜 부동산은 임장도 다니고 주변 호재나 정부의 지침 등 여러가지를
+                                        알아보고 공부하면서 주식은 그러지 않았을까? 공부를 하면 할수록 그런 생각이 들어요. 아무튼 엄청나게
+                                        유익한 강의임은 틀림없는 사실~! 강력추천 합니다.
+                                    </p>
+                                    <div class="box-from">
+                                        최지영님
+                                        <em class="date">2021.05.30</em>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <em class="scab">초급</em>
+                                    <span class="group">기본적 분석편</span>
+                                    <strong class="tit">
+                                        유익한 강의! <br />
+                                        정말 추천합니다!
+                                    </strong>
+                                    <p class="txt">
+                                        왜 부동산은 임장도 다니고 주변 호재나 정부의 지침 등 여러가지를 알아보고 공부하면서 주식은 그러지
+                                        않았을까? 공부를 하면 할수록 그런 생각이 들어요. 아무튼 엄청나게 유익한 강의임은 틀림없는 사실~!
+                                        강력추천 합니다. 왜 부동산은 임장도 다니고 주변 호재나 정부의 지침 등 여러가지를 알아보고 공부하면서
+                                        주식은 그러지 않았을까? 공부를 하면 할수록 그런 생각이 들어요. 아무튼 엄청나게 유익한 강의임은
+                                        틀림없는 사실~! 강력추천 합니다. 왜 부동산은 임장도 다니고 주변 호재나 정부의 지침 등 여러가지를
+                                        알아보고 공부하면서 주식은 그러지 않았을까? 공부를 하면 할수록 그런 생각이 들어요. 아무튼 엄청나게
+                                        유익한 강의임은 틀림없는 사실~! 강력추천 합니다.
+                                    </p>
+                                    <div class="box-from">
+                                        최지영님
+                                        <em class="date">2021.05.30</em>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <em class="scab">초급</em>
+                                    <span class="group">기본적 분석편</span>
+                                    <strong class="tit">
+                                        유익한 강의! <br />
+                                        정말 추천합니다!
+                                    </strong>
+                                    <p class="txt">
+                                        왜 부동산은 임장도 다니고 주변 호재나 정부의 지침 등 여러가지를 알아보고 공부하면서 주식은 그러지
+                                        않았을까? 공부를 하면 할수록 그런 생각이 들어요. 아무튼 엄청나게 유익한 강의임은 틀림없는 사실~!
+                                        강력추천 합니다. 왜 부동산은 임장도 다니고 주변 호재나 정부의 지침 등 여러가지를 알아보고 공부하면서
+                                        주식은 그러지 않았을까? 공부를 하면 할수록 그런 생각이 들어요. 아무튼 엄청나게 유익한 강의임은
+                                        틀림없는 사실~! 강력추천 합니다. 왜 부동산은 임장도 다니고 주변 호재나 정부의 지침 등 여러가지를
+                                        알아보고 공부하면서 주식은 그러지 않았을까? 공부를 하면 할수록 그런 생각이 들어요. 아무튼 엄청나게
+                                        유익한 강의임은 틀림없는 사실~! 강력추천 합니다.
+                                    </p>
+                                    <div class="box-from">
+                                        최지영님
+                                        <em class="date">2021.05.30</em>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <em class="scab">초급</em>
+                                    <span class="group">기본적 분석편</span>
+                                    <strong class="tit">
+                                        유익한 강의! <br />
+                                        정말 추천합니다!
+                                    </strong>
+                                    <p class="txt">
+                                        왜 부동산은 임장도 다니고 주변 호재나 정부의 지침 등 여러가지를 알아보고 공부하면서 주식은 그러지
+                                        않았을까? 공부를 하면 할수록 그런 생각이 들어요. 아무튼 엄청나게 유익한 강의임은 틀림없는 사실~!
+                                        강력추천 합니다. 왜 부동산은 임장도 다니고 주변 호재나 정부의 지침 등 여러가지를 알아보고 공부하면서
+                                        주식은 그러지 않았을까? 공부를 하면 할수록 그런 생각이 들어요. 아무튼 엄청나게 유익한 강의임은
+                                        틀림없는 사실~! 강력추천 합니다. 왜 부동산은 임장도 다니고 주변 호재나 정부의 지침 등 여러가지를
+                                        알아보고 공부하면서 주식은 그러지 않았을까? 공부를 하면 할수록 그런 생각이 들어요. 아무튼 엄청나게
+                                        유익한 강의임은 틀림없는 사실~! 강력추천 합니다.
+                                    </p>
+                                    <div class="box-from">
+                                        최지영님
+                                        <em class="date">2021.05.30</em>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <em class="scab">초급</em>
+                                    <span class="group">기본적 분석편</span>
+                                    <strong class="tit">
+                                        유익한 강의! <br />
+                                        정말 추천합니다!
+                                    </strong>
+                                    <p class="txt">
+                                        왜 부동산은 임장도 다니고 주변 호재나 정부의 지침 등 여러가지를 알아보고 공부하면서 주식은 그러지
+                                        않았을까? 공부를 하면 할수록 그런 생각이 들어요. 아무튼 엄청나게 유익한 강의임은 틀림없는 사실~!
+                                        강력추천 합니다. 왜 부동산은 임장도 다니고 주변 호재나 정부의 지침 등 여러가지를 알아보고 공부하면서
+                                        주식은 그러지 않았을까? 공부를 하면 할수록 그런 생각이 들어요. 아무튼 엄청나게 유익한 강의임은
+                                        틀림없는 사실~! 강력추천 합니다. 왜 부동산은 임장도 다니고 주변 호재나 정부의 지침 등 여러가지를
+                                        알아보고 공부하면서 주식은 그러지 않았을까? 공부를 하면 할수록 그런 생각이 들어요. 아무튼 엄청나게
+                                        유익한 강의임은 틀림없는 사실~! 강력추천 합니다.
+                                    </p>
+                                    <div class="box-from">
+                                        최지영님
+                                        <em class="date">2021.05.30</em>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button swiper-button-next"></div>
+                            <div class="swiper-button swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                            <a href="#" class="link-more">더보기</a>
+                        </div>
+                    </div>
+                </section>
+                <script>
+                    var swiper = new Swiper(".slider-review", {
+                        slidesPerView: 4,
+                        spaceBetween: 15,
+                        loop: true,
+                        loopFillGroupWithBlank: true,
+                        autoplay: {
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        },
+                        pagination: {
+                            el: ".swiper-pagination",
+                            type: "progressbar",
+                        },
+                        navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                        },
+                        breakpoints: {
+                            1280: {
+                                slidesPerView: 3,
+                                spaceBetween: 10,
+                            },
+                            800: {
+                                slidesPerView: 1,
+                                spaceBetween: 10,
+                            },
+                        },
+                    });
+                </script>
+                <!-- //review -->
+                <!-- child -->
+                <div class="sec- sec-child">
+                    <div class="container">
+                        <div class="tit-area">
+                            <h2 class="tit">
+                                이런 분들이 <br />
+                                끝까지 완강할 수 있도록<br class="m" />
+                                준비했습니다.
+                            </h2>
+                            <p class="txt">
+                                한번 시작하면 끊기지 않는 정주행 기능으로 편안하게~ <br />
+                                핵심만 집약 된 강좌를 통해 <br class="m" />
+                                투자의 정석 책 한권을 읽은 것과 같이 설계된<br class="m" />
+                                커리큘럼으로 <br class="pc" />
+                                짧고 쉽게 구성되어 있습니다.
+                            </p>
+                        </div>
+                        <ul class="lst-child">
+                            <li>
+                                <img src="./images/main/mChild-type2.jpg" class="img" alt="" />
+                                <strong class="tit">
+                                    주식투자가 처음인
+                                    <span> 주린이!</span>
+                                </strong>
+                                <p class="txt">
+                                    더 쉽고, 완벽하게 설명해 드립니다. <br />
+                                    영상을 보고 난 뒤 한번에 이해되도록 구성되었습니다.
+                                </p>
+                            </li>
+                            <li>
+                                <img src="./images/main/mChild-type1.jpg" class="img" alt="" />
+                                <strong class="tit">
+                                    해도해도 어려워 주식을
+                                    <span>포기하려는 분!</span>
+                                </strong>
+                                <p class="txt">
+                                    아직도 책보면서 주식공부하시나요? <br />
+                                    분야별 최고의 투자 전문가들의 노하우를 전수합니다.
+                                </p>
+                            </li>
+                            <li>
+                                <img src="./images/main/mChild-type3.jpg" class="img" alt="" />
+                                <strong class="tit">
+                                    종목에 대한
+                                    <span>객관적인 분석이 필요하신 분!</span>
+                                </strong>
+                                <p class="txt">
+                                    국내주식 2,300여개 종목, 미국주식 6,100여개 종목을 <br class="m" />
+                                    분기별로 <br class="et-br" />
+                                    FM스쿨만이 가지고 있는<br class="m" />
+                                    알고리즘을 통해 재무분석을 제공합니다.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- //child -->
+
+                <!-- teacher -->
+                <section class="sec- sec-teacher">
+                    <div class="container">
+                        <h2 class="sec-tit">
+                            FM스쿨의 <br class="m" />
+                            전문 강사진<span class="pc">들을 만나보세요</span>!
+                        </h2>
+                        <div class="swiper slider-teacher">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./images/main/mInstructor-sin.jpg" class="img" alt="" />
+                                    <div class="txt-area">
+                                        <em class="spe">Speciallist</em>
+                                        <strong class="name">신영일</strong>
+                                        <span class="group">입문편/ 투자심리</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/main/mInstructor-go.jpg" class="img" alt="고란" />
+                                    <div class="txt-area">
+                                        <em class="spe">Speciallist</em>
+                                        <strong class="name">고란</strong>
+                                        <span class="group">주식 트렌드분석, 해외주식 </span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/main/mInstructor-kang.jpg" class="img" alt="강승희" />
+                                    <div class="txt-area">
+                                        <em class="spe">Speciallist</em>
+                                        <strong class="name">강승희</strong>
+                                        <span class="group">족집게 경제분석</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/main/mInstructor-leeyoungseok.jpg" class="img" alt="이용석" />
+                                    <div class="txt-area">
+                                        <em class="spe">Speciallist</em>
+                                        <strong class="name">이용석</strong>
+                                        <span class="group">시장파악, 차트분석 등 입문의 길잡이 </span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/main/mInstructor-leesumin.jpg" class="img" alt="이수민" />
+                                    <div class="txt-area">
+                                        <em class="spe">Speciallist</em>
+                                        <strong class="name">이수민</strong>
+                                        <span class="group">초보자를 위한 주식투자의 이해 </span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/main/mInstructor-choe.jpg" class="img" alt="이수민" />
+                                    <div class="txt-area">
+                                        <em class="spe">Speciallist</em>
+                                        <strong class="name">최윤지</strong>
+                                        <span class="group">기술적분석 마스터, 금융계 여신</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button swiper-button-next"></div>
+                            <div class="swiper-button swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                            <a href="#" class="link-more">더보기</a>
+                        </div>
+                    </div>
+                </section>
+                <script>
+                    var swiper = new Swiper(".slider-teacher", {
+                        slidesPerView: 4,
+                        spaceBetween: 15,
+                        autoplay: {
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        },
+                        loop: true,
+                        pagination: {
+                            el: ".swiper-pagination",
+                            type: "progressbar",
+                        },
+                        navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                        },
+                        breakpoints: {
+                            1280: {
+                                slidesPerView: 3,
+                                spaceBetween: 10,
+                            },
+                            800: {
+                                slidesPerView: 1,
+                                spaceBetween: 10,
+                            },
+                        },
+                    });
+                </script>
+                <!-- //teacher -->
+                <!-- qna -->
+                <section class="sec- sec-qna">
+                    <div class="container">
+                        <h2 class="sec-tit">무엇을 도와드릴까요?</h2>
+                        <div class="sec-cont">
+                            <ul class="lst-qna">
+                                <li>
+                                    <div class="question">[동영상] 아이폰에서 강좌 수강하는데, 소리가 나오지 않아요</div>
+                                    <div class="answer">
+                                        1.Internet Explorer (인터넷 익스플로러) 또는 Chrome (크롬) 을 구동하신 후에 Kollus 플레이어를 다운
+                                        받아 다시 설치를 진행합니다. <br />
+                                        2. 또는 Edge 브라우저의 캐시를 삭제한 후 다시 다운로드를 진행합니다. <br />
+                                        위와 같이 진행하였음에도 동일 현상 발생 시 [무시(I)] 버튼을 클릭한 후 플레이어 설치를 진행합니다.
+                                    </div>
+                                </li>
+                                <li class="on">
+                                    <div class="question">[동영상] Windows 10 Edge (엣지) 브러우저에서 Kollus 설치가 되지 않습니다.</div>
+                                    <div class="answer">
+                                        1.Internet Explorer (인터넷 익스플로러) 또는 Chrome (크롬) 을 구동하신 후에 Kollus 플레이어를 다운
+                                        받아 다시 설치를 진행합니다. <br />
+                                        2. 또는 Edge 브라우저의 캐시를 삭제한 후 다시 다운로드를 진행합니다. <br />
+                                        위와 같이 진행하였음에도 동일 현상 발생 시 [무시(I)] 버튼을 클릭한 후 플레이어 설치를 진행합니다.
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="question">
+                                        [결제/환불] 결제 수단을 변경하고 싶습니다.<br />
+                                        [동영상] Windows 10 Edge (엣지) 브러우저에서 Kollus 설치가 되지 않습니다.
+                                    </div>
+                                    <div class="answer">
+                                        1.Internet Explorer (인터넷 익스플로러) 또는 Chrome (크롬) 을 구동하신 후에 Kollus 플레이어를 다운
+                                        받아 다시 설치를 진행합니다. <br />
+                                        2. 또는 Edge 브라우저의 캐시를 삭제한 후 다시 다운로드를 진행합니다. <br />
+                                        위와 같이 진행하였음에도 동일 현상 발생 시 [무시(I)] 버튼을 클릭한 후 플레이어 설치를 진행합니다.
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="question">[사이트이용] 부자스쿨 웹사이트 (일반 회원가입) 은 어떻게 하나요?</div>
+                                    <div class="answer">
+                                        1.Internet Explorer (인터넷 익스플로러) 또는 Chrome (크롬) 을 구동하신 후에 Kollus 플레이어를 다운
+                                        받아 다시 설치를 진행합니다. <br />
+                                        2. 또는 Edge 브라우저의 캐시를 삭제한 후 다시 다운로드를 진행합니다. <br />
+                                        위와 같이 진행하였음에도 동일 현상 발생 시 [무시(I)] 버튼을 클릭한 후 플레이어 설치를 진행합니다.
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="#" class="link-more">더보기</a>
+                        </div>
+                    </div>
+                </section>
+                <!-- //qna -->
+                <!-- fm bnr -->
+                <section class="sec-fmbnr pc">
+                    <div class="container">
+                        <a href="#" class="bnr-comming">
+                            <em class="opening">투자능력을 기르고 싶으세요?</em>
+                            <strong class="tit">지금바로 <span class="fmschool">FMschool</span>을 만나보세요.</strong>
+                            <span class="coming">Coming Soon</span>
+                        </a>
+                    </div>
+                </section>
+                <section class="sec-appdown m">
+                    <a href="#">앱 다운로드 바로가기</a>
+                </section>
+                <!-- //fm bnr -->
+            </div>
+        </main>
+        <!-- //220117 추가 -->
+    </body>
+</html>

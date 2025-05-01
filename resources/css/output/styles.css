@@ -358,7 +358,7 @@ legend {
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  margin: 0 auto;
+  margin: 20px auto 0;
   padding: 10px 20px 10px 25px;
   font-size: 1.5rem;
   font-weight: 600;
@@ -797,7 +797,7 @@ legend {
 
 #container {
   position: relative;
-  padding-top: 240px;
+  padding-top: 200px;
 }
 
 #footer {
@@ -919,10 +919,10 @@ legend {
 }
 @media (min-width: 1024px) {
   .intro__vid {
-    height: 50vh;
+    height: 80vh;
     border-radius: 40px;
     position: absolute;
-    top: 700px;
+    top: 540px;
     left: 50%;
     transform: translateX(-50%);
     transition: width 0.3s ease;
@@ -938,7 +938,7 @@ legend {
 
 .sec-leadin .sec-leadin__cont {
   position: relative;
-  padding-top: 170px;
+  padding-top: 100px;
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -953,6 +953,7 @@ legend {
   }
 }
 .sec-leadin .txt-box .txt-box__middle {
+  display: block;
   margin-top: 20px;
   font-size: clamp(1rem, 7vw, 3.2rem);
 }
