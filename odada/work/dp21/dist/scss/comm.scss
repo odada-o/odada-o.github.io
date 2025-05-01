@@ -231,7 +231,7 @@
 @media screen and (max-width: 992px) {
     #header {
         background-color: $w;
-        border-bottom: 1px solid rgba(rgba($b, 0.2));
+        border-bottom: 1px solid rgba($b, 0.2);
         &.sticky {
             .nav-depth1 {
                 > li > a {
