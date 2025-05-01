@@ -671,8 +671,7 @@ legend {
     gap: 30px;
   }
 }
-#header .util .lang,
-#header .util .all-menu {
+#header .util .btn-util {
   display: flex;
   padding: 12px 20px 10px;
   background: #E7FF6C;
@@ -681,8 +680,7 @@ legend {
   font-size: 1.4rem;
   font-weight: 700;
 }
-#header .util .lang svg,
-#header .util .all-menu svg {
+#header .util .btn-util svg {
   stroke: #1d1d1d;
 }
 
