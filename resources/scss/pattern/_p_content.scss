@@ -47,7 +47,7 @@
     }
 
     .oddodd {
-      font-family: "Comfortaa", sans-serif;
+      font-family: $font-kimm;
       font-size: 40px;
     }
 
@@ -85,12 +85,18 @@
 
 #portfolio {
   padding-top: 100px;
+  .wrap-explain{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
 }
 .wrap-explain {
-  .box-explain {
+  .box-explain {    
+    height: 205px;
     padding: 100px 0 20px;
     border-bottom: 3px solid #000;
-    border-top: 1px solid #000;
+    // border-top: 1px solid #000;
     dt {
       text-indent: -9999px;
       overflow: hidden;
@@ -100,7 +106,7 @@
     dd {
         font-size: 2rem;
       strong {
-        font-size: 5rem;
+        font-size: 3.5rem;
       }
       a {
         color: blue;
@@ -111,5 +117,15 @@
     img {
       display: block;
     }
+  }
+}
+
+#daumkakao {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
 }

@@ -47,14 +47,14 @@
 }
 
 // logo
-  #logo {
-    .logo__link {
-      display: block;
-      font-family: $font-kimm;
-      font-weight: normal;
-      font-size: 32px;
-    }
+.logo {
+  .logo__link {
+    display: block;
+    font-family: $font-kimm;
+    font-weight: normal;
+    font-size: 32px;
   }
+}
 
 // header
 #header {
@@ -254,7 +254,6 @@
 
 // footer
 #footer {
-  border-top: 2px solid $gray-90;
   padding: 28px 0px 20px 0px;
   .inner {
     display: flex;

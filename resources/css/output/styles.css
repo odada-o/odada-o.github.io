@@ -632,7 +632,7 @@ legend {
   }
 }
 
-#logo .logo__link {
+.logo .logo__link {
   display: block;
   font-family: "KIMM", sans-serif;
   font-weight: normal;
@@ -840,7 +840,6 @@ legend {
 }
 
 #footer {
-  border-top: 2px solid #1d1d1d;
   padding: 28px 0px 20px 0px;
 }
 #footer .inner {
@@ -2727,7 +2726,7 @@ legend {
   background: #fff;
 }
 #profile .card .oddodd {
-  font-family: "Comfortaa", sans-serif;
+  font-family: "KIMM", sans-serif;
   font-size: 40px;
 }
 #profile .card img {
@@ -2751,11 +2750,16 @@ legend {
 #portfolio {
   padding-top: 100px;
 }
+#portfolio .wrap-explain {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
 
 .wrap-explain .box-explain {
+  height: 205px;
   padding: 100px 0 20px;
   border-bottom: 3px solid #000;
-  border-top: 1px solid #000;
 }
 .wrap-explain .box-explain dt {
   text-indent: -9999px;
@@ -2767,11 +2771,19 @@ legend {
   font-size: 2rem;
 }
 .wrap-explain .box-explain dd strong {
-  font-size: 5rem;
+  font-size: 3.5rem;
 }
 .wrap-explain .box-explain dd a {
   color: blue;
 }
 .wrap-explain .box-img img {
   display: block;
+}
+
+#daumkakao .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }/*# sourceMappingURL=styles.css.map */
