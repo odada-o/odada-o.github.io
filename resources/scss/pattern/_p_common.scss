@@ -218,6 +218,7 @@
   position: relative;
   width: 100%;
   border: 1px solid #ddd;
+  border-radius: 10px;
   &::before {
     content: '';
     display: block;

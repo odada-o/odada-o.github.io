@@ -550,6 +550,7 @@ legend {
   position: relative;
   width: 100%;
   border: 1px solid #ddd;
+  border-radius: 10px;
 }
 .square::before {
   content: "";
@@ -2382,13 +2383,15 @@ legend {
 }
 .sec-careers .box {
   display: flex;
+  overflow: hidden;
+  border-radius: 20px;
 }
 .sec-careers .box .left {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 600px;
+  height: 470px;
   padding: 0 70px;
   background: #E7FF6C;
 }

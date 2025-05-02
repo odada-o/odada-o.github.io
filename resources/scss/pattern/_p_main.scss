@@ -1451,12 +1451,14 @@
   padding-top: 0;
   .box {
     display: flex;
+    overflow: hidden;
+    border-radius: 20px;
     .left {
       flex: 1;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      height: 600px;
+      height: 470px;
       padding: 0 70px;
       background: $primary;
       @include tabletMore {
