@@ -633,6 +633,10 @@ legend {
   }
 }
 
+#profile > .inner, #portfolio > .inner {
+  max-width: 1980px;
+}
+
 .logo .logo__link {
   display: block;
   font-family: "KIMM", sans-serif;
@@ -2754,7 +2758,7 @@ legend {
 #portfolio .wrap-explain {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 100px;
 }
 
 .wrap-explain .box-explain {
@@ -2771,6 +2775,17 @@ legend {
 .wrap-explain .box-explain dd {
   font-size: 2rem;
 }
+.wrap-explain .box-explain dd .device-support {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 20px;
+  font-size: 1.5rem;
+  color: #666;
+}
+.wrap-explain .box-explain dd .device-support i {
+  font-size: 3.5rem;
+}
 .wrap-explain .box-explain dd strong {
   font-size: 3.5rem;
 }
@@ -2784,10 +2799,21 @@ legend {
      object-fit: cover;
 }
 
-#daumkakao .row {
+#kakao {
+  padding: 200px 0 100px;
+}
+#kakao .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+#kakao .wrap-explain {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+#kakao .box-explain {
+  height: auto;
+  padding-top: 0;
 }/*# sourceMappingURL=styles.css.map */

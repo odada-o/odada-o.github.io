@@ -46,6 +46,14 @@
   }
 }
 
+#profile, #portfolio {
+  > .inner {
+    max-width: 1980px;
+  }
+}
+
+
+
 // logo
 .logo {
   .logo__link {

@@ -88,7 +88,7 @@
   .wrap-explain{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 100px;
   }
 }
 .wrap-explain {
@@ -105,6 +105,17 @@
     }
     dd {
         font-size: 2rem;
+        .device-support {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          margin-left: 20px;
+          font-size: 1.5rem;
+          color: #666;
+          i {
+            font-size: 3.5rem;
+          }
+        }
       strong {
         font-size: 3.5rem;
       }
@@ -122,12 +133,21 @@
   }
 }
 
-#daumkakao {
+#kakao {
+  padding: 200px 0 100px;
   .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
+  }
+  .wrap-explain {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .box-explain {
+    height: auto;
+    padding-top: 0;
   }
 }
