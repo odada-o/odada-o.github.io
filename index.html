@@ -37,6 +37,10 @@
     <!-- Styles -->
     <link rel="stylesheet" href="./resources/css/redesign.css" />
 
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-032MX0Y1QJ"></script>
     <script>
@@ -61,24 +65,35 @@
       </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero-redesign">
-      <div class="container">
-        <div class="hero-content animate-fadeInUp">
-          <div class="hero-badge">
-            <span>✨ 프론트엔드 & UX/UI 전문</span>
-          </div>
-          <h1 class="hero-title">
-            기술의 가치를<br />이끌어내는<br />아하! 오팀
-          </h1>
-          <p class="hero-description">
-            단순한 아웃소싱이 아닌 비즈니스 파트너로 함께합니다.<br />
-            사용자 경험을 최우선으로, 비즈니스 목표에 맞춘 웹 솔루션을 만듭니다.
-          </p>
-          <div class="hero-cta">
-            <a href="#work" class="btn-primary">포트폴리오 보기</a>
-            <a href="mailto:eehd10@naver.com" class="btn-secondary">문의하기</a>
-          </div>
+    <!-- Video Intro Section -->
+    <section class="intro-redesign">
+      <div class="intro-video-wrapper">
+        <video id="introVideo" autoplay loop muted playsinline>
+          <source src="./resources/images/pattern/main/intro-1080.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="intro-overlay"></div>
+      <div class="intro-content">
+        <div class="intro-badge">
+          <span>Frontend & UX/UI Experts</span>
+        </div>
+        <h1 class="intro-title">
+          <span class="word">기술의</span> <span class="word">가치를</span><br />
+          <span class="word">이끌어내는</span><br />
+          <span class="word">아하!</span> <span class="word">오팀</span>
+        </h1>
+        <p class="intro-subtitle">
+          단순한 아웃소싱이 아닌 비즈니스 파트너로 함께합니다.
+        </p>
+        <div class="intro-cta">
+          <a href="#work" class="btn-primary">포트폴리오 보기</a>
+          <a href="mailto:eehd10@naver.com" class="btn-secondary" style="border-color: rgba(255,255,255,0.3); color: white;">문의하기</a>
+        </div>
+      </div>
+      <div class="intro-scroll-indicator">
+        <div class="scroll-down">
+          <span>Scroll</span>
+          <div class="scroll-down-arrow"></div>
         </div>
       </div>
     </section>
@@ -343,7 +358,99 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="https://unpkg.com/split-type"></script>
     <script>
+      // GSAP Intro Animations
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Wait for page load
+      window.addEventListener('load', () => {
+        // Split text for character animation
+        const titleWords = document.querySelectorAll('.intro-title .word');
+
+        // Initial timeline for intro
+        const tl = gsap.timeline({
+          defaults: { ease: 'power4.out' }
+        });
+
+        // Animate intro badge
+        tl.to('.intro-badge', {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          delay: 0.5
+        });
+
+        // Animate title words with stagger
+        titleWords.forEach((word, index) => {
+          tl.to(word, {
+            opacity: 1,
+            y: 0,
+            duration: 0.8,
+            ease: 'power3.out'
+          }, `-=${index === 0 ? 0 : 0.6}`);
+        });
+
+        // Animate subtitle
+        tl.to('.intro-subtitle', {
+          opacity: 1,
+          y: 0,
+          duration: 1
+        }, '-=0.4');
+
+        // Animate CTA buttons
+        tl.to('.intro-cta', {
+          opacity: 1,
+          y: 0,
+          duration: 1
+        }, '-=0.6');
+
+        // Animate scroll indicator
+        tl.to('.intro-scroll-indicator', {
+          opacity: 1,
+          y: 0,
+          duration: 1
+        }, '-=0.8');
+
+        // Parallax effect on scroll
+        gsap.to('.intro-video-wrapper', {
+          scrollTrigger: {
+            trigger: '.intro-redesign',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: 1
+          },
+          y: 200,
+          scale: 1.2,
+          ease: 'none'
+        });
+
+        // Fade out intro content on scroll
+        gsap.to('.intro-content', {
+          scrollTrigger: {
+            trigger: '.intro-redesign',
+            start: 'top top',
+            end: '80% top',
+            scrub: 1
+          },
+          opacity: 0,
+          y: -100,
+          ease: 'none'
+        });
+
+        // Fade out overlay on scroll
+        gsap.to('.intro-overlay', {
+          scrollTrigger: {
+            trigger: '.intro-redesign',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: 1
+          },
+          opacity: 0,
+          ease: 'none'
+        });
+      });
+
       // Smooth scroll
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -359,23 +466,45 @@
         });
       });
 
+      // Scroll down button
+      document.querySelector('.scroll-down')?.addEventListener('click', () => {
+        const portfolioSection = document.querySelector('#work');
+        if (portfolioSection) {
+          const offsetTop = portfolioSection.offsetTop - 80;
+          window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth'
+          });
+        }
+      });
+
       // Header scroll effect
       let lastScroll = 0;
       const header = document.querySelector('.header-redesign');
 
-      window.addEventListener('scroll', () => {
-        const currentScroll = window.pageYOffset;
-
-        if (currentScroll > 100) {
-          header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.05)';
-        } else {
-          header.style.boxShadow = 'none';
+      gsap.to(header, {
+        scrollTrigger: {
+          trigger: 'body',
+          start: '100px top',
+          end: '100px top',
+          onEnter: () => {
+            gsap.to(header, {
+              backgroundColor: 'rgba(255, 255, 255, 0.95)',
+              boxShadow: '0 2px 10px rgba(0,0,0,0.05)',
+              duration: 0.3
+            });
+          },
+          onLeaveBack: () => {
+            gsap.to(header, {
+              backgroundColor: 'rgba(255, 255, 255, 0.8)',
+              boxShadow: 'none',
+              duration: 0.3
+            });
+          }
         }
-
-        lastScroll = currentScroll;
       });
 
-      // Intersection Observer for animations
+      // Intersection Observer for portfolio cards
       const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -384,18 +513,37 @@
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
+            gsap.to(entry.target, {
+              opacity: 1,
+              y: 0,
+              duration: 0.8,
+              ease: 'power3.out'
+            });
           }
         });
       }, observerOptions);
 
-      // Observe portfolio cards
+      // Observe portfolio cards, feature cards, and stat items
       document.querySelectorAll('.portfolio-card, .feature-card, .stat-item').forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = 'all 0.6s ease-out';
+        gsap.set(el, { opacity: 0, y: 30 });
         observer.observe(el);
+      });
+
+      // Section animations
+      gsap.utils.toArray('.section-header').forEach(section => {
+        gsap.from(section.children, {
+          scrollTrigger: {
+            trigger: section,
+            start: 'top 80%',
+            end: 'top 50%',
+            toggleActions: 'play none none reverse'
+          },
+          opacity: 0,
+          y: 30,
+          stagger: 0.2,
+          duration: 1,
+          ease: 'power3.out'
+        });
       });
     </script>
   </body>
