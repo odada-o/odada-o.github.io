@@ -960,7 +960,7 @@ legend {
 }
 @media (min-width: 1024px) {
   .intro__vid {
-    height: 80vh;
+    height: 700px;
     border-radius: 40px;
     position: absolute;
     top: 540px;
@@ -2466,13 +2466,14 @@ legend {
 }
 .sec-works .lst-works {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   margin: 0 auto;
   margin-top: 40px;
 }
 .sec-works .lst-works li {
   margin-bottom: 40px;
+  text-align: center;
 }
 .sec-works .lst-works video {
   width: 100%;

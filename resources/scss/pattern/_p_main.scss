@@ -54,7 +54,7 @@
       border-radius: 20px;
     }
     @include tabletMore {
-      height: 80vh;
+      height: 700px;
       border-radius: 40px;
       position: absolute;
       top: 540px;
@@ -1530,12 +1530,13 @@
 
   .lst-works {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     margin: 0 auto;
     margin-top: 40px;
     li {
       margin-bottom: 40px;
+      text-align: center;
     }
     video {
       width: 100%;
