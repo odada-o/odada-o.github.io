@@ -34,6 +34,9 @@
   }
 }
 
+body {
+  background: $bg-base;
+}
 // grid layout
 .inner {
   position: relative;
@@ -66,7 +69,7 @@
 
 // header
 #header {
-  background-color: rgba(255, 255, 255, 0.65);
+  background-color: transparentize($bg-base, 0.1);
   backdrop-filter: blur(0.5rem);
   position: fixed;
   top: 0;

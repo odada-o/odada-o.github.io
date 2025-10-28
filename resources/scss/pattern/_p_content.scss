@@ -1,15 +1,15 @@
 .portfolio {
   padding: 100px 0;
-  background: #333;
 }
 
 .wrap-portfolio {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 100px;
   img {
     display: block;
     margin: 0 auto;
+    border-top: 10px solid #000;
   }
 }
 
