@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="refresh" content="0; url=/odada" /> -->
+    <!-- 기본 SEO -->
+    <title>오드오드 아하!오팀 – IT 기술 기반의 디지털 서비스 개발사</title>
+    <meta name="description" content="오드오드는 아하!오팀을 통해 기획부터 UX/UI 디자인, 프론트엔드 개발까지 제공하는 IT 기술 기반 디지털 서비스 전문 회사입니다." />
+    <meta name="keywords" content="오드오드, 아하오팀, IT 서비스, 디지털 서비스 개발, 스타트업 아웃소싱, UX 기획, 웹사이트 제작, 퍼블리싱, 프론트엔드 개발, 웹접근성, 인터랙션, 플랫폼 구축" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="오드오드 아하!오팀 – IT 기술 기반 디지털 서비스 전문 기업" />
+    <meta property="og:description" content="기획부터 UX/UI 디자인, 웹개발까지 스타트업을 위한 디지털 솔루션을 제공합니다. 오드오드의 전문 개발 브랜드, 아하오팀과 함께하세요." />
+    <meta property="og:image" content="https://github.com/odada-o/odada-o.github.io/blob/main/resources/images/pattern/common/og-image@1x.png?raw=true" />
+    <meta property="og:url" content="https://oddodd.io/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="오드오드 아하!오팀 – 디지털 서비스 개발 전문팀" />
+    <meta name="twitter:description" content="IT 기술 기반의 UX/UI 디자인과 웹개발을 통해 스타트업의 성공적인 시작을 함께합니다." />
+    <meta name="twitter:image" content="https://github.com/odada-o/odada-o.github.io/blob/main/resources/images/pattern/common/og-image@1x.png?raw=true" />
+
+
+    <!-- naver -->
+    <meta name="naver-site-verification" content="bcb8f27d40cdb2def98e6d9a8eda842a4f4d82ef" />
+
+    <link rel="shortcut icon" href="http://www.mysite.com/favicon.ico" />
+    <!-- css -->
+     <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/duotone/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="./resources/css/pattern_css.css" />
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@latest/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.8/countUp.min.js"></script>
+    <script defer src="./resources/js/ui-swiper.js"></script>
+    <script defer src="./resources/js/ui-pattern-script.js"></script>
+    <script defer src="./resources/js/ui-counter.js"></script>
+    <script defer src="./resources/js/include.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-032MX0Y1QJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-032MX0Y1QJ');
+    </script>
+  </head>
+  <body>
+    <div id="skip-nav">
+      <a href="#gnb">메뉴 바로가기</a>
+      <a href="#container">본문 바로가기</a>
+    </div>
+    <div id="wrap">
+      <header id="header" include-html="./pages/layout/header.html"></header>
+
+      <div id="container">
+          <div id="profile">
+              <div class="inner">
+                <h2 class="blind">Portfolio</h2>
+                <ul class="lst-career">
+                    <li>
+                        <div class="card">
+                            <div class="image oddodd">
+                                <div class="logo">od<b>d:o</b>dd</div>
+                            </div>
+                            <h3>오드오드</h3>
+                            <p>프론트엔드 중심의 UI/UX 리디자인 전문 스튜디오<br />홈페이지 개편, 반응형 웹, 공공기관 제안 대응</p>
+                            <div class="card__hashtags">
+                                <span class="hashtag">#React</span>
+                                <span class="hashtag">#Vue</span>
+                                <span class="hashtag">#GSAP</span>
+                                <span class="hashtag">#웹접근성</span>
+                                <span class="hashtag">#나라장터</span>
+                            </div>
+                          </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <span class="image daum">
+                                <img src="resources/images/portfolio/intro/logo-daumkakao.png" alt="daumkakao" />
+                                <!-- <img src="resources/images/portfolio/intro/logo-daumkakao.png" alt="daumkakao" /> -->
+                            </span>
+                            <h3>dk techin for kakao</h3>
+                            <p>Daum, kakao UI개발</p>
+                            <div class="card__hashtags">
+                                <span class="hashtag">#React</span>
+                                <span class="hashtag">#Vue.js</span>
+                                <span class="hashtag">#프론트엔드 개발</span>
+                                <span class="hashtag">#웹표준</span>
+                                <span class="hashtag">#웹접근성</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <span class="image" style="font-size: 24px;">
+                                서울시 뉴딜일자리 사업, <br> 그린컴퓨터, 더조은, 이젠아카데미
+                            </span>
+                            <h3>프론트엔드 강사</h3>
+                            <p>
+                                AI를 활용한 프론트엔드(React, Vue.js) <br>
+                                UIUX 반응형 웹 프로젝트
+                            </p>
+                            <div class="card__hashtags">
+                                <span class="hashtag">#React</span>
+                                <span class="hashtag">#Vue.js</span>
+                                <span class="hashtag">#인터랙션</span>
+                            </div>
+                          </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <span class="image">
+                                <img src="resources/images/portfolio/intro/logo-paxnet.png" alt="paxnet" />
+                            </span>
+                            <h3>No.1 재테크포털 모네타/팍스넷</h3>
+                            <p>
+                                사이트 내 UI/UX, 웹디자인, 웹퍼블리싱<br />
+                                모의투자대회
+                            </p>
+                            <div class="card__hashtags">
+                                <span class="hashtag">#HTML5</span>
+                                <span class="hashtag">#CSS3</span>
+                                <span class="hashtag">#Photoshop</span>
+                                <span class="hashtag">#Illustrator</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <span class="image"><img src="resources/images/portfolio/intro/logo-woongjin.png" alt="웅진패스원" /></span>
+                            <h3>웅진패스원(KG패스원)</h3>
+                            <p>농협, 동국제강, SK네트웍스, 대한병원협회, <br />아주그룹 직무교육 사이트 제작</p>
+                            <div class="card__hashtags">
+                                <span class="hashtag">#daum</span>
+                                <span class="hashtag">#mobile 최적화</span>
+                                <span class="hashtag">#웹표준</span>
+                                <span class="hashtag">#웹접근성</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <span class="image"><img src="resources/images/portfolio/intro/logo-flash.png" alt="플래시책저" /></span>
+                            <h3>플래시 책 저</h3>
+                            <p>
+                                플래시8 Motion+Action <br />
+                                플래시MX 모든걸 가르쳐주마
+                            </p>
+                            <div class="card__hashtags">
+                                <span class="hashtag">#제우미디어</span>
+                                <span class="hashtag">#flash</span>
+                                <span class="hashtag">#Motion</span>
+                                <span class="hashtag">#Action</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="portfolio">
+            <div class="inner">
+                <div class="tab-content">
+                    <div id="flato" class="tab-pane fade in active">
+                        <h2 class="blind">odd:odd</h2>
+                        <div class="wrap-explain">
+                            <!-- 삼성선물 Open API -->
+                            <div id="ssf" class="wrap-project">
+                                <div class="box-explain">
+                                    <dl>
+                                        <dt>작업명</dt>
+                                        <dd>
+                                            <strong> 삼성선물 Open API</strong>
+                                            <span class="device-support">
+                                              <i class="las la-mobile"></i>
+                                              <i class="las la-tablet"></i>
+                                              <i class="las la-desktop"></i>
+                                            </span>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>작업url</dt>
+                                        <dd>
+                                            <a href="https://openapi.ssfutures.com/#/" target="_blank">https://openapi.ssfutures.com/#/</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="row text-center box-img">
+                                    <div class="col-md-6">
+                                        <img src="resources/images/portfolio/oddodd/ssf-1.png" alt="" style="max-height: 1220px;" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ls증권 -->
+                            <div id="ls" class="wrap-project">
+                                <div class="box-explain">
+                                    <dl>
+                                        <dt>작업명</dt>
+                                        <dd>
+                                          <strong>LS증권 롱숏클럽</strong>
+                                          <span class="device-support">
+                                            <i class="las la-mobile"></i>
+                                            <i class="las la-desktop"></i>
+                                          </span>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>작업url</dt>
+                                        <dd>
+                                            <a href="https://lsclub.co.kr/" target="_blank">https://lsclub.co.kr/</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="row text-center box-img">
+                                    <div class="col-md-6">
+                                        <img src="resources/images/portfolio/oddodd/PC_Main_NEW.jpg" alt="" style="height: 1220px;" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- stx -->
+                            <div class="wrap-project">
+                                <div class="box-explain">
+                                    <dl>
+                                        <dt>작업명</dt>
+                                        <dd>
+                                          <strong>한국 ST 거래</strong>
+                                          <span class="device-support">
+                                            <i class="las la-mobile"></i>
+                                            <i class="las la-desktop"></i>
+                                          </span>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>작업url</dt>
+                                        <dd>
+                                            <a href="https://krste.co.kr/" target="_blank">https://krste.co.kr/</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="row text-center box-img">
+                                    <div class="col-md-6">
+                                        <img src="resources/images/portfolio/oddodd/STexchange_Main기본화면, 퀵주문, 매도.png" alt="" style="height: 410px;" />
+                                    </div>
+                                    <br>
+                                    <div class="col-md-6">
+                                        <img src="resources/images/portfolio/oddodd/STexchange_투자내역 (거래내역).png" alt="" style="height: 410px;" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- bosagora -->
+                            <div id="boaspace" class="wrap-project">
+                                <div class="box-explain">
+                                    <dl>
+                                        <dt>작업명</dt>
+                                        <dd>
+                                          <strong>BOASpace NFT Market</strong>
+                                          <span class="device-support">
+                                            <i class="las la-mobile"></i>
+                                            <i class="las la-desktop"></i>
+                                          </span>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>작업url</dt>
+                                        <dd>
+                                            <a href="https://boaspace.io/" target="_blank">https://boaspace.io/</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="row text-center box-img">
+                                    <div class="col-md-6">
+                                        <img src="resources/images/portfolio/oddodd/Assets_more3_1920.png" alt="" />
+                                        <!-- <img src="resources/images/portfolio/oddodd/Assets_more1_1920.png" alt="" /> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- bosagora -->
+                            <div class="wrap-project">
+                                <div class="box-explain">
+                                    <dl>
+                                        <dt>작업명</dt>
+                                        <dd>
+                                          <strong>BOSagora</strong>
+                                          <span class="device-support">
+                                            <i class="las la-mobile"></i>
+                                            <i class="las la-desktop"></i>
+                                          </span>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>작업url</dt>
+                                        <dd>
+                                            <a href="https://bosagora.io/ko/" target="_blank">https://bosagora.io/ko/</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="row text-center box-img">
+                                    <div class="col-md-6">
+                                        <img src="resources/images/portfolio/oddodd/bosagora-1.jpg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- bizboa -->
+                            <div class="wrap-project">
+                                <div class="box-explain">
+                                    <dl>
+                                        <dt>작업명</dt>
+                                        <dd>
+                                          <strong>BIZBOA Coin</strong>
+                                          <span class="device-support">
+                                            <i class="las la-mobile"></i>
+                                            <i class="las la-desktop"></i>
+                                          </span>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>작업url</dt>
+                                        <dd>
+                                            <a href="https://github.com/odada-o/bizboa-bridge-contracts" target="_blank">https://github.com/odada-o/bizboa-bridge-contracts</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+
+                            <!-- fm스쿨 -->
+                            <div class="wrap-project">
+                                <div class="box-explain">
+                                    <dl>
+                                        <dt>작업명</dt>
+                                        <dd>
+                                          <strong>FMschool</strong>
+                                          <span class="device-support">
+                                            <i class="las la-mobile"></i>
+                                            <i class="las la-desktop"></i>
+                                          </span>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>작업url</dt>
+                                        <dd>
+                                            <a href="https://fmschool.co.kr/" target="_blank">https://fmschool.co.kr/</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="row text-center box-img">
+                                    <div class="col-md-12">
+                                        <img src="resources/images/portfolio/oddodd/fmschool.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 한국전자인증 -->
+                            <div id="cert" class="wrap-project">
+                                <div class="box-explain">
+                                    <dl>
+                                        <dt>작업명</dt>
+                                        <dd>
+                                          <strong>한국전자인증 웹접근성 평가인증</strong>
+                                          <span class="device-support">
+                                            <i class="las la-mobile"></i>
+                                            <i class="las la-desktop"></i>
+                                          </span>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>작업url</dt>
+                                        <dd>
+                                            <a href="https://www.crosscert.com/" target="_blank">https://www.crosscert.com/</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="row text-center box-img">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <img src="resources/images/portfolio/oddodd/210100-crosscert.jpeg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 2000n -->
+                            <div class="wrap-project">
+                                <div class="box-explain">
+                                    <dl>
+                                        <dt>작업명</dt>
+                                        <dd>
+                                          <strong>이천동행누리센터 웹접근성 평가인증</strong>
+                                          <span class="device-support">
+                                            <i class="las la-desktop"></i>
+                                          </span>
+                                        </dd>
+                                        <!-- <dt>작업영역</dt>
+                <dd>디자인 + 퍼블리싱 + jQuery</dd>
+                <dt>작업기간</dt>
+                <dd>1달</dd> -->
+                                    </dl>
+                                    <dl>
+                                        <dt>작업URL</dt>
+                                        <dd>
+                                            <a href="https://www.2000happydream.or.kr/" target="_blank">https://www.2000happydream.or.kr/</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="row text-center box-img">
+                                    <div class="col-md-6">
+                                        <img src="resources/images/portfolio/oddodd/191023-2000n-1.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 용인시 교통약자지원센터 -->
+                            <div class="wrap-project">
+                                <div class="box-explain">
+                                    <dl>
+                                        <dt>작업명</dt>
+                                        <dd>
+                                          <strong>용인시 교통약자 이동지원센터</strong>
+                                          <span class="device-support">
+                                            <i class="las la-desktop"></i>
+                                          </span>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="row text-center box-img">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <img src="resources/images/portfolio/oddodd/210601-damsyn-1.jpg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 환경지킴이 복무관리시스템 -->
+                             <div class="wrap-project">
+                            <div class="box-explain">
+                                <dl>
+                                    <dt>작업명</dt>
+                                    <dd>
+                                      <strong>환경부 환경지킴이 복무관리시스템</strong>
+                                      <span class="device-support">
+                                        <i class="las la-desktop"></i>
+                                      </span>
+                                    </dd>
+                                    <!-- <dt>작업영역</dt>
+            <dd>디자인 + 퍼블리싱 + jQuery</dd>
+            <dt>작업기간</dt>
+            <dd>1달</dd> -->
+                                </dl>
+                            </div>
+                            <div class="row text-center box-img">
+                                <div class="col-md-6">
+                                    <img src="resources/images/portfolio/oddodd/210518-5rc-1.png" alt="환경지킴이 복무관리시스템 이미지" />
+                                </div>
+                            </div>
+                            </div>                            
+
+                        </div>
+                    </div>
+                    <div id="kakao" class="tab-pane fade">
+                        <h2 class="blind">kakao</h2>
+                        <div class="wrap-explain">
+                            <div class="box-explain">
+                                <dl>
+                                    <dt>작업명</dt>
+                                    <dd><strong>kakao 선물하기</strong></dd>
+                                </dl>
+                            </div>
+
+                            <div class="box-explain">
+                                <dl>
+                                    <dt>작업명</dt>
+                                    <dd><strong>Daum 백과</strong></dd>
+                                </dl>
+                            </div>
+
+                            <div class="box-explain">
+                                <dl>
+                                    <dt>작업명</dt>
+                                    <dd><strong>Daum 웹툰</strong></dd>
+                                </dl>
+                            </div>
+                            
+
+                            <div class="box-explain">
+                                <dl>
+                                    <dt>작업명</dt>
+                                    <dd><strong>Daum 뮤직</strong></dd>
+                                </dl>
+                            </div>
+                            
+
+                            <div class="box-explain">
+                                <dl>
+                                    <dt>작업명</dt>
+                                    <dd><strong>Daum 운세</strong></dd>
+                                </dl>
+                            </div>
+                            
+
+                            <div class="box-explain">
+                                <dl>
+                                    <dt>작업명</dt>
+                                    <dd><strong>kakao Mobile AD</strong></dd>
+                                </dl>
+                            </div>
+                            
+
+                            <div class="box-explain">
+                                <dl>
+                                    <dt>작업명</dt>
+                                    <dd><strong>TISTORY 관리</strong></dd>
+                                </dl>
+                            </div>
+                            
+
+                            <div class="box-explain">
+                                <dl>
+                                    <dt>작업명</dt>
+                                    <dd><strong>키즈짱 디즈니존</strong></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+
+      <footer id="footer" include-html="./pages/layout/footer.html"></footer>
+    </div>
+  </body>
+</html>
