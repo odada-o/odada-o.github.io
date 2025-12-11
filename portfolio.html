@@ -65,6 +65,10 @@
             <p class="pf-clients__desc">다양한 산업 분야의 클라이언트와 함께했습니다.</p>
             <ul class="pf-clients__list">
               <li class="pf-clients__item">
+                <span class="client-name">hanui.io</span>
+                <span class="client-desc">KRDS UI 라이브러리</span>
+              </li>
+              <li class="pf-clients__item">
                 <span class="client-name">삼성선물</span>
                 <span class="client-desc">Open API</span>
               </li>
@@ -105,11 +109,111 @@
           <div class="pf-projects__inner">
             <h2 class="pf-projects__title">Projects</h2>
 
-            <!-- Project 1: 삼성선물 -->
-            <article class="pf-accordion" data-category="fintech">
+            <!-- Project 1: hanui.io -->
+            <article id="hanui" class="pf-accordion" data-category="opensource">
               <button class="pf-accordion__header" aria-expanded="false">
                 <div class="pf-accordion__info">
                   <span class="pf-accordion__num">01</span>
+                  <h3 class="pf-accordion__title">HANUI - KRDS React UI Library</h3>
+                  <span class="pf-accordion__category">Open Source</span>
+                </div>
+                <div class="pf-accordion__meta">
+                  <span class="pf-accordion__period">2025.11 - Present</span>
+                  <span class="pf-accordion__toggle"><i class="las la-plus"></i></span>
+                </div>
+              </button>
+              <div class="pf-accordion__content">
+                <div class="pf-accordion__body">
+                  <div class="pf-detail">
+                    <div class="pf-detail__overview">
+                      <h4>프로젝트 개요</h4>
+                      <dl class="pf-detail__list">
+                        <div><dt>프로젝트 유형</dt><dd>오픈소스 UI 컴포넌트 라이브러리</dd></div>
+                        <div><dt>진행 기간</dt><dd>2024년 ~ 현재 (지속 업데이트)</dd></div>
+                        <div><dt>기술 스택</dt><dd>React, TypeScript, Storybook, Vite, SCSS, WCAG 2.1, KRDS</dd></div>
+                        <div><dt>라이선스</dt><dd>MIT License</dd></div>
+                      </dl>
+                    </div>
+
+                    <div class="pf-detail__role">
+                      <h4>프로젝트 소개</h4>
+                      <ul>
+                        <li><strong>KRDS 준수:</strong> 대한민국 정부 디자인 시스템(Korea Republic Design System) 완벽 준수</li>
+                        <li><strong>접근성 인증:</strong> WCAG 2.1 AA 등급 준수, 스크린리더 및 키보드 네비게이션 완벽 지원</li>
+                        <li><strong>프레임워크 호환:</strong> eGovFrame 5.0 및 Next.js 14 공식 지원</li>
+                        <li><strong>50+ 컴포넌트:</strong> Button, Input, Modal, Table, DatePicker 등 실무에 필요한 모든 컴포넌트 제공</li>
+                      </ul>
+                    </div>
+
+                    <div class="pf-detail__tasks">
+                      <h4>주요 특징</h4>
+                      <div class="pf-detail__task-group">
+                        <h5>정부 표준 디자인 시스템</h5>
+                        <ul>
+                          <li>행정안전부 KRDS 가이드라인 100% 준수</li>
+                          <li>공공기관 웹사이트 구축 시 즉시 적용 가능</li>
+                          <li>디자인 토큰 기반 테마 시스템으로 커스터마이징 용이</li>
+                        </ul>
+                      </div>
+                      <div class="pf-detail__task-group">
+                        <h5>개발자 경험 (DX)</h5>
+                        <ul>
+                          <li>TypeScript 기반 완벽한 타입 정의 및 자동완성 지원</li>
+                          <li>Storybook 문서화: 모든 컴포넌트 인터랙티브 데모 제공</li>
+                          <li>Tree-shaking 지원으로 번들 사이즈 최적화</li>
+                          <li>npm/yarn 패키지 배포 및 CDN 지원</li>
+                        </ul>
+                      </div>
+                      <div class="pf-detail__task-group">
+                        <h5>접근성 (A11y)</h5>
+                        <ul>
+                          <li>WAI-ARIA 패턴 적용: 모든 인터랙티브 컴포넌트</li>
+                          <li>키보드 네비게이션: Tab, Arrow, Enter, Escape 완벽 지원</li>
+                          <li>포커스 관리: Modal, Dropdown 등 포커스 트랩 구현</li>
+                          <li>색상 대비 4.5:1 이상 보장, 고대비 모드 지원</li>
+                        </ul>
+                      </div>
+                      <div class="pf-detail__task-group">
+                        <h5>컴포넌트 구성</h5>
+                        <ul>
+                          <li>기본 UI: Button, Input, Checkbox, Radio, Select, Switch, Slider</li>
+                          <li>레이아웃: Grid, Stack, Container, Card, Divider</li>
+                          <li>네비게이션: Tabs, Breadcrumb, Pagination, Menu, Sidebar</li>
+                          <li>피드백: Modal, Toast, Alert, Progress, Skeleton</li>
+                          <li>데이터: Table, DataGrid, Tree, Accordion, Timeline</li>
+                          <li>입력: DatePicker, TimePicker, FileUpload, Editor</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 스크린샷 -->
+                  <div class="pf-screenshots">
+                    <img src="./resources/images/portfolio/oddodd/hanui-1.png" alt="hanui.io 메인 페이지 - KRDS 기반 React 컴포넌트 라이브러리" loading="lazy">
+                    <img src="./resources/images/portfolio/oddodd/hanui-2.png" alt="hanui.io 컴포넌트 문서 - Header 컴포넌트 상세" loading="lazy">
+                  </div>
+
+                  <!-- 링크 -->
+                  <div class="pf-link" style="margin-top: 1.5rem; display: flex; gap: 1.5rem; flex-wrap: wrap;">
+                    <a href="https://www.hanui.io" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--pf-accent); font-size: 1.5rem; text-decoration: none;">
+                      <i class="las la-external-link-alt"></i> hanui.io 공식 사이트
+                    </a>
+                    <a href="https://github.com/hanui-labs/hanui" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--pf-accent); font-size: 1.5rem; text-decoration: none;">
+                      <i class="lab la-github"></i> GitHub Repository
+                    </a>
+                    <a href="https://www.npmjs.com/package/@aspect22/hanui" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--pf-accent); font-size: 1.5rem; text-decoration: none;">
+                      <i class="lab la-npm"></i> npm Package
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2: 삼성선물 -->
+            <article class="pf-accordion" data-category="fintech">
+              <button class="pf-accordion__header" aria-expanded="false">
+                <div class="pf-accordion__info">
+                  <span class="pf-accordion__num">02</span>
                   <h3 class="pf-accordion__title">삼성선물 Open API</h3>
                   <span class="pf-accordion__category">Fintech</span>
                 </div>
@@ -190,11 +294,11 @@
               </div>
             </article>
 
-            <!-- Project 2: LS증권 -->
+            <!-- Project 3: LS증권 -->
             <article class="pf-accordion" data-category="fintech">
               <button class="pf-accordion__header" aria-expanded="false">
                 <div class="pf-accordion__info">
-                  <span class="pf-accordion__num">02</span>
+                  <span class="pf-accordion__num">03</span>
                   <h3 class="pf-accordion__title">LS증권 롱숏클럽</h3>
                   <span class="pf-accordion__category">Investment Community</span>
                 </div>
@@ -266,11 +370,11 @@
               </div>
             </article>
 
-            <!-- Project 3: 한국ST거래 -->
+            <!-- Project 4: 한국ST거래 -->
             <article class="pf-accordion" data-category="fintech">
               <button class="pf-accordion__header" aria-expanded="false">
                 <div class="pf-accordion__info">
-                  <span class="pf-accordion__num">03</span>
+                  <span class="pf-accordion__num">04</span>
                   <h3 class="pf-accordion__title">한국 ST 거래</h3>
                   <span class="pf-accordion__category">Fintech</span>
                 </div>
@@ -342,11 +446,11 @@
               </div>
             </article>
 
-            <!-- Project 4: BOASpace -->
+            <!-- Project 5: BOASpace -->
             <article class="pf-accordion" data-category="web3">
               <button class="pf-accordion__header" aria-expanded="false">
                 <div class="pf-accordion__info">
-                  <span class="pf-accordion__num">04</span>
+                  <span class="pf-accordion__num">05</span>
                   <h3 class="pf-accordion__title">BOASpace NFT Market</h3>
                   <span class="pf-accordion__category">Web3 / NFT</span>
                 </div>
@@ -419,11 +523,11 @@
               </div>
             </article>
 
-            <!-- Project 5: 한국전자인증 -->
+            <!-- Project 6: 한국전자인증 -->
             <article class="pf-accordion" data-category="public">
               <button class="pf-accordion__header" aria-expanded="false">
                 <div class="pf-accordion__info">
-                  <span class="pf-accordion__num">05</span>
+                  <span class="pf-accordion__num">06</span>
                   <h3 class="pf-accordion__title">한국전자인증</h3>
                   <span class="pf-accordion__category">Web Accessibility</span>
                 </div>
@@ -490,11 +594,11 @@
               </div>
             </article>
 
-            <!-- Project 6: 환경부 -->
+            <!-- Project 7: 환경부 -->
             <article class="pf-accordion" data-category="public">
               <button class="pf-accordion__header" aria-expanded="false">
                 <div class="pf-accordion__info">
-                  <span class="pf-accordion__num">06</span>
+                  <span class="pf-accordion__num">07</span>
                   <h3 class="pf-accordion__title">환경부 환경지킴이 복무관리시스템</h3>
                   <span class="pf-accordion__category">Public Sector</span>
                 </div>
@@ -563,11 +667,11 @@
               </div>
             </article>
 
-            <!-- Project 7: 용인시 -->
+            <!-- Project 8: 용인시 -->
             <article class="pf-accordion" data-category="public">
               <button class="pf-accordion__header" aria-expanded="false">
                 <div class="pf-accordion__info">
-                  <span class="pf-accordion__num">07</span>
+                  <span class="pf-accordion__num">08</span>
                   <h3 class="pf-accordion__title">용인시 교통약자 이동지원센터</h3>
                   <span class="pf-accordion__category">Public Sector</span>
                 </div>
@@ -606,11 +710,11 @@
               </div>
             </article>
 
-            <!-- Project 8: 이천 동행누리센터 -->
+            <!-- Project 9: 이천 동행누리센터 -->
             <article class="pf-accordion" data-category="public">
               <button class="pf-accordion__header" aria-expanded="false">
                 <div class="pf-accordion__info">
-                  <span class="pf-accordion__num">08</span>
+                  <span class="pf-accordion__num">09</span>
                   <h3 class="pf-accordion__title">이천 동행누리센터</h3>
                   <span class="pf-accordion__category">Public Sector</span>
                 </div>
