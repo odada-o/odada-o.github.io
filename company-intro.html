@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OddOdd 회사소개서</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="./resources/css/company-intro.css">
+</head>
+<body>
+  <!-- 네비게이션 -->
+  <nav class="slide-nav">
+    <button class="nav-btn prev" onclick="prevSlide()"><i class="fas fa-chevron-left"></i></button>
+    <span class="slide-counter"><span id="currentSlide">1</span> / <span id="totalSlides">12</span></span>
+    <button class="nav-btn next" onclick="nextSlide()"><i class="fas fa-chevron-right"></i></button>
+  </nav>
+
+  <div class="slides-container">
+
+    <!-- Slide 1: 표지 -->
+    <section class="slide slide-cover" data-slide="1">
+      <div class="slide-inner">
+        <div class="cover-content">
+          <h1 class="cover-headline">웹사이트가 곧 첫인상입니다.</h1>
+          <p class="cover-subline">당신의 브랜드를 제대로 보여드립니다</p>
+          <div class="cover-visual">
+            <div class="browser-mockup">
+              <div class="browser-header">
+                <span class="browser-dot"></span>
+                <span class="browser-dot"></span>
+                <span class="browser-dot"></span>
+              </div>
+              <div class="browser-content">
+                <div class="mock-nav"></div>
+                <div class="mock-hero">
+                  <div class="mock-text"></div>
+                  <div class="mock-text short"></div>
+                </div>
+                <div class="mock-cards">
+                  <div class="mock-card"></div>
+                  <div class="mock-card"></div>
+                  <div class="mock-card"></div>
+                </div>
+              </div>
+            </div>
+            <div class="floating-element el-1"></div>
+            <div class="floating-element el-2"></div>
+            <div class="floating-element el-3"></div>
+          </div>
+          <p class="cover-brand">oddodd.io</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 2: 고민 -->
+    <section class="slide slide-problems" data-slide="2">
+      <div class="slide-inner">
+        <h2 class="slide-title">이런 고민 있으신가요?</h2>
+        <div class="problems-grid">
+          <div class="problem-card">
+            <div class="problem-icon">
+              <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- 지갑 -->
+                <rect x="8" y="16" width="40" height="28" rx="4" fill="#d4e5ed" stroke="#1d1d1d" stroke-width="2.5"/>
+                <rect x="8" y="16" width="40" height="10" rx="4" fill="#1d1d1d"/>
+                <rect x="32" y="30" width="12" height="8" rx="3" fill="#E7FF6C" stroke="#1d1d1d" stroke-width="2"/>
+                <circle cx="38" cy="34" r="2" fill="#1d1d1d"/>
+              </svg>
+            </div>
+            <p class="problem-text">"홈페이지 만들고 싶은데<br><strong>대행사는 너무 비싸요</strong>"</p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon">
+              <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- 팔레트 -->
+                <ellipse cx="26" cy="30" rx="18" ry="16" fill="#d4e5ed" stroke="#1d1d1d" stroke-width="2.5"/>
+                <circle cx="18" cy="26" r="4" fill="#1d1d1d"/>
+                <circle cx="26" cy="38" r="3" fill="#E7FF6C" stroke="#1d1d1d" stroke-width="1.5"/>
+                <circle cx="34" cy="28" r="3" fill="#1d1d1d"/>
+                <ellipse cx="22" cy="34" rx="2.5" ry="3" fill="#1d1d1d"/>
+              </svg>
+            </div>
+            <p class="problem-text">"개발자한테 맡겼는데<br><strong>디자인이 별로예요</strong>"</p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon">
+              <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- 모니터 + 코드 -->
+                <rect x="8" y="10" width="40" height="30" rx="4" fill="#d4e5ed" stroke="#1d1d1d" stroke-width="2.5"/>
+                <rect x="12" y="14" width="32" height="22" rx="2" fill="#1d1d1d"/>
+                <path d="M20 22l-4 4 4 4" stroke="#d4e5ed" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M36 22l4 4-4 4" stroke="#d4e5ed" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M30 20l-4 12" stroke="#E7FF6C" stroke-width="2.5" stroke-linecap="round"/>
+                <rect x="22" y="40" width="12" height="4" rx="2" fill="#1d1d1d"/>
+              </svg>
+            </div>
+            <p class="problem-text">"디자이너한테 맡겼는데<br><strong>개발이 안 돼요</strong>"</p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon">
+              <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- 빌딩 -->
+                <rect x="12" y="16" width="32" height="32" rx="3" fill="#d4e5ed" stroke="#1d1d1d" stroke-width="2.5"/>
+                <rect x="18" y="22" width="6" height="6" rx="1.5" fill="#E7FF6C" stroke="#1d1d1d" stroke-width="1.5"/>
+                <rect x="32" y="22" width="6" height="6" rx="1.5" fill="#E7FF6C" stroke="#1d1d1d" stroke-width="1.5"/>
+                <rect x="18" y="34" width="6" height="6" rx="1.5" fill="#1d1d1d"/>
+                <rect x="32" y="34" width="6" height="6" rx="1.5" fill="#1d1d1d"/>
+                <rect x="24" y="38" width="8" height="10" rx="2" fill="#1d1d1d"/>
+              </svg>
+            </div>
+            <p class="problem-text">"대기업 외주사는<br><strong>소규모는 안 받아줘요</strong>"</p>
+          </div>
+        </div>
+        <div class="problems-solution">
+          <i class="fas fa-arrow-down"></i>
+          <p><span class="line-highlight"><strong>오드오드</strong></span>가 딱 맞습니다</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 3: 오드오드는 -->
+    <section class="slide slide-about" data-slide="3">
+      <div class="slide-inner">
+        <h2 class="slide-title">오드오드는</h2>
+        <p class="slide-subtitle">소규모 팀이지만 <span class="line-highlight">대기업 퀄리티</span></p>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- 레이어 아이콘 -->
+                <rect x="6" y="32" width="44" height="14" rx="4" fill="#d4e5ed" stroke="#1d1d1d" stroke-width="2.5"/>
+                <rect x="10" y="20" width="36" height="12" rx="4" fill="#d4e5ed" stroke="#1d1d1d" stroke-width="2.5"/>
+                <rect x="14" y="8" width="28" height="12" rx="4" fill="#E7FF6C" stroke="#1d1d1d" stroke-width="2.5"/>
+                <circle cx="28" cy="14" r="3" fill="#1d1d1d"/>
+              </svg>
+            </div>
+            <h3>기획 + 디자인 + 개발<br>원스톱</h3>
+            <p>따로 맡길 필요 없이 한 번에</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- 돼지 저금통 -->
+                <ellipse cx="28" cy="32" rx="18" ry="14" fill="#d4e5ed" stroke="#1d1d1d" stroke-width="2.5"/>
+                <ellipse cx="28" cy="32" rx="12" ry="9" fill="#E7FF6C"/>
+                <circle cx="22" cy="30" r="2.5" fill="#1d1d1d"/>
+                <circle cx="34" cy="30" r="2.5" fill="#1d1d1d"/>
+                <ellipse cx="28" cy="36" rx="4" ry="2" fill="#1d1d1d"/>
+                <!-- 귀 -->
+                <ellipse cx="16" cy="22" rx="4" ry="6" fill="#d4e5ed" stroke="#1d1d1d" stroke-width="2"/>
+                <ellipse cx="40" cy="22" rx="4" ry="6" fill="#d4e5ed" stroke="#1d1d1d" stroke-width="2"/>
+                <!-- 동전 투입구 -->
+                <rect x="24" y="16" width="8" height="3" rx="1.5" fill="#1d1d1d"/>
+              </svg>
+            </div>
+            <h3>합리적인 가격</h3>
+            <p>대행사 대비 30~50% 절감</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- 말풍선 두 개 -->
+                <path d="M6 14h28a4 4 0 014 4v14a4 4 0 01-4 4H18l-8 8V36H6V14z" fill="#d4e5ed" stroke="#1d1d1d" stroke-width="2.5" stroke-linejoin="round"/>
+                <path d="M18 8h28a4 4 0 014 4v14a4 4 0 01-4 4h-4v8l-8-8H18a4 4 0 01-4-4V12a4 4 0 014-4z" fill="#E7FF6C" stroke="#1d1d1d" stroke-width="2.5" stroke-linejoin="round"/>
+                <circle cx="24" cy="19" r="2" fill="#1d1d1d"/>
+                <circle cx="32" cy="19" r="2" fill="#1d1d1d"/>
+                <circle cx="40" cy="19" r="2" fill="#1d1d1d"/>
+              </svg>
+            </div>
+            <h3>직접 소통</h3>
+            <p>담당자가 직접 기획부터 개발까지</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- 번개 -->
+                <path d="M32 4L16 28h12l-4 24 20-30H30l6-18h-4z" fill="#E7FF6C" stroke="#1d1d1d" stroke-width="2.5" stroke-linejoin="round"/>
+                <!-- 속도선 -->
+                <path d="M8 20h6M6 28h8M8 36h6" stroke="#1d1d1d" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>빠른 대응</h3>
+            <p>소규모팀이라 의사결정 빠름</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 4: 대표 소개 -->
+    <section class="slide slide-ceo" data-slide="4">
+      <div class="slide-inner">
+        <h2 class="slide-title">20년 경력의 전문가</h2>
+        <div class="ceo-content">
+          <div class="ceo-info">
+            <h3 class="ceo-name">대표 정미애</h3>
+            <ul class="ceo-career">
+              <li><i class="fas fa-briefcase"></i> 프론트엔드/디자인 경력 <strong class="line-highlight">20년+</strong></li>
+              <li><i class="fas fa-building"></i> 전) 카카오(다음서비스) 프론트엔드</li>
+              <li><i class="fas fa-building"></i> 전) SKT 자회사 팍스넷 디자인팀</li>
+              <li><i class="fas fa-certificate"></i> 웹디자인기능사 / 정보처리기능사</li>
+              <li><i class="fas fa-book"></i> 플래시 모션&액션 저서 (2003, 2006)</li>
+            </ul>
+            <p class="ceo-highlight">금융권부터 공공기관까지<br>다양한 경험</p>
+          </div>
+          <div class="ceo-visual">
+            <div class="experience-badge">
+              <span class="exp-number">20</span>
+              <span class="exp-text">Years<br>Experience</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 5: 주요 고객사 -->
+    <section class="slide slide-clients" data-slide="5">
+      <div class="slide-inner">
+        <h2 class="slide-title">주요 고객사</h2>
+        <div class="clients-grid">
+          <div class="client-item">
+            <span class="client-name">삼성선물</span>
+          </div>
+          <div class="client-item">
+            <span class="client-name">LS증권</span>
+          </div>
+          <div class="client-item">
+            <span class="client-name">카카오</span>
+          </div>
+          <div class="client-item">
+            <span class="client-name">환경부</span>
+          </div>
+          <div class="client-item">
+            <span class="client-name">용인특례시</span>
+          </div>
+          <div class="client-item">
+            <span class="client-name">한국전자인증</span>
+          </div>
+          <div class="client-item">
+            <span class="client-name">서울특별시</span>
+          </div>
+          <div class="client-item">
+            <span class="client-name">이천시</span>
+          </div>
+        </div>
+        <p class="clients-more">외 다수</p>
+      </div>
+    </section>
+
+    <!-- Slide 6: 포트폴리오 - 대형 -->
+    <section class="slide slide-portfolio" data-slide="6">
+      <div class="slide-inner">
+        <h2 class="slide-title">포트폴리오 <span class="title-sub">대형 프로젝트</span></h2>
+        <div class="portfolio-grid two-col">
+          <div class="portfolio-card">
+            <div class="portfolio-img">
+              <img src="./resources/images/portfolio/oddodd/삼성선물-1.png" alt="삼성선물 Open API">
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-year">2025</span>
+              <h3>삼성선물 Open API</h3>
+              <p>Open API 개발자 포털 구축<br>기획 · 디자인 · 프론트엔드 전체</p>
+              <div class="portfolio-tags">
+                <span>Vue3</span><span>Nuxt</span><span>TailwindCSS</span>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card">
+            <div class="portfolio-img">
+              <img src="./resources/images/portfolio/oddodd/ls증권-1.jpg" alt="LS증권 롱숏클럽">
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-year">2024~2025</span>
+              <h3>LS증권 롱숏클럽</h3>
+              <p>투자 커뮤니티 플랫폼 신규 구축<br>기획 · 디자인 · 프론트엔드 전체</p>
+              <div class="portfolio-tags">
+                <span>Next.js</span><span>TypeScript</span><span>Redux</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 7: 포트폴리오 - 공공 -->
+    <section class="slide slide-portfolio" data-slide="7">
+      <div class="slide-inner">
+        <h2 class="slide-title">포트폴리오 <span class="title-sub">공공기관</span></h2>
+        <div class="portfolio-grid three-col">
+          <div class="portfolio-card compact">
+            <div class="portfolio-img">
+              <img src="./resources/images/portfolio/oddodd/환경부환경지킴이.png" alt="환경부 환경지킴이">
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-year">2021</span>
+              <h3>환경부 환경지킴이<br>복무관리시스템</h3>
+              <p>관리자 시스템 기획 · 디자인 · 개발</p>
+            </div>
+          </div>
+          <div class="portfolio-card compact">
+            <div class="portfolio-img">
+              <img src="./resources/images/portfolio/oddodd/용인시교통약자이동지원센터.jpg" alt="용인시 교통약자">
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-year">2021</span>
+              <h3>용인시 교통약자<br>이동지원센터</h3>
+              <p>예약 시스템 구축</p>
+            </div>
+          </div>
+          <div class="portfolio-card compact">
+            <div class="portfolio-img">
+              <img src="./resources/images/portfolio/oddodd/이천동행누리센터.png" alt="이천 동행누리센터">
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-year">2021</span>
+              <h3>이천시<br>동행누리센터</h3>
+              <p>웹사이트 기획 · 디자인 · 개발</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 8: 포트폴리오 - 중소기업 -->
+    <section class="slide slide-portfolio" data-slide="8">
+      <div class="slide-inner">
+        <h2 class="slide-title">포트폴리오 <span class="title-sub">중소기업</span></h2>
+        <div class="portfolio-grid three-col">
+          <div class="portfolio-card compact">
+            <div class="portfolio-img">
+              <img src="./resources/images/portfolio/oddodd/벽초지-1.webp" alt="벽초지 문화수목원">
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-year">2019</span>
+              <h3>벽초지 문화수목원</h3>
+              <p>기업 소개 사이트 제작<br>기획 · 디자인 · 개발</p>
+            </div>
+          </div>
+          <div class="portfolio-card compact">
+            <div class="portfolio-img">
+              <img src="./resources/images/portfolio/oddodd/dazum-1.png" alt="다줌 간편청구">
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-year">2021</span>
+              <h3>다줌 간편청구</h3>
+              <p>서비스 고도화<br>UI/UX 개선 · 프론트엔드</p>
+            </div>
+          </div>
+          <div class="portfolio-card compact">
+            <div class="portfolio-img">
+              <img src="./resources/images/portfolio/oddodd/suwon-1.webp" alt="수원 프로젝트">
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-year">2022</span>
+              <h3>FM스쿨</h3>
+              <p>교육 플랫폼<br>디자인 · 개발</p>
+            </div>
+          </div>
+        </div>
+        <p class="portfolio-note">* 중소기업도 <span class="line-highlight">대기업과 동일한 퀄리티</span>로 작업합니다</p>
+      </div>
+    </section>
+
+    <!-- Slide 9: 이런 것도 가능해요 -->
+    <section class="slide slide-samples" data-slide="9">
+      <div class="slide-inner">
+        <h2 class="slide-title">이런 것도 가능해요</h2>
+        <div class="samples-grid">
+          <div class="sample-card">
+            <div class="sample-icon"><i class="fas fa-building"></i></div>
+            <h3>회사 소개 사이트</h3>
+            <ul>
+              <li>5~10페이지 구성</li>
+              <li>반응형 (모바일 대응)</li>
+              <li>관리자 페이지 옵션</li>
+            </ul>
+            <p class="sample-price">300~600만원</p>
+          </div>
+          <div class="sample-card">
+            <div class="sample-icon"><i class="fas fa-cogs"></i></div>
+            <h3>관리자 페이지</h3>
+            <ul>
+              <li>회원관리, 게시판</li>
+              <li>통계 대시보드</li>
+              <li>권한 관리</li>
+            </ul>
+            <p class="sample-price">500~1,000만원</p>
+          </div>
+          <div class="sample-card">
+            <div class="sample-icon"><i class="fas fa-bullhorn"></i></div>
+            <h3>랜딩/이벤트 페이지</h3>
+            <ul>
+              <li>1페이지 집중형</li>
+              <li>애니메이션 효과</li>
+              <li>빠른 제작</li>
+            </ul>
+            <p class="sample-price">100~300만원</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 10: 가격 안내 -->
+    <section class="slide slide-pricing" data-slide="10">
+      <div class="slide-inner">
+        <h2 class="slide-title">가격 안내</h2>
+        <table class="pricing-table">
+          <thead>
+            <tr>
+              <th>유형</th>
+              <th>예상 범위</th>
+              <th>작업 기간</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>회사 소개 (5~10P)</td>
+              <td><strong>300~600만원</strong></td>
+              <td>4~6주</td>
+            </tr>
+            <tr>
+              <td>관리자 페이지</td>
+              <td><strong>500~1,000만원</strong></td>
+              <td>6~10주</td>
+            </tr>
+            <tr>
+              <td>랜딩페이지</td>
+              <td><strong>100~300만원</strong></td>
+              <td>2~3주</td>
+            </tr>
+            <tr class="highlight-row">
+              <td>풀 서비스 (기획~개발)</td>
+              <td><strong>800만원~</strong></td>
+              <td>협의</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="pricing-note">* 실제 비용은 요구사항에 따라 달라질 수 있습니다<br>* 무료 견적 상담을 통해 정확한 비용을 안내해드립니다</p>
+      </div>
+    </section>
+
+    <!-- Slide 11: 작업 프로세스 -->
+    <section class="slide slide-process" data-slide="11">
+      <div class="slide-inner">
+        <h2 class="slide-title">작업 프로세스</h2>
+        <div class="process-flow">
+          <div class="process-step">
+            <div class="step-num">1</div>
+            <div class="step-name">상담</div>
+          </div>
+          <div class="process-arrow"><i class="fas fa-chevron-right"></i></div>
+          <div class="process-step">
+            <div class="step-num">2</div>
+            <div class="step-name">견적</div>
+          </div>
+          <div class="process-arrow"><i class="fas fa-chevron-right"></i></div>
+          <div class="process-step">
+            <div class="step-num">3</div>
+            <div class="step-name">계약</div>
+          </div>
+          <div class="process-arrow"><i class="fas fa-chevron-right"></i></div>
+          <div class="process-step">
+            <div class="step-num">4</div>
+            <div class="step-name">기획</div>
+          </div>
+          <div class="process-arrow"><i class="fas fa-chevron-right"></i></div>
+          <div class="process-step">
+            <div class="step-num">5</div>
+            <div class="step-name">디자인</div>
+          </div>
+          <div class="process-arrow"><i class="fas fa-chevron-right"></i></div>
+          <div class="process-step">
+            <div class="step-num">6</div>
+            <div class="step-name">개발</div>
+          </div>
+          <div class="process-arrow"><i class="fas fa-chevron-right"></i></div>
+          <div class="process-step">
+            <div class="step-num">7</div>
+            <div class="step-name">검수</div>
+          </div>
+          <div class="process-arrow"><i class="fas fa-chevron-right"></i></div>
+          <div class="process-step highlight">
+            <div class="step-num">8</div>
+            <div class="step-name">오픈</div>
+          </div>
+        </div>
+        <div class="process-benefits">
+          <div class="benefit"><i class="fas fa-check"></i> 각 단계별 확인 후 진행</div>
+          <div class="benefit"><i class="fas fa-check"></i> 중간 수정 가능</div>
+          <div class="benefit"><i class="fas fa-check"></i> 오픈 후 1개월 무상 유지보수</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 12: 연락처 -->
+    <section class="slide slide-contact" data-slide="12">
+      <div class="slide-inner">
+        <div class="contact-content">
+          <h1 class="contact-logo">od<b>d:o</b>dd</h1>
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-globe"></i>
+              <a href="https://oddodd.io" target="_blank">oddodd.io</a>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:odada@oddodd.io">odada@oddodd.io</a>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <a href="tel:010-3111-2469">010-3111-2469</a>
+            </div>
+          </div>
+          <p class="btn-point">무료 견적 상담</p>
+        </div>
+        <div class="contact-decoration">
+          <div class="deco-circle c1"></div>
+          <div class="deco-circle c2"></div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script>
+    let currentSlide = 1;
+    const totalSlides = 12;
+
+    function showSlide(n) {
+      const slides = document.querySelectorAll('.slide');
+      if (n > totalSlides) currentSlide = 1;
+      if (n < 1) currentSlide = totalSlides;
+
+      slides.forEach((slide, index) => {
+        slide.classList.remove('active');
+        if (index === currentSlide - 1) {
+          slide.classList.add('active');
+        }
+      });
+
+      document.getElementById('currentSlide').textContent = currentSlide;
+    }
+
+    function nextSlide() {
+      currentSlide++;
+      showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+      currentSlide--;
+      showSlide(currentSlide);
+    }
+
+    // 키보드 네비게이션
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ') {
+        nextSlide();
+      } else if (e.key === 'ArrowLeft') {
+        prevSlide();
+      }
+    });
+
+    // 초기화
+    showSlide(currentSlide);
+  </script>
+</body>
+</html>
