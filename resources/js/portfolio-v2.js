@@ -20,8 +20,10 @@ function initAccordion() {
       const content = accordion.querySelector('.pf-accordion__content');
       const isExpanded = this.getAttribute('aria-expanded') === 'true';
 
-      // Close all other accordions (optional - remove for multi-open)
-      // closeAllAccordions();
+      // Close all other accordions
+      if (!isExpanded) {
+        closeAllAccordions();
+      }
 
       // Toggle current accordion
       if (isExpanded) {
@@ -30,14 +32,6 @@ function initAccordion() {
       } else {
         this.setAttribute('aria-expanded', 'true');
         content.classList.add('is-open');
-
-        // Smooth scroll to accordion
-        setTimeout(() => {
-          accordion.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
-        }, 100);
       }
     });
   });
