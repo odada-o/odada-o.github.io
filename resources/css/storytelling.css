@@ -22,8 +22,8 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
   overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 
 body {
@@ -289,7 +289,6 @@ body {
 .era-content {
   text-align: center;
   position: relative;
-  padding: 60px 0;
 }
 
 .era-hashtags {
@@ -338,6 +337,10 @@ body {
    Section 4: Answer
    =========================================== */
 .section-answer {
+  background: transparent;
+}
+
+.section-compare {
   background: transparent;
 }
 
@@ -390,10 +393,6 @@ body {
 /* ===========================================
    Section 5: Compare
    =========================================== */
-.section-compare {
-  background: transparent;
-}
-
 .compare-title {
   font-size: 40px;
   font-weight: 700;
@@ -469,14 +468,220 @@ body {
 }
 
 /* ===========================================
-   Section 6: CTA
+   Section 6: Clients
+   =========================================== */
+.section-clients {
+  background: transparent;
+}
+
+.section-clients .container {
+  text-align: center;
+}
+
+.clients-title {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
+  color: var(--text);
+}
+
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.client-item {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px 16px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text);
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.client-item:hover {
+  border-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.clients-more {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.clients-portfolio-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 32px;
+  padding: 14px 28px;
+  background: transparent;
+  border: 2px solid var(--primary);
+  border-radius: 40px;
+  color: var(--primary);
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.clients-portfolio-link:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.clients-portfolio-link i {
+  transition: transform 0.3s ease;
+}
+
+.clients-portfolio-link:hover i {
+  transform: translateX(4px);
+}
+
+/* ===========================================
+   Section 7: CTA
    =========================================== */
 .section-cta {
   background: transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 브라우저 목업 장식 */
+.cta-visual {
+  position: absolute;
+  right: -80px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.browser-mockup {
+  width: 400px;
+  background: var(--primary);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+}
+
+.browser-header {
+  padding: 12px 16px;
+  background: rgba(255,255,255,0.1);
+  display: flex;
+  gap: 6px;
+}
+
+.browser-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.3);
+}
+
+.browser-content {
+  padding: 20px;
+  background: white;
+}
+
+.mock-nav {
+  height: 12px;
+  background: var(--border);
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.mock-hero {
+  margin-bottom: 20px;
+}
+
+.mock-text {
+  height: 14px;
+  background: var(--border);
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.mock-text.short {
+  width: 60%;
+  height: 10px;
+}
+
+.mock-cards {
+  display: flex;
+  gap: 12px;
+}
+
+.mock-card {
+  flex: 1;
+  height: 60px;
+  background: var(--bg-gray);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+/* 플로팅 요소 */
+.floating-element {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.floating-element.el-1 {
+  width: 60px;
+  height: 60px;
+  top: -20px;
+  right: -20px;
+  animation: float1 6s ease-in-out infinite;
+}
+
+.floating-element.el-2 {
+  width: 30px;
+  height: 30px;
+  bottom: 40px;
+  left: -40px;
+  animation: float2 5s ease-in-out infinite;
+}
+
+.floating-element.el-3 {
+  width: 20px;
+  height: 20px;
+  top: 60%;
+  right: -60px;
+  animation: float3 7s ease-in-out infinite;
+}
+
+@keyframes float1 {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  50% { transform: translate(-10px, 15px) rotate(180deg); }
+}
+
+@keyframes float2 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(8px, -12px); }
+}
+
+@keyframes float3 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-6px, 10px); }
 }
 
 .cta-content {
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .cta-title {
@@ -589,5 +794,24 @@ body {
   .cta-contact {
     flex-direction: column;
     gap: 16px;
+  }
+
+  .clients-title {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .clients-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .client-item {
+    padding: 16px 12px;
+    font-size: 14px;
+  }
+
+  .cta-visual {
+    display: none;
   }
 }

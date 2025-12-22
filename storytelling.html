@@ -149,8 +149,55 @@
     </div>
   </section>
 
-  <!-- Section 6: CTA -->
+  <!-- Section 6: 주요 고객사 -->
+  <section class="section section-clients" id="section-clients">
+    <div class="container">
+      <h2 class="clients-title">신뢰할 수 있는 고객사와 함께합니다</h2>
+      <div class="clients-grid">
+        <div class="client-item">환경부</div>
+        <div class="client-item">서울특별시</div>
+        <div class="client-item">용인특례시</div>
+        <div class="client-item">이천시</div>
+        <div class="client-item">스타트업 A사</div>
+        <div class="client-item">병원/클리닉</div>
+        <div class="client-item">쇼핑몰 B사</div>
+        <div class="client-item">교육 스타트업</div>
+      </div>
+      <p class="clients-more">대기업부터 스타트업까지</p>
+      <a href="./portfolio.html" class="clients-portfolio-link">
+        포트폴리오 전체 보기
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Section 7: CTA -->
   <section class="section section-cta" id="section-cta">
+    <!-- 브라우저 목업 배경 장식 -->
+    <div class="cta-visual">
+      <div class="browser-mockup">
+        <div class="browser-header">
+          <span class="browser-dot"></span>
+          <span class="browser-dot"></span>
+          <span class="browser-dot"></span>
+        </div>
+        <div class="browser-content">
+          <div class="mock-nav"></div>
+          <div class="mock-hero">
+            <div class="mock-text"></div>
+            <div class="mock-text short"></div>
+          </div>
+          <div class="mock-cards">
+            <div class="mock-card"></div>
+            <div class="mock-card"></div>
+            <div class="mock-card"></div>
+          </div>
+        </div>
+      </div>
+      <div class="floating-element el-1"></div>
+      <div class="floating-element el-2"></div>
+      <div class="floating-element el-3"></div>
+    </div>
     <div class="container">
       <div class="cta-content">
         <h2 class="cta-title">당신의 사업을<br><span class="highlight">제대로</span> 보여드립니다</h2>
@@ -174,6 +221,10 @@
   <script>
     gsap.registerPlugin(ScrollTrigger);
 
+    // 페이지 로드 시 맨 위로 스크롤
+    window.history.scrollRestoration = 'manual';
+    window.scrollTo(0, 0);
+
     // 배경색 정의
     const bgColors = {
       chat: "#fafafa",
@@ -181,7 +232,8 @@
       era: "#1d1d1d",
       answer: "#ffffff",
       compare: "#fafafa",
-      cta: "#ffffff"
+      clients: "#ffffff",
+      cta: "#fafafa"
     };
 
     // Section 1: 채팅 말풍선 순차 등장
@@ -199,7 +251,7 @@
       );
     });
 
-    // Section 1 → 2: 말풍선 옆으로 빠지면서 배경색 전환
+    // Section 1 → 2: 말풍선 퇴장 애니메이션
     gsap.timeline({
       scrollTrigger: {
         trigger: "#section-problem",
@@ -210,232 +262,113 @@
     })
     .to(".chat-bubble.client", { x: 200, opacity: 0, stagger: 0.1 }, 0)
     .to(".chat-bubble.agency", { x: -200, opacity: 0, stagger: 0.1 }, 0)
-    .to(".section-hint", { opacity: 0 }, 0)
-    .to("body", { backgroundColor: bgColors.problem }, 0);
+    .to(".section-hint", { opacity: 0 }, 0);
 
     // Section 2: 문제 제기 등장
     gsap.timeline({
       scrollTrigger: {
         trigger: "#section-problem",
-        start: "top center",
-        toggleActions: "play none none reverse"
+        start: "top 60%",
+        end: "top 10%",
+        scrub: 0.5
       }
     })
-    .fromTo(".problem-title", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.5 })
-    .fromTo(".template-site", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.6 }, "-=0.2")
-    .fromTo(".quote", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.4, stagger: 0.15 }, "-=0.3")
-    .to(".template-site", { filter: "blur(3px)", opacity: 0.6, duration: 0.4 }, "-=0.2");
+    .fromTo(".problem-title", { opacity: 0, y: 50 }, { opacity: 1, y: 0 })
+    .fromTo(".template-site", { opacity: 0, y: 40 }, { opacity: 1, y: 0 }, "-=0.2")
+    .fromTo(".quote", { opacity: 0, y: 30 }, { opacity: 1, y: 0, stagger: 0.2 }, "-=0.1")
+    .to(".template-site", { filter: "blur(3px)", opacity: 0.6 });
 
-    // Section 2 → 3: 배경색 어두워짐 (양방향 스크롤 대응)
-    ScrollTrigger.create({
-      trigger: "#section-era",
-      start: "top bottom",
-      end: "top top",
-      scrub: 1,
-      onUpdate: (self) => {
-        const progress = self.progress;
-        // problem(#ffffff) → era(#1d1d1d) 그라데이션
-        const r = Math.round(255 - (255 - 29) * progress);
-        const g = Math.round(255 - (255 - 29) * progress);
-        const b = Math.round(255 - (255 - 29) * progress);
-        document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+    // Section 3: Era 애니메이션
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: "#section-era",
+        start: "top 80%",
+        end: "top 20%",
+        scrub: 0.5
       }
-    });
+    })
+    .fromTo(".hashtag", { opacity: 0, y: -10 }, { opacity: 1, y: 0, stagger: 0.1 })
+    .fromTo(".era-message-main", { opacity: 0, y: 40 }, { opacity: 1, y: 0 }, "-=0.3")
+    .fromTo(".era-sub", { opacity: 0, y: 20 }, { opacity: 1, y: 0 }, "-=0.2");
 
-    // Section 3: 해시태그 순차 등장
-    const hashtags = document.querySelectorAll('.hashtag');
-    hashtags.forEach((tag, index) => {
-      gsap.fromTo(tag,
-        { opacity: 0, y: -10 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.4,
-          delay: index * 0.1,
-          scrollTrigger: {
-            trigger: "#section-era",
-            start: "top center",
-            toggleActions: "play none none reverse"
-          }
-        }
-      );
-    });
-
-    // 메인 메시지 등장
-    gsap.fromTo(".era-message-main",
-      { opacity: 0, y: 40 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 0.8,
-        scrollTrigger: {
-          trigger: "#section-era",
-          start: "top center",
-          toggleActions: "play none none reverse"
-        }
+    // Section 4: Answer
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: "#section-answer",
+        start: "top 80%",
+        end: "top 20%",
+        scrub: 0.5
       }
-    );
+    })
+    .fromTo(".answer-title", { opacity: 0, y: 30 }, { opacity: 1, y: 0 })
+    .fromTo(".answer-point", { opacity: 0, x: -50 }, { opacity: 1, x: 0, stagger: 0.15 }, "-=0.3");
 
-    // 서브 메시지 등장
-    gsap.fromTo(".era-sub",
-      { opacity: 0, y: 20 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 0.6,
-        delay: 0.3,
-        scrollTrigger: {
-          trigger: "#section-era",
-          start: "top center",
-          toggleActions: "play none none reverse"
-        }
-      }
-    );
-
-    // Section 3 → 4: 배경색 밝아짐 (양방향 스크롤 대응)
-    ScrollTrigger.create({
-      trigger: "#section-answer",
-      start: "top bottom",
-      end: "top top",
-      scrub: 1,
-      onUpdate: (self) => {
-        const progress = self.progress;
-        // era(#1d1d1d) → answer(#ffffff) 그라데이션
-        const r = Math.round(29 + (255 - 29) * progress);
-        const g = Math.round(29 + (255 - 29) * progress);
-        const b = Math.round(29 + (255 - 29) * progress);
-        document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
-      }
-    });
-
-    // Section 4: 해답 포인트 등장
-    gsap.fromTo(".answer-title",
-      { opacity: 0, y: 30 },
-      {
-        opacity: 1,
-        y: 0,
-        scrollTrigger: {
-          trigger: "#section-answer",
-          start: "top center",
-          toggleActions: "play none none reverse"
-        }
-      }
-    );
-
-    const answerPoints = document.querySelectorAll('.answer-point');
-    answerPoints.forEach((point, index) => {
-      gsap.fromTo(point,
-        { opacity: 0, x: -50 },
-        {
-          opacity: 1,
-          x: 0,
-          duration: 0.6,
-          delay: index * 0.15,
-          scrollTrigger: {
-            trigger: "#section-answer",
-            start: "top center",
-            toggleActions: "play none none reverse"
-          }
-        }
-      );
-    });
-
-    // Section 4 → 5: 배경색 전환
-    gsap.to("body", {
-      backgroundColor: bgColors.compare,
+    // Section 5: Compare
+    gsap.timeline({
       scrollTrigger: {
         trigger: "#section-compare",
-        start: "top bottom",
-        end: "top center",
-        scrub: 1
+        start: "top 80%",
+        end: "top 20%",
+        scrub: 0.5
       }
-    });
+    })
+    .fromTo(".compare-title", { opacity: 0, y: 30 }, { opacity: 1, y: 0 })
+    .fromTo(".compare-column.normal", { opacity: 0, x: -80 }, { opacity: 1, x: 0 }, "-=0.3")
+    .fromTo(".compare-column.oddodd", { opacity: 0, x: 80 }, { opacity: 1, x: 0 }, "<")
+    .fromTo(".compare-vs", { opacity: 0, scale: 0 }, { opacity: 1, scale: 1 }, "-=0.2");
 
-    // Section 5: 비교 테이블
-    gsap.fromTo(".compare-title",
-      { opacity: 0, y: 30 },
-      {
-        opacity: 1,
-        y: 0,
-        scrollTrigger: {
-          trigger: "#section-compare",
-          start: "top center",
-          toggleActions: "play none none reverse"
-        }
+    // Section 6: Clients
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: "#section-clients",
+        start: "top 80%",
+        end: "top 20%",
+        scrub: 0.5
       }
-    );
+    })
+    .fromTo(".clients-title", { opacity: 0, y: 30 }, { opacity: 1, y: 0 })
+    .fromTo(".client-item", { opacity: 0, y: 20 }, { opacity: 1, y: 0, stagger: 0.08 }, "-=0.3")
+    .fromTo(".clients-more", { opacity: 0 }, { opacity: 1 }, "-=0.2");
 
-    gsap.fromTo(".compare-column.normal",
-      { opacity: 0, x: -80 },
-      {
-        opacity: 1,
-        x: 0,
-        duration: 0.6,
-        scrollTrigger: {
-          trigger: "#section-compare",
-          start: "top center",
-          toggleActions: "play none none reverse"
-        }
-      }
-    );
-
-    gsap.fromTo(".compare-column.oddodd",
-      { opacity: 0, x: 80 },
-      {
-        opacity: 1,
-        x: 0,
-        duration: 0.6,
-        scrollTrigger: {
-          trigger: "#section-compare",
-          start: "top center",
-          toggleActions: "play none none reverse"
-        }
-      }
-    );
-
-    gsap.fromTo(".compare-vs",
-      { opacity: 0, scale: 0 },
-      {
-        opacity: 1,
-        scale: 1,
-        duration: 0.4,
-        delay: 0.2,
-        scrollTrigger: {
-          trigger: "#section-compare",
-          start: "top center",
-          toggleActions: "play none none reverse"
-        }
-      }
-    );
-
-    // Section 5 → 6: 배경색 전환
-    gsap.to("body", {
-      backgroundColor: bgColors.cta,
+    // Section 7: CTA
+    gsap.timeline({
       scrollTrigger: {
         trigger: "#section-cta",
-        start: "top bottom",
-        end: "top center",
-        scrub: 1
+        start: "top 80%",
+        end: "top 20%",
+        scrub: 0.5
       }
-    });
+    })
+    .fromTo(".cta-content", { opacity: 0, y: 40 }, { opacity: 1, y: 0 });
 
-    // Section 6: CTA
-    gsap.fromTo(".cta-content",
-      { opacity: 0, y: 40 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 0.8,
-        scrollTrigger: {
-          trigger: "#section-cta",
-          start: "top center",
-          toggleActions: "play none none reverse"
-        }
-      }
-    );
+    // 배경색 전환 - 섹션별로 설정
+    const sections = [
+      { id: "#section-chat", color: bgColors.chat },
+      { id: "#section-problem", color: bgColors.problem },
+      { id: "#section-era", color: bgColors.era },
+      { id: "#section-answer", color: bgColors.answer },
+      { id: "#section-compare", color: bgColors.compare },
+      { id: "#section-clients", color: bgColors.clients },
+      { id: "#section-cta", color: bgColors.cta }
+    ];
+
+    sections.forEach(section => {
+      ScrollTrigger.create({
+        trigger: section.id,
+        start: "top center",
+        end: "bottom center",
+        onEnter: () => gsap.to("body", { backgroundColor: section.color, duration: 0.8, ease: "power2.out" }),
+        onEnterBack: () => gsap.to("body", { backgroundColor: section.color, duration: 0.8, ease: "power2.out" })
+      });
+    });
 
     // 초기 배경색 설정
     gsap.set("body", { backgroundColor: bgColors.chat });
+
+    // Section 2 초기 상태 설정
+    gsap.set(".problem-title", { opacity: 0, y: 50 });
+    gsap.set(".template-site", { opacity: 0, y: 40 });
+    gsap.set(".quote", { opacity: 0, y: 30 });
   </script>
 </body>
 </html>
