@@ -735,14 +735,15 @@ body {
   display: flex;
   justify-content: center;
   gap: 40px;
-  color: var(--text-muted);
   font-size: 16px;
 }
 
-.cta-contact span {
+.cta-contact a {
   display: flex;
   align-items: center;
   gap: 8px;
+  color: var(--text-muted);
+  text-decoration: none;
 }
 
 /* ===========================================

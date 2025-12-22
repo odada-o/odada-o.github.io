@@ -154,13 +154,13 @@
     <div class="container">
       <h2 class="clients-title">신뢰할 수 있는 고객사와 함께합니다</h2>
       <div class="clients-grid">
+        <div class="client-item">삼성선물</div>
+        <div class="client-item">LS증권</div>
         <div class="client-item">환경부</div>
-        <div class="client-item">서울특별시</div>
         <div class="client-item">용인특례시</div>
         <div class="client-item">이천시</div>
-        <div class="client-item">스타트업 A사</div>
         <div class="client-item">병원/클리닉</div>
-        <div class="client-item">쇼핑몰 B사</div>
+        <div class="client-item">스타트업 A사</div>
         <div class="client-item">교육 스타트업</div>
       </div>
       <p class="clients-more">대기업부터 스타트업까지</p>
@@ -207,8 +207,8 @@
           <i class="fas fa-arrow-right"></i>
         </a>
         <div class="cta-contact">
-          <span><i class="fas fa-globe"></i> oddodd.io</span>
-          <span><i class="fas fa-phone"></i> 010-3111-2469</span>
+          <a href="https://oddodd.io"><i class="fas fa-globe"></i> oddodd.io</a>
+          <a href="tel:01031112469"><i class="fas fa-phone"></i> 010-3111-2469</a>
         </div>
       </div>
     </div>
@@ -296,12 +296,12 @@
       scrollTrigger: {
         trigger: "#section-answer",
         start: "top 80%",
-        end: "top 20%",
+        end: "top 30%",
         scrub: 0.5
       }
     })
-    .fromTo(".answer-title", { opacity: 0, y: 30 }, { opacity: 1, y: 0 })
-    .fromTo(".answer-point", { opacity: 0, x: -50 }, { opacity: 1, x: 0, stagger: 0.15 }, "-=0.3");
+    .fromTo(".answer-title", { opacity: 0, y: 15 }, { opacity: 1, y: 0 })
+    .fromTo(".answer-point", { opacity: 0, x: -20 }, { opacity: 1, x: 0, stagger: 0.1 }, "-=0.3");
 
     // Section 5: Compare
     gsap.timeline({
